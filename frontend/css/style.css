@@ -5,6 +5,8 @@
 
 @import url('https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap&subset=latin-ext');
 @import url('https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
+@import url('https://fonts.googleapis.com/css2?family=Tajawal&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amiri&display=swap');
 
 /*****---------------------------------------- 1) font-family: 'Rajdhani', sans-serif;
  2) font-family: 'Poppins', sans-serif;
@@ -21,6 +23,7 @@
 @import url(jquery-ui.css);
 @import url(nice-select.css);
 
+
 /*--------------------------------------------------------------------- skeleton ---------------------------------------------------------------------*/
 
 * {
@@ -33,19 +36,15 @@ html {
 }
 
 body {
-    color: #666666;
-    font-size: 14px;
-    font-family: 'Raleway', sans-serif;
+background-color: rgb(216, 224, 241);  
+  font-size: 14px;
+    font-family: Tajawal;
     ;
     line-height: 1.80857;
     font-weight: normal;
     overflow-x: hidden;
 }
 
-.footer-logo {
-    border-radius: 50%;
-    margin-top: 0px;
-}
 
 a {
     color: #1f1f1f;
@@ -216,9 +215,11 @@ ol {
     font-size: 15pt;
 }
 
-.aya img:hover {
+.aya img {
     background-color: #fff;
     border-radius: 50%;
+    
+
 }
 
 .mean-container .mean-bar {
@@ -235,10 +236,11 @@ ol {
 }
 
 .web_text {
-    width: 100%;
     float: left;
-    font-size: 48px;
-    padding-top: 100px;
+    text-align: center;
+    font-size: 32px;
+    padding-top: 200px;
+    padding-bottom: 40px;
     color: rgb(255, 255, 255);
 }
 
@@ -252,7 +254,7 @@ ol {
 }
 
 .donec_text {
-    font-size: 17px;
+    font-family: Tajawal;
     color: #110f0a;
     margin-left: 0;
     padding-bottom: 20px;
@@ -438,9 +440,9 @@ button.btn.btn-primary:focus {
 .about_main {
     width: 100%;
     float: left;
-    background-color: #0b3b65;
+    background-color: #5a83a7;
     height: auto;
-    margin-top: 70px;
+    margin-top: 20px;
     margin-bottom: 20px;
     position: relative;
 }
@@ -481,6 +483,7 @@ button.btn.btn-primary:focus {
 
 .right_section_main {
     width: 100%;
+    height: 360px;
     float: left;
     background-color: #ffffff;
     padding: 12px 40px 0px 40px;
@@ -491,12 +494,22 @@ button.btn.btn-primary:focus {
     width: 100%;
     float: left;
 }
-
-.special_text {
-    color: #000;
-    font-weight: 500;
+.more{
+    float: left;
 }
 
+.special_text {
+    font-size: 18px;
+    padding-top: 40px;
+    color: rgb(9, 74, 128);
+    font-weight: 420;
+}
+.taital-text{
+    font-family: Tajawal;
+    padding-top: 15px;
+    color: rgb(9, 74, 128);
+    font-weight: 500;
+}
 .right_aero {
     max-width: 100%;
     left: -245px;
@@ -725,8 +738,11 @@ button.main_bt a:hover {
     width: 33.33%;
 }
 
+
 .footer-logo {
-    margin-top: 70px;
+    border-radius: 50%;
+    margin-top: 0px;
+
 }
 
 .subsrcibe_bt {
