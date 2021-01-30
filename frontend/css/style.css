@@ -42,6 +42,11 @@ body {
     overflow-x: hidden;
 }
 
+.footer-logo {
+    border-radius: 50%;
+    margin-top: 0px;
+}
+
 a {
     color: #1f1f1f;
     text-decoration: none !important;
