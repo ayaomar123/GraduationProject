@@ -75,6 +75,18 @@ h6 {
     margin: 0
 }
 
+.tri{
+    width: 300px;
+    height: 50px;
+}
+
+.myBtn{
+    width: 140px;
+    background-color: #0b3b65;
+    color: #fff;
+    font-family: Amiri;
+}
+
 h1 {
     font-size: 48px
 }
@@ -171,10 +183,19 @@ a {
     background-color: #0b3b65;
     height: auto;
     padding-top: 20px;
-    padding-bottom: 50px;
+    padding-bottom: 20px;
     background-size: cover;
     background-size: 100%;
   
+}
+
+
+
+.card-header{
+    background-color: #0b3b65;
+}
+.white{
+    color: #fff;
 }
 
 .main-menu ul>li a {
