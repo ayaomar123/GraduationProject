@@ -165,6 +165,17 @@ a {
     background-size: 100%;
     background-repeat: no-repeat;
 }
+.header_main_2{
+    width: 100%;
+    float: left;
+    background-color: #0b3b65;
+    height: auto;
+    padding-top: 20px;
+    padding-bottom: 50px;
+    background-size: cover;
+    background-size: 100%;
+  
+}
 
 .main-menu ul>li a {
     font-family: Tajwal;
@@ -303,7 +314,7 @@ a:hover {
 button.btn.btn-primary,
 button.btn.btn-primary:hover,
 button.btn.btn-primary:focus {
-    background: #136af8;
+    background: #0b3b65;
     padding: 10 40px;
 }
 
@@ -442,7 +453,7 @@ button.btn.btn-primary:focus {
 .about_main {
     width: 100%;
     float: left;
-    background-color: #5a83a7;
+    background-color: #0b3b65;
     height: auto;
     margin-top: 20px;
     margin-bottom: 20px;
@@ -503,14 +514,14 @@ button.btn.btn-primary:focus {
 .special_text {
     font-size: 18px;
     padding-top: 40px;
-    color: rgb(9, 74, 128);
+    color: rgb(255 0 0);
     font-weight: 420;
 }
 .taital-text{
     font-family: Tajawal;
     padding-top: 15px;
     color: rgb(9, 74, 128);
-    font-weight: 500;
+    font-weight: 600;
 }
 .right_aero {
     max-width: 100%;
