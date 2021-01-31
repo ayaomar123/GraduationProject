@@ -35,16 +35,18 @@ html {
     scroll-behavior: smooth;
 }
 
+
 body {
-background-color: rgb(216, 224, 241);  
   font-size: 14px;
     font-family: Tajawal;
-    ;
     line-height: 1.80857;
     font-weight: normal;
     overflow-x: hidden;
 }
 
+.white{
+    color: #fff;
+}
 
 a {
     color: #1f1f1f;
@@ -165,7 +167,7 @@ a {
 }
 
 .main-menu ul>li a {
-    font-family: sans-serif;
+    font-family: Tajwal;
     line-height: 20px;
     font-size: 16px;
     display: block;
