@@ -65,7 +65,7 @@
 
                             <div class="col-xl-5 col-lg-6 col-md-6 col-sm-12">
                                 <div class="aya">
-                                    <h1 class="web_text"><strong>أهلا وسهلا بكم في منصة دليلك </strong></h1>
+                                    <h1 class="web_text ml3"><strong>أهلا وسهلا بكم في منصة دليلك </strong></h1>
                                     <a href="#home"><img class="myLogo row" src="images/logo2-removebg-preview.png"
                                             style="max-width: 35%;"></a>
                                   
@@ -288,6 +288,7 @@
     <script src="js/custom.js"></script>
     <!-- javascript -->
     <script src="https:cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
     <script>
         $(document).ready(function () {
             $(".fancybox").fancybox({
@@ -303,6 +304,24 @@
                 $(this).removeClass('transition');
             });
         });
+        // Wrap every letter in a span
+        var textWrapper = document.querySelector('.ml3');
+        textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+        anime.timeline({ loop: true })
+            .add({
+                targets: '.ml3 .letter',
+                opacity: [0, 1],
+                easing: "easeInOutQuad",
+                duration: 5,
+                delay: (el, i) => 150 * (i + 1)
+            }).add({
+                targets: '.ml3',
+                opacity: 0,
+                duration: 1000,
+                easing: "easeOutExpo",
+                delay: 1000
+            });
     </script>
 
 </body>
