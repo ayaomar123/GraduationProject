@@ -203,11 +203,6 @@ a {
     text-transform: uppercase;
 }
 
-nav.main-menu {
-    float: right;
-    margin-left: 0;
-}
-
 .main-menu ul {
     margin: 0;
     list-style-type: none;
