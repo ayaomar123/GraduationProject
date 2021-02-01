@@ -3,14 +3,10 @@
 
 /*--------------------------------------------------------------------- import Fonts ---------------------------------------------------------------------*/
 
-@import url('https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap&subset=latin-ext');
-@import url('https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
 @import url('https://fonts.googleapis.com/css2?family=Tajawal&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Amiri&display=swap');
 
-/*****---------------------------------------- 1) font-family: 'Rajdhani', sans-serif;
- 2) font-family: 'Poppins', sans-serif;
- ----------------------------------------*****/
+
 
 
 /*--------------------------------------------------------------------- import Files ---------------------------------------------------------------------*/
@@ -84,7 +80,6 @@ h6 {
     width: 140px;
     background-color: #0b3b65;
     color: #fff;
-    font-family: Amiri;
 }
 
 h1 {
@@ -157,7 +152,7 @@ a {
 }
 
 .layout_padding {
-    padding: 90px 0;
+    padding: 25px 0;
 }
 
 .center-desk {
@@ -172,7 +167,7 @@ a {
     background-image: url(../images/Artboard\ 1.png);
     height: auto;
     padding-top: 20px;
-    padding-bottom: 50px;
+    padding-bottom: 100px;
     background-size: cover;
     background-size: 100%;
     background-repeat: no-repeat;
@@ -199,7 +194,6 @@ a {
 }
 
 .main-menu ul>li a {
-    font-family: Tajwal;
     line-height: 20px;
     font-size: 16px;
     display: block;
@@ -218,6 +212,7 @@ nav.main-menu {
     margin: 0;
     list-style-type: none;
     margin-bottom: 10px;
+    font-family: Tajawal;
 }
 
 ul,
@@ -245,17 +240,13 @@ ol {
 .main-menu ul>li a:hover {
     color: #00566b;
     background-color: #fff;
-    border-radius: 100px;
-    font-size: 15pt;
+    border-radius: 30px;
 }
 
-.aya img {
-    background-color: #fff;
-    border-radius: 50%;
-    
-
+.aya{
+    margin-left: -20px;
+    margin-right: 135px;
 }
-
 .mean-container .mean-bar {
     background: #0b3b65;
 }
@@ -474,40 +465,9 @@ button.btn.btn-primary:focus {
 .about_main {
     width: 100%;
     float: left;
-    background-color: #0b3b65;
-    height: auto;
-    margin-top: 20px;
-    margin-bottom: 20px;
     position: relative;
 }
 
-.about_main:before {
-    content: "";
-    display: block;
-    position: absolute;
-    top: 0;
-    width: 100%;
-    height: 110px;
-    background-image: url(../images/about-top-bg.png);
-    z-index: 1;
-    background-size: 100%;
-    background-position: top center;
-    background-repeat: no-repeat;
-}
-
-.about_main:after {
-    content: "";
-    display: block;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 110px;
-    background-image: url(../images/about-bottom-bg.png);
-    z-index: 1;
-    background-size: 100%;
-    background-position: bottom center;
-    background-repeat: no-repeat;
-}
 
 .images {
     margin: 30px;
