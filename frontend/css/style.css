@@ -38,6 +38,7 @@ body {
     line-height: 1.80857;
     font-weight: normal;
     overflow-x: hidden;
+    background-color: #f3f3f5;
 }
 
 .white{
@@ -138,7 +139,7 @@ ol {
 }
 
 p {
-    margin: 20px;
+    margin: 5px;
     font-weight: 600;
     font-size: 15px;
     line-height: 24px;
@@ -151,9 +152,6 @@ a {
     outline: none !important;
 }
 
-.layout_padding {
-    padding: 25px 0;
-}
 
 .center-desk {
     width: 100%;
@@ -177,8 +175,7 @@ a {
     float: left;
     background-color: #0b3b65;
     height: auto;
-    padding-top: 20px;
-    padding-bottom: 20px;
+
     background-size: cover;
     background-size: 100%;
   
@@ -225,17 +222,61 @@ ol {
 .main-menu ul li:first-child {
     margin-left: 0;
 }
+.myaya{
+    background-image: url('../images/ik]sm.jpg');
+    background-size: cover;
+    width: 100%;
+    background-repeat: no-repeat;
+    height: 280px;
+    margin-top: 40px;
+}
+.image {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+
+.middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.container:hover .image {
+    opacity: 0.5;
+}
+
+.container:hover .middle {
+    opacity: 1;
+}
+
+.text {
+    background-color: #0b3b65;
+    color: white;
+    font-size: 16px;
+    padding: 16px 32px;
+}
 
 .main-menu ul>li {
     position: inherit;
     display: inline-block;
     vertical-align: middle;
+    pointer: cursor;
 }
 
 .main-menu ul>li a:hover {
-    color: #00566b;
-    background-color: #fff;
+    background-color: #e2adab;
     border-radius: 30px;
+    padding: 20px 10px;
+
 }
 
 .at:hover{
@@ -478,9 +519,9 @@ button.btn.btn-primary:focus {
     width: 100%;
     height: 360px;
     float: left;
-    background-color: #ffffff;
     padding: 12px 40px 0px 40px;
     margin-top: 31px;
+    background-color: #f3f3f5;
 }
 
 .dolar_tetx {
@@ -488,14 +529,20 @@ button.btn.btn-primary:focus {
     float: left;
 }
 .more{
-    float: left;
+    float: right;
+    background-color: #0b3b65;
+    color: white;
 }
 
+.more:hover{
+    background-color: #e2adab;
+}
 .special_text {
     font-size: 18px;
     padding-top: 40px;
-    color: rgb(255 0 0);
-    font-weight: 420;
+    color: rgb(9, 74, 128);
+    font-weight: 620;
+
 }
 .taital-text{
     font-family: Tajawal;
@@ -735,6 +782,7 @@ button.main_bt a:hover {
 .footer-logo {
     
     margin-top: 0px;
+    margin-right: -120px;
 
 }
 
