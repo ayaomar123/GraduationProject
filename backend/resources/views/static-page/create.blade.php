@@ -19,7 +19,7 @@
                     <div class="form-group m-form__group row">
                         <label class="col-lg-3 col-form-label">العنوان</label>
                         <div class="col-lg-6">
-                            <input id="title" value="{{ old('title') }}" name="title" placeholder="title"
+                            <input id="title" value="{{ old('title') }}" name="title" placeholder="العنوان"
                                 class="form-control" type="text">
                         </div>
                     </div>

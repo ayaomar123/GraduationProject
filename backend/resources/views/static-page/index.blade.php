@@ -43,7 +43,7 @@
                     <a href='{{ route("static-page.edit",$item->id) }}' class='btn btn-sm btn-primary'>تعديل</a>
                     <!-- <input type='submit' onclick='return confirm("Are you sure?")' value='Delete'
                         class='btn btn-danger btn-sm ' /> -->
-                    <a href='{{ route("static-page.delete",$item->id) }}' class='btn btn-warning btn-sm'
+                    <a href='{{ route("static-page.delete",$item->id) }}' class='btn btn-danger btn-sm'
                         onclick='return confirm("Are you sure?")'>حذف</a>
                 </form>
             </td>
