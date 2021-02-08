@@ -97,9 +97,9 @@
                                                 </div>
                                                 <div class="m-card-user__details">
                                                     <span
-                                                        class="m-card-user__name m--font-weight-500">{{auth()->user()->name??''}}</span>
+                                                        class="m-card-user__name m--font-weight-500"><h5>{{auth()->user()->name??''}}</h5></span>
                                                     <a href="" onclick="event.preventDefault(); "
-                                                       class="m-card-user__email m--font-weight-300 m-link">{{auth()->user()->email??''}}</a>
+                                                       class="m-card-user__email m--font-weight-300 m-link"><h5>{{auth()->user()->email??''}}</h5></a>
                                                 </div>
                                             </div>
                                         </div>
@@ -114,7 +114,7 @@
                                                             <i class="m-nav__link-icon flaticon-profile-1"></i>
                                                             <span class="m-nav__link-title">
                                                                 <span class="m-nav__link-wrap">
-                                                                    <span class="m-nav__link-text">الملف الشخصي</span>
+                                                                    <span class="m-nav__link-text"><h5>الملف الشخصي</h5></span>
                                                                 </span>
                                                             </span>
                                                         </a>
@@ -122,7 +122,7 @@
                                                     <li class="m-nav__item">
                                                         <a href="{{route('password.edit')}}" class="m-nav__link">
                                                             <i class="m-nav__link-icon flaticon-share"></i>
-                                                            <span class="m-nav__link-text">تغيير كلمة المرور</span>
+                                                            <span class="m-nav__link-text"><h5>تغيير كلمة المرور</h5></span>
                                                         </a>
                                                     </li>
                                                     <li class="m-nav__separator m-nav__separator--fit">
@@ -132,8 +132,8 @@
                                                             @csrf
                                                             <a href="route('logout')"
                                                                onclick="event.preventDefault(); this.closest('form').submit();"
-                                                               class="btn m-btn--pill    btn-secondary m-btn m-btn--custom m-btn--label-brand m-btn--bolder">تسجيل
-                                                                خروج </a>
+                                                               class="btn m-btn--pill    btn-secondary m-btn m-btn--custom m-btn--label-brand m-btn--bolder"><h6>   تسجيل خروج</h6>
+                                                                 </a>
 
                                                         </form>
                                                     </li>
