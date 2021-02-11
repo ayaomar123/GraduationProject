@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\Admin\AnswerController;
+use App\Http\Controllers\Admin\QestionController;
 use App\Http\Controllers\Admin\StaticPageController;
 use App\Http\Controllers\Admin\UserController;
 use App\Http\Controllers\Admin\UserProfileController;
@@ -31,6 +33,12 @@ Route::prefix("admin")->middleware('auth')->group(function() {
 
     Route::resource("static-page", StaticPageController::class);
     Route::get("static-page/{id}/delete", [StaticPageController::class, 'destroy'])->name("static-page.delete");
+
+    Route::resource("question", QestionController::class);
+    Route::get("question/{id}/delete", [QestionController::class, 'destroy'])->name("question.delete");
+
+    Route::resource("answers", AnswerController::class);
+    Route::get("answers/{id}/delete", [AnswerController::class, 'destroy'])->name("answers.delete");
 
     Route::get("change-pass", [ChangePasswordController::class, 'edit'])->name("password.edit");
     Route::post("change-pass", [ChangePasswordController::class, 'update'])->name("password.changed");
