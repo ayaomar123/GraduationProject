@@ -73,7 +73,7 @@
                                             <img src="{{asset('metronic/assets/app/media/img/users/user.png')}}" alt="">
                                         @else
                                             <img src="{{asset('storage/user-images/'.auth()->user()->image)}}"
-                                                 class="circular--portrait"  style="position: relative;width: 50px;height: 50px;overflow: hidden;border-radius: 50%;">
+                                                 class="circular--portrait"  style="position: relative;width: 50px;height: 40px;overflow: hidden;border-radius: 50%;">
                                         @endif
                                     </span>
                                 </a>

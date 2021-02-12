@@ -14,11 +14,11 @@
                     <div class="form-group m-form__group row">
                         <label class="col-lg-3 col-form-label">السؤال </label>
                         <div class="col-lg-8">
-                            <select class="form-control chosen-rtl select" name='Question_id' id='Question_id'>
+                            <select class="form-control chosen-rtl select" name='question_id' id='question_id'>
                                 <option selected>-اختر السؤال-</option>
                                 @foreach($questions as $question)
                                     <option
-                                        {{old('Question_id')==$question->id?'selected':''}} value='{{$question->id}}'>
+                                        {{$question->id==$item->id?'selected':''}} value='{{$question->id}}'>
                                         {{$question->question_body}}</option>
                                 @endforeach
                             </select>
@@ -65,7 +65,7 @@
                         <div class="row">
                             <div class="col-lg-3"></div>
                             <div class="col-lg-6">
-                                <button class="btn btn-primary" type="submit">إضافة</button>
+                                <button class="btn btn-primary" type="submit">تعديل</button>
                                 <a href='{{route("answers.index")}}' class="btn btn-secondary">الغاء الامر</a>
                             </div>
                         </div>

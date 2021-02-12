@@ -80,7 +80,9 @@
                 <h3 class="white">:أكمل الإجابة عن الأسئلة التالية</h3>
             </div>
             <form method='post' action="{{route('quiz.index')}}">
-            <div class="card border-0 mb-2">
+                @csrf
+                <input type="hidden" name="user_id" value="{{auth()->user()->id}}">
+                <div class="card border-0 mb-2">
                 <!--                     <img class="card-img-top" src="images/1.jpg" alt=""> -->
                 @foreach($answers as $answer)
                     <div class="card-body bg-light">
@@ -91,7 +93,9 @@
                             <div class="row">
                                 <div class="col-md-10">
                                     <ul>
-                                        <li>{{$answer->answer}} <input class="btn btn-lg" type="radio" name="{{$answer->answer}}" id="radio-toolbar"></li>
+                                        <li>{{$answer->answer1}} <input class="btn btn-lg" type="radio" name="{{$answer->question_id}}" value="{{$answer->answer1}}"  id="radio-toolbar"></li>
+                                        <li>{{$answer->answer2}} <input class="btn btn-lg" type="radio" name="{{$answer->question_id}}" value="{{$answer->answer2}}" id="radio-toolbar2"></li>
+                                        <li>{{$answer->answer3}} <input class="btn btn-lg" type="radio" name="{{$answer->question_id}}" value="{{$answer->answer3}}" id="radio-toolbar3"></li>
                                     </ul>
                                 </div>
 

@@ -3,8 +3,10 @@
 namespace App\Http\Controllers;
 
 use App\Models\Answer;
+use App\Models\Result;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use Session;
 
 class FrontQuestionController extends Controller
 {
@@ -15,11 +17,11 @@ class FrontQuestionController extends Controller
     }
 
     public function store(Request $request){
-        $requestData = $request->all();
-        dd($requestData);
         $user= Auth::user();
-        $answer = Answer::create($requestData);
+        $requestData = $request->all();
+//        dd($requestData);
+        $answer = Result::create($requestData);
         Session::flash("msg","s: تمت عملية الاضافة بنجاح");
-        return redirect(route("answers.index"));
+        return redirect()->back();
     }
 }

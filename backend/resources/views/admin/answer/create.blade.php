@@ -10,7 +10,7 @@
                     <div class="form-group m-form__group row">
                         <label class="col-lg-3 col-form-label">السؤال </label>
                         <div class="col-lg-8">
-                            <select class="form-control chosen-rtl select" name='Question_id' id='Question_id'>
+                            <select class="form-control chosen-rtl select" name='question_id' id='question_id'>
                                 <option selected>-اختر السؤال-</option>
                                 @foreach($questions as $question)
                                     <option

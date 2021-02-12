@@ -1,5 +1,5 @@
 @extends("layouts.admin")
-@section("title", "الأجوبة ")
+@section("title", "اختبار القدرات (الأجوبة) ")
 @section("title-side")
     <a href="{{asset('admin/answers/create')}}" class="btn btn-accent m-btn m-btn--custom m-btn--pill m-btn--icon m-btn--air">
     <span>
@@ -15,13 +15,24 @@
     <div class="m-portlet m-portlet--mobile">
         <div class="m-portlet__body">
             <form class='row mb-3'>
-                <div class='col-sm-8'>
+                <div class='col-sm-5'>
                     <input name='q' value='{{request()->q}}' autofocus type="text" class='form-control'
                            placeholder="ابحث هنا ..." />
                 </div>
-                <div class='col-sm-1'>
-                    <button class='btn btn-primary' value='Search'><i class='fa fa-search'></i></button>
+                <div class='col-sm-4'>
+                    <select name='question' id='question' class='select2 form-control '>
+                        <option value=''>السؤال</option>
+                        @foreach($questions as $question)
+                            <option {{request()->question==$question->id?"selected":""}} value="{{$question->id}}">
+                                {{$question->question_body}}</option>
+                        @endforeach
+                    </select>
+
                 </div>
+                <div class='col-sm-1'>
+                    <button class='btn btn-primary' value='Search'><i class='fa fa-search'></i> بحث </button>
+                </div>
+                <a class="col-sm-2 btn badge-light" href="{{route('answers.index')}}">مسح البحث</a>
 
             </form>
 
