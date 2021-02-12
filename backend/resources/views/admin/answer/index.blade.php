@@ -41,8 +41,12 @@
                                         </label>
                                     </th>
                                     <th>السؤال</th>
-                                    <th>الجواب</th>
-                                    <th>وزن الجواب</th>
+                                    <th>الجواب الأول</th>
+                                    <th>وزن الجواب الأول</th>
+                                    <th>الجواب الثاني</th>
+                                    <th>وزن الجواب الثاني</th>
+                                    <th>الجواب الثالث</th>
+                                    <th>وزن الجواب الثالث</th>
                                     <th>Actions</th>
                                 </tr>
                                 </thead>
@@ -56,16 +60,20 @@
                                             </label>
                                         </td>
                                         <td>{{ $item->question->question_body ?? '' }}</td>
-                                        <td>{{ $item->answer }}</td>
-                                        <td>{{ $item->weight }}</td>
+                                        <td>{{ $item->answer1 }}</td>
+                                        <td>{{ $item->weight1 }}</td>
+                                        <td>{{ $item->answer2 }}</td>
+                                        <td>{{ $item->weight2 }}</td>
+                                        <td>{{ $item->answer3 }}</td>
+                                        <td>{{ $item->weight3 }}</td>
                                         <td width="10%">
-                                            <a href='{{ route("question.edit",$item->id) }}'
+                                            <a href='{{ route("answers.edit",$item->id) }}'
                                                class="m-portlet__nav-link btn m-btn m-btn--hover-brand m-btn--icon m-btn--icon-only m-btn--pill"
                                                title="تعديل">
                                                 <i class="la la-edit"></i>
                                             </a>
 
-                                            <a href='{{ route("question.delete",$item->id) }}'
+                                            <a href='{{ route("answers.delete",$item->id) }}'
                                                class="btn m-btn m-btn--hover-brand m-btn--icon m-btn--icon-only m-btn--pill"
                                                aria-expanded="true" title="حذف" onclick='return confirm("Are you sure?")'>
                                                 <i class="flaticon-delete"></i>

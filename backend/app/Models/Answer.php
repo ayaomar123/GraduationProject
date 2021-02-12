@@ -11,8 +11,12 @@ class Answer extends Model
     protected $with = ['question'];
     protected $fillable = [
         'Question_id',
-        'answer',
-        'weight'
+        'answer1',
+        'weight1',
+        'answer2',
+        'weight2',
+        'answer3',
+        'weight3'
     ];
     public function question() {
         return $this->belongsTo(Question::class);

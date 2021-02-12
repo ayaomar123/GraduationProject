@@ -9,11 +9,12 @@
                 <div class="m-portlet__body">
                     <div class="form-group m-form__group row">
                         <label class="col-lg-3 col-form-label">السؤال </label>
-                        <div class="col-lg-6">
+                        <div class="col-lg-8">
                             <select class="form-control chosen-rtl select" name='Question_id' id='Question_id'>
-                                <option selected>-اختر السؤال- </option>
+                                <option selected>-اختر السؤال-</option>
                                 @foreach($questions as $question)
-                                    <option {{old('Question_id')==$question->id?'selected':''}} value='{{$question->id}}'>
+                                    <option
+                                        {{old('Question_id')==$question->id?'selected':''}} value='{{$question->id}}'>
                                         {{$question->question_body}}</option>
                                 @endforeach
                             </select>
@@ -21,24 +22,37 @@
                     </div>
                     <div class="m-form__section m-form__section--first">
                         <div class="form-group m-form__group row">
-                            <label class="col-lg-3 col-form-label">الأجوبة</label>
+                            <label class="col-lg-3 col-form-label"> الأجوبة</label>
                             <div class="col-lg-6">
-                                <input type="text" class="form-control m-input" placeholder="ادخل جميع الأجوبة كاملاً" name="answer"
-                                       value='{{ old("answer") }}'>
-                                <span class="m-form__help">من فضلك ادخل السؤال </span>
+                                <input type="text" class="form-control m-input" placeholder="الإجابة الأول"
+                                       name="answer1"
+                                       value='{{ old("answer1") }}'>
+
+                                <span class="m-form__help">من فضلك ادخل الجواب الأول </span>
                             </div>
+                                <div class="col-md-2"><input name="weight1" value='{{ old("weight1") }}' placeholder="وزن الإجابة" class="m-input form-control" type="number"></div>
+
+                            <label class="col-lg-3 col-form-label"></label>
+                            <div class="col-lg-6">
+                                <input type="text" class="form-control m-input" placeholder="الإجابة الثانية"
+                                       name="answer2"
+                                       value='{{ old("answer2") }}'>
+
+                                <span class="m-form__help">من فضلك ادخل الإجابة الثاني </span>
+                            </div>
+                            <div class="col-md-2"><input name="weight2" value='{{ old("weight2") }}' placeholder="وزن الإجابة" class="m-input form-control" type="number"></div>
+
+                            <label class="col-lg-3 col-form-label"></label>
+                            <div class="col-lg-6">
+                                <input type="text" class="form-control m-input" placeholder="الإجابة الثالثة"
+                                       name="answer3"
+                                       value='{{ old("answer3") }}'>
+
+                                <span class="m-form__help">من فضلك ادخل الإجابة الثالثة </span>
+                            </div>
+                            <div class="col-md-2"><input name="weight3" value='{{ old("weight3") }}' placeholder=" وزن الإجابة" class="m-input form-control" type="number"></div>
                         </div>
 
-                    <div class="m-form__section m-form__section--first">
-                        <div class="form-group m-form__group row">
-                            <label class="col-lg-3 col-form-label">الوزن % </label>
-                            <div class="col-lg-6">
-                                <input type="number" class="form-control m-input" placeholder="ادخل وزن الجواب في التقييم" name="weight"
-                                       value='{{ old("weight") }}'>
-                                <span class="m-form__help">من فضلك ادخل الوزن </span>
-                            </div>
-                        </div>
-                    </div>
                     </div>
 
                 </div>

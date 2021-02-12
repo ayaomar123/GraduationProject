@@ -20,7 +20,7 @@ class AnswerController extends Controller
     {
         $q = $request->q;
         $question = Question::all();
-        $items = Answer::whereRaw('(answer like ?)',["%$q%"])->paginate(10)->appends(['q'=>$q]);
+        $items = Answer::whereRaw('(answer1 like ?)',["%$q%"])->paginate(10)->appends(['q'=>$q]);
 
         return view("admin.answer.index",compact('items','question'));
     }
@@ -106,7 +106,7 @@ class AnswerController extends Controller
     {
         $itemDB = Answer::find($id);
         $itemDB->delete();
-        session()->flash("msg","w:تم حذف السؤال بنجاح");
+        session()->flash("msg","w:تم حذف الجواب بنجاح");
         return redirect(route("answers.index"));
     }
 }

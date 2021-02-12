@@ -74,14 +74,14 @@
                 <div class="m-menu__submenu "><span class="m-menu__arrow"></span>
                     <ul class="m-menu__subnav">
 
-                        <li class="m-menu__item " aria-haspopup="true"><a href='{{route("question.index")}}'
+                        <li class="m-menu__item " aria-haspopup="true"><a href='{{route("answers.index")}}'
                                                                           class="m-menu__link "><i
                                     class="m-menu__link-bullet m-menu__link-bullet--dot"><span></span></i><span
-                                    class="m-menu__link-text">عرض الأسئلة</span></a></li>
-                        <li class="m-menu__item " aria-haspopup="true"><a href='{{route("question.create")}}'
+                                    class="m-menu__link-text">عرض الأجوبة</span></a></li>
+                        <li class="m-menu__item " aria-haspopup="true"><a href='{{route("answers.create")}}'
                                                                           class="m-menu__link "><i
                                     class="m-menu__link-bullet m-menu__link-bullet--dot"><span></span></i><span
-                                    class="m-menu__link-text">إضافة سؤال</span></a></li>
+                                    class="m-menu__link-text">إضافة جواب</span></a></li>
 
                     </ul>
                 </div>

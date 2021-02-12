@@ -72,11 +72,10 @@
                                         @if(Auth()->user()->image == '')
                                             <img src="{{asset('metronic/assets/app/media/img/users/user.png')}}" alt="">
                                         @else
-                                        <img src="{{asset('storage/user-images/'.auth()->user()->image)}}"
-                                             class="m--img-rounded m--marginless  m-portlet m-portlet--bordered" alt="" />
-                                    @endif
+                                            <img src="{{asset('storage/user-images/'.auth()->user()->image)}}"
+                                                 class="circular--portrait"  style="position: relative;width: 50px;height: 50px;overflow: hidden;border-radius: 50%;">
+                                        @endif
                                     </span>
-                                    <span class="m-topbar__username m--hide">محمد</span>
                                 </a>
                                 <div class="m-dropdown__wrapper">
                                     <span
@@ -89,7 +88,7 @@
                                                 <div class="m-card-user__pic">
                                                     <img
                                                         src="{{auth()->user()->image?asset('storage/user-images/'.auth()->user()->image):asset('metronic/assets/app/media/img/users/user.png')}}"
-                                                        class="m--img-rounded m--marginless" alt=""/>
+                                                        class="rounded m--marginless" alt=""/>
 
                                                     <!--
 						<span class="m-type m-type--lg m--bg-danger"><span class="m--font-light">S<span><span>
@@ -99,7 +98,8 @@
                                                     <span
                                                         class="m-card-user__name m--font-weight-500"><h5>{{auth()->user()->name??''}}</h5></span>
                                                     <a href="" onclick="event.preventDefault(); "
-                                                       class="m-card-user__email m--font-weight-300 m-link"><h5>{{auth()->user()->email??''}}</h5></a>
+                                                       class="m-card-user__email m--font-weight-300 m-link">
+                                                        <h5>{{auth()->user()->email??''}}</h5></a>
                                                 </div>
                                             </div>
                                         </div>
@@ -122,7 +122,8 @@
                                                     <li class="m-nav__item">
                                                         <a href="{{route('password.edit')}}" class="m-nav__link">
                                                             <i class="m-nav__link-icon flaticon-share"></i>
-                                                            <span class="m-nav__link-text"><h5>تغيير كلمة المرور</h5></span>
+                                                            <span
+                                                                class="m-nav__link-text"><h5>تغيير كلمة المرور</h5></span>
                                                         </a>
                                                     </li>
                                                     <li class="m-nav__separator m-nav__separator--fit">
@@ -132,8 +133,9 @@
                                                             @csrf
                                                             <a href="route('logout')"
                                                                onclick="event.preventDefault(); this.closest('form').submit();"
-                                                               class="btn m-btn--pill    btn-secondary m-btn m-btn--custom m-btn--label-brand m-btn--bolder"><h6>   تسجيل خروج</h6>
-                                                                 </a>
+                                                               class="btn m-btn--pill    btn-secondary m-btn m-btn--custom m-btn--label-brand m-btn--bolder">
+                                                                <h6> تسجيل خروج</h6>
+                                                            </a>
 
                                                         </form>
                                                     </li>

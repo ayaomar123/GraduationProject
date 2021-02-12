@@ -1,59 +1,40 @@
-<x-guest-layout>
-    <x-auth-card>
-        <x-slot name="logo">
-            <a href="/">
-                <x-application-logo class="w-20 h-20 fill-current text-gray-500" />
+@extends("auth.auth-layout")
+@section('title','تسجيل مستخدم جديد')
+@section('main-title','تسجيل مستخدم جديد')
+@section('sub-title','الرجاء إدخال التفاصيل الخاصة بك لتسجيل حسابك')
+
+@section('content')
+    <form class="m-login__form m-form" method="POST" action="{{ route('register') }}">
+        @csrf
+        <div class="form-group m-form__group">
+            <input class="form-control m-input" type="text" id="name" value="{{old('name')}}" placeholder="الاسم بالكامل"
+                   name="name" autocomplete="on" required autofocus>
+        </div>
+        <div class="form-group m-form__group">
+            <input class="form-control m-input" type="email" id="email" placeholder="البريد الالكتروني"
+                   value="{{old('email')}}" name="email" autocomplete="on" required>
+        </div>
+        <div class="form-group m-form__group">
+            <input class="form-control m-input" type="password" placeholder="كلمة المرور" name="password" id="password"
+                   required>
+        </div>
+        <div class="form-group m-form__group">
+            <input class="form-control m-input m-login__form-input--last" type="password" placeholder="تأكيد كلمة المرور"
+                   id="password_confirmation" name="password_confirmation" required>
+        </div>
+
+
+        <div class="m-login__form-action">
+            <button id="" type="submit" style="background-color: #0b3b65;color: white" class="btn m-btn m-btn--pill m-btn--custom m-btn--air  m-login__btn">تسجيل
+                مستخدم جديد</button>&nbsp;&nbsp;
+            <a href="{{ route('login') }}" id="m_login_signup_cancel" style="background-color: #f7f6f9;color: #0b3b65" class="btn m-btn m-btn--pill m-btn--custom  m-login__btn">إلغاء الأمر
             </a>
-        </x-slot>
+        </div>
+        <div class="row m-login__form-sub">
+            <div class="col m--align-center m-login__form-right">
+                <a href="{{ route('login') }}" id="m_login_forget_password" class="m-link">لديك حساب بالفعل؟</a>
 
-        <!-- Validation Errors -->
-        <x-auth-validation-errors class="mb-4" :errors="$errors" />
-
-        <form method="POST" action="{{ route('register') }}">
-            @csrf
-
-            <!-- Name -->
-            <div>
-                <x-label for="name" :value="__('Name')" />
-
-                <x-input id="name" class="block mt-1 w-full" type="text" name="name" :value="old('name')" required autofocus />
             </div>
-
-            <!-- Email Address -->
-            <div class="mt-4">
-                <x-label for="email" :value="__('Email')" />
-
-                <x-input id="email" class="block mt-1 w-full" type="email" name="email" :value="old('email')" required />
-            </div>
-
-            <!-- Password -->
-            <div class="mt-4">
-                <x-label for="password" :value="__('Password')" />
-
-                <x-input id="password" class="block mt-1 w-full"
-                                type="password"
-                                name="password"
-                                required autocomplete="new-password" />
-            </div>
-
-            <!-- Confirm Password -->
-            <div class="mt-4">
-                <x-label for="password_confirmation" :value="__('Confirm Password')" />
-
-                <x-input id="password_confirmation" class="block mt-1 w-full"
-                                type="password"
-                                name="password_confirmation" required />
-            </div>
-
-            <div class="flex items-center justify-end mt-4">
-                <a class="underline text-sm text-gray-600 hover:text-gray-900" href="{{ route('login') }}">
-                    {{ __('Already registered?') }}
-                </a>
-
-                <x-button class="ml-4">
-                    {{ __('Register') }}
-                </x-button>
-            </div>
-        </form>
-    </x-auth-card>
-</x-guest-layout>
+        </div>
+    </form>
+@endsection

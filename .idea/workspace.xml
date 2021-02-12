@@ -21,10 +21,17 @@
   <component name="ChangeListManager">
     <list default="true" id="f8fe2947-eb27-4003-98fd-9960f1d7fc08" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/database/migrations/2021_02_08_172712_create_questions_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/database/migrations/2021_02_08_172712_create_questions_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/resources/views/admin/user/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/resources/views/admin/user/create.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/app/Http/Controllers/Admin/AnswerController.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/app/Http/Controllers/Admin/AnswerController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/app/Models/Answer.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/app/Models/Answer.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/app/Providers/RouteServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/app/Providers/RouteServiceProvider.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/database/migrations/2021_02_11_073044_create_answers_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/database/migrations/2021_02_11_073044_create_answers_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/resources/views/admin/answer/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/resources/views/admin/answer/create.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/resources/views/admin/answer/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/resources/views/admin/answer/edit.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/resources/views/admin/answer/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/resources/views/admin/answer/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/resources/views/auth/login.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/resources/views/auth/login.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/resources/views/auth/register.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/resources/views/auth/register.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/resources/views/layouts/admin/aside.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/resources/views/layouts/admin/aside.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/resources/views/layouts/tamkeen-home.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/resources/views/layouts/admin/header.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/resources/views/layouts/admin/header.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -175,7 +182,7 @@
       <updated>1612820410902</updated>
       <workItem from="1612820412066" duration="1595000" />
       <workItem from="1613027769853" duration="4449000" />
-      <workItem from="1613060583583" duration="10507000" />
+      <workItem from="1613060583583" duration="23741000" />
     </task>
     <servers />
   </component>
@@ -195,6 +202,10 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="455" y="166" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1613071880565">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="455" y="166" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.728@0.0.1366.728" timestamp="1613071880565" />
     <state x="296" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1613061208676">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -207,5 +218,16 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="438" y="86" key="NewPhpClassDialog/0.0.1366.728@0.0.1366.728" timestamp="1613030901318" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/backend/resources/views/front/quiz.blade.php</url>
+          <line>90</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
