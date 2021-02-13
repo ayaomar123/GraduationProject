@@ -19,8 +19,9 @@ class FrontQuestionController extends Controller
     public function store(Request $request){
         $user= Auth::user();
         $requestData = $request->all();
-//        dd($requestData);
+dd($requestData);
         $answer = Result::create($requestData);
+
         Session::flash("msg","s: تمت عملية الاضافة بنجاح");
         return redirect()->back();
     }
