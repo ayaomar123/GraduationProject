@@ -21,17 +21,10 @@
   <component name="ChangeListManager">
     <list default="true" id="f8fe2947-eb27-4003-98fd-9960f1d7fc08" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/app/Http/Controllers/Admin/QestionController.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/app/Http/Controllers/Admin/QestionController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/app/Http/Controllers/FrontQuestionController.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/app/Http/Controllers/FrontQuestionController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/app/Models/Answer.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/app/Models/Answer.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/app/Models/Result.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/app/Models/Result.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/database/migrations/2021_02_08_172540_create_departments_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/database/migrations/2021_02_08_172540_create_departments_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/resources/views/front/quiz.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/resources/views/front/quiz.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/resources/views/layouts/admin/aside.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/resources/views/layouts/admin/aside.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/resources/views/layouts/home/footer.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/resources/views/layouts/home/header.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/app/Http/Controllers/Auth/AuthenticatedSessionController.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/app/Http/Controllers/Auth/AuthenticatedSessionController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/app/Http/Kernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/app/Http/Kernel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/app/Models/User.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/routes/web.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/test.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/test.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -184,7 +177,7 @@
       <workItem from="1613060583583" duration="35065000" />
       <workItem from="1613208596273" duration="224000" />
       <workItem from="1613244312973" duration="452000" />
-      <workItem from="1613667913092" duration="20558000" />
+      <workItem from="1613667913092" duration="22548000" />
     </task>
     <servers />
   </component>
@@ -204,10 +197,10 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="455" y="166" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1613071880565">
+    <state x="455" y="166" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1613691116757">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="455" y="166" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.728@0.0.1366.728" timestamp="1613071880565" />
+    <state x="455" y="166" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.728@0.0.1366.728" timestamp="1613691116757" />
     <state x="296" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1613061208676">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
