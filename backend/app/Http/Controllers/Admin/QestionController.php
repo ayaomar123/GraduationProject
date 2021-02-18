@@ -20,7 +20,6 @@ class QestionController extends Controller
     {
         $q = $request->q;
         $items = Question::whereRaw('(question_body like ?)',["%$q%"])->paginate(10)->appends(['q'=>$q]);
-//dd($items);
         return view("admin.question.index")->with('items',$items);
     }
 

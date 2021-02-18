@@ -11,16 +11,22 @@ use Session;
 class FrontQuestionController extends Controller
 {
     public function index(){
-        $answers = Answer::all();
-        //dd($answers);
-        return view('front.quiz',compact('answers'));
+        if(auth()->user()) {
+            $answers = Answer::all();
+            return view('front.quiz', compact('answers'));
+        }else{
+            return view('auth.login');
+        }
     }
 
     public function store(Request $request){
         $user= Auth::user();
         $requestData = $request->all();
-dd($requestData);
+        $requestData['answer_id'] = $request->answer_id;
         $answer = Result::create($requestData);
+        $answer->answers()->attach($request->question_id);
+        dd($answer);
+
 
         Session::flash("msg","s: تمت عملية الاضافة بنجاح");
         return redirect()->back();

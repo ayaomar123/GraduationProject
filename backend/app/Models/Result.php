@@ -14,15 +14,15 @@ class Result extends Model
       'answer_id'
     ];
 
-    public function answers() {
-        return $this->hasMany(Answer::class);
-    }
 
     public function questions() {
-        return $this->hasMany(Question::class);
+        return $this->belongsToMany(Question::class);
     }
 
     public function result() {
-        return $this->hasOne(User::class);
+        return $this->belongsTo(User::class);
+    }
+    public function answers(){
+        return $this->belongsToMany(Answer::class,'results');
     }
 }
