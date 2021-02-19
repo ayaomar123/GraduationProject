@@ -1,15 +1,5 @@
 @extends("layouts.admin")
-@section("title", "إدارة المدراء ")
-@section("title-side")
-<a href="{{asset('admin/user/create')}}" class="btn btn-accent m-btn m-btn--custom m-btn--pill m-btn--icon m-btn--air">
-    <span>
-        <i class="la la-plus"></i>
-        <span>
-            اضافة مستخدم جديد
-        </span>
-    </span>
-</a>
-@endsection
+@section("title", "المستخدمين ")
 
 @section("content")
 <div class="m-portlet m-portlet--mobile">
@@ -43,7 +33,6 @@
                                 <th>الاسم</th>
                                 <th>
                                     الايميل</th>
-                                <th>Actions</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -57,19 +46,6 @@
                                 </td>
                                 <td>{{ $item->name }}</td>
                                 <td>{{ $item->email }}</td>
-                                <td width="10%">
-                                    <a href='{{ route("user.edit",$item->id) }}'
-                                        class="m-portlet__nav-link btn m-btn m-btn--hover-brand m-btn--icon m-btn--icon-only m-btn--pill"
-                                        title="تعديل">
-                                        <i class="la la-edit"></i>
-                                    </a>
-
-                                    <a href='{{ route("users.delete",$item->id) }}'
-                                        class="btn m-btn m-btn--hover-brand m-btn--icon m-btn--icon-only m-btn--pill"
-                                        aria-expanded="true" title="حذف" onclick='return confirm("Are you sure?")'>
-                                        <i class="flaticon-delete"></i>
-                                    </a>
-                                </td>
 
                             </tr>
                             @endforeach

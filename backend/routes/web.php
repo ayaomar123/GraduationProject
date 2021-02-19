@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\Admin\AnswerController;
 use App\Http\Controllers\Admin\CourseController;
+use App\Http\Controllers\Admin\CustomerController;
 use App\Http\Controllers\Admin\DepartmentController;
 use App\Http\Controllers\Admin\QestionController;
 use App\Http\Controllers\Admin\ScholarController;
@@ -34,10 +35,16 @@ Route::get('home',function (){
 Route::resource("quiz",FrontQuestionController::class);
 
 
-Route::prefix("admin")->middleware('auth')->group(function() {
+Route::prefix("admin")->middleware(['auth','role:admin'])->group(function() {
+    Route::get('/', function () {
+        return view('layouts.admin');
+    })->name('dashboard');
 
     Route::resource("user",UserController::class);
     Route::get("user/{id}/delete",[UserController::class,'destroy'])->name("users.delete");
+
+    Route::resource("customer",CustomerController::class);
+    Route::get("customer/{id}/delete",[CustomerController::class,'destroy'])->name("customer.delete");
 
     Route::resource("static-page", StaticPageController::class);
     Route::get("static-page/{id}/delete", [StaticPageController::class, 'destroy'])->name("static-page.delete");
@@ -64,8 +71,6 @@ Route::prefix("admin")->middleware('auth')->group(function() {
     Route::put("profile", [UserProfileController::class, 'update'])->name("profile.update");
 });
 
-Route::get('/dashboard', function () {
-    return view('layouts.admin');
-})->middleware(['auth'])->name('dashboard');
+
 
 require __DIR__.'/auth.php';

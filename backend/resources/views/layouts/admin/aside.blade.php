@@ -19,11 +19,15 @@
                         <li class="m-menu__item " aria-haspopup="true"><a href='{{route("user.index")}}'
                                                                           class="m-menu__link ">
                                 <i class="m-menu__link-bullet m-menu__link-bullet--dot"><span></span></i>
-                                <span class="m-menu__link-text"><h6>عرض المستخدمين</h6></span></a></li>
+                                <span class="m-menu__link-text"><h6>عرض المدراء</h6></span></a></li>
                         <li class="m-menu__item " aria-haspopup="true"><a href='{{route("user.create")}}'
                                                                           class="m-menu__link "><i
                                     class="m-menu__link-bullet m-menu__link-bullet--dot"><span></span></i><span
-                                    class="m-menu__link-text"><h6>إضافة مستخدم</h6></span></a></li>
+                                    class="m-menu__link-text"><h6>إضافة مدير</h6></span></a></li>
+                        <li class="m-menu__item " aria-haspopup="true"><a href='{{route("customer.index")}}'
+                                                                          class="m-menu__link ">
+                                <i class="m-menu__link-bullet m-menu__link-bullet--dot"><span></span></i>
+                                <span class="m-menu__link-text"><h6>عرض المستخدمين</h6></span></a></li>
 
                     </ul>
                 </div>

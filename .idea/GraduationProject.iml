@@ -82,6 +82,7 @@
       <excludeFolder url="file://$MODULE_DIR$/backend/vendor/sebastian/resource-operations" />
       <excludeFolder url="file://$MODULE_DIR$/backend/vendor/sebastian/type" />
       <excludeFolder url="file://$MODULE_DIR$/backend/vendor/sebastian/version" />
+      <excludeFolder url="file://$MODULE_DIR$/backend/vendor/spatie/laravel-permission" />
       <excludeFolder url="file://$MODULE_DIR$/backend/vendor/swiftmailer/swiftmailer" />
       <excludeFolder url="file://$MODULE_DIR$/backend/vendor/symfony/console" />
       <excludeFolder url="file://$MODULE_DIR$/backend/vendor/symfony/css-selector" />
