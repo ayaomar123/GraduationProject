@@ -36,12 +36,50 @@
         <div class="header">
             <div class="container">
                 <div class="row">
-                    <div class="col-xl-11 col-lg-9 col-md-9 col-sm-9">
+                    <div class="mt-1 col-xl-1 ">
+                        <nav class="navbar navbar-expand-sm">
+                            <div class="collapse navbar-collapse" id="navbar-list-4">
+                                <ul class="navbar-nav">
+                                    <li style="margin-left: -150px" class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink"
+                                           role="button" data-toggle="dropdown" aria-haspopup="true"
+                                           aria-expanded="false">
+                                            <span class="m-topbar__userpic">
+                                                @if(Auth()->user()->image == '')
+                                                    <img src="{{asset('metronic/assets/app/media/img/users/user.png')}}"
+                                                         width="40" height="40" class="rounded-circle" alt="">
+                                                @else
+                                                    <img src="{{asset('storage/user-images/'.auth()->user()->image)}}"
+                                                         class="circular--portrait" width="40" height="40"
+                                                         class="rounded-circle">
+                                                @endif
+                                            </span>
+                                        </a>
+                                        <div class="dropdown-menu text-right" aria-labelledby="navbarDropdownMenuLink">
+{{--                                            <a class="dropdown-item" href="{{asset('myprofile/edit')}}">الملف الشخصي <i--}}
+{{--                                                    class="fas fa-lg fa-user-circle"></i></a>--}}
+
+                                            <form method="POST" action="{{ route('logout') }}">
+                                                @csrf
+                                                <a class="dropdown-item" href="route('logout')"
+                                                   onclick="event.preventDefault(); this.closest('form').submit();"
+                                                   class="btn m-btn--pill m-btn m-btn--custom m-btn--label-brand m-btn--bolder">
+                                                    <h4> تسجيل خروج <i class="fas fa-lg fa-sign-out-alt"></i></h4>
+                                                </a>
+
+                                            </form>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="col-xl-10 col-lg-9 col-md-9 col-sm-9">
                         <div class="menu-area">
                             <div class="limit-box">
                                 <nav class="main-menu">
                                     <ul class="menu-area-main">
-                                        <li><a href="test.html">اختبار
+                                        <li><a href="{{asset('quiz')}}">اختبار
                                                 القدرات <i class="fas fa-tasks"></i></a></li>
                                         <li><a href="Scholarship.html">المنح
                                                 الجامعية <i class="fas fa-hand-holding-usd"></i></a></li>
@@ -49,7 +87,8 @@
                                                 التدريبية <i class="fas fa-chalkboard-teacher"></i></a></li>
                                         <li><a href="department.html">التخصصات <i class="fas fa-laptop"></i></a>
                                         </li>
-                                        <li><a href="index.html">الرئيسية <i class="fas fa-home"></i></a></li>
+                                        <li><a href="{{asset('')}}">الرئيسية <i class="fas fa-home"></i></a></li>
+
                                     </ul>
                                 </nav>
                             </div>

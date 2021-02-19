@@ -33,12 +33,6 @@ class UserProfileController extends Controller
         if($customerDB){
             $customerDB->update($requestData);
         }
-
-
-
-
-
-
         session()->flash('msg','s:تم تعديل الملف الشخصي بنجاح');
         return redirect(route("profile.edit"));
     }

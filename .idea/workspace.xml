@@ -20,21 +20,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f8fe2947-eb27-4003-98fd-9960f1d7fc08" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/GraduationProject.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/GraduationProject.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/app/Http/Controllers/Admin/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/app/Http/Controllers/Admin/UserController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/app/Http/Controllers/Auth/AuthenticatedSessionController.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/app/Http/Controllers/Auth/AuthenticatedSessionController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/app/Http/Controllers/Auth/RegisteredUserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/app/Http/Controllers/Auth/RegisteredUserController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/app/Http/Kernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/app/Http/Kernel.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/app/Models/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/app/Http/Controllers/Admin/UserProfileController.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/app/Http/Controllers/Admin/UserProfileController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/app/Providers/RouteServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/app/Providers/RouteServiceProvider.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/backend/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/backend/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/config/app.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/database/seeders/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/database/seeders/DatabaseSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/resources/views/admin/user/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/resources/views/admin/user/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/resources/views/layouts/admin/aside.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/resources/views/layouts/admin/aside.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/resources/views/admin/Customer/profile.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/resources/views/admin/Customer/profile.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/resources/views/layouts/home/header.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/resources/views/layouts/home/header.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -172,12 +162,14 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/backend/app/Models" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/backend/app/Http/Controllers" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\GraduationProject\backend\app\Http\Controllers" />
+      <recent name="C:\xampp\htdocs\GraduationProject\backend\resources\views\front" />
       <recent name="C:\xampp\htdocs\GraduationProject\backend\app\Models" />
       <recent name="C:\xampp\htdocs\GraduationProject\backend\app\Http\Controllers\Admin" />
     </key>
@@ -195,7 +187,7 @@
       <workItem from="1613060583583" duration="35065000" />
       <workItem from="1613208596273" duration="224000" />
       <workItem from="1613244312973" duration="452000" />
-      <workItem from="1613667913092" duration="31025000" />
+      <workItem from="1613667913092" duration="38880000" />
     </task>
     <servers />
   </component>
@@ -223,14 +215,18 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="296" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1366.728@0.0.1366.728" timestamp="1613061208676" />
-    <state x="413" y="118" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1613683985132">
+    <state x="413" y="118" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1613752894057">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="413" y="118" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.728@0.0.1366.728" timestamp="1613683985132" />
+    <state x="413" y="118" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.728@0.0.1366.728" timestamp="1613752894057" />
     <state x="438" y="86" key="NewPhpClassDialog" timestamp="1613030901318">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="438" y="86" key="NewPhpClassDialog/0.0.1366.728@0.0.1366.728" timestamp="1613030901318" />
+    <state x="262" y="0" key="search.everywhere.popup" timestamp="1613747371726">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="262" y="0" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1613747371726" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -244,6 +240,16 @@
           <url>file://$PROJECT_DIR$/backend/resources/views/admin/scholarships/create.blade.php</url>
           <line>66</line>
           <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/backend/resources/views/layouts/admin/header.blade.php</url>
+          <line>67</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/backend/resources/views/layouts/admin/header.blade.php</url>
+          <line>1</line>
+          <option name="timeStamp" value="7" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

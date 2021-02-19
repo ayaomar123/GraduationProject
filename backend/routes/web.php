@@ -10,6 +10,7 @@ use App\Http\Controllers\Admin\StaticPageController;
 use App\Http\Controllers\Admin\UserController;
 use App\Http\Controllers\Admin\UserProfileController;
 use App\Http\Controllers\Auth\ChangePasswordController;
+use App\Http\Controllers\CustomerHomeController;
 use App\Http\Controllers\FrontQuestionController;
 use Illuminate\Support\Facades\Route;
 
@@ -24,15 +25,17 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+
 
 Route::get('home',function (){
     return view('layouts.home.frontend');
 });
+Route::get('',function (){
+    return view('front.CustomerHome');
+});
 
 Route::resource("quiz",FrontQuestionController::class);
+Route::resource("myprofile",CustomerHomeController::class);
 
 
 Route::prefix("admin")->middleware(['auth','role:admin'])->group(function() {
