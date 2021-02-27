@@ -23,6 +23,6 @@ class Result extends Model
         return $this->belongsTo(User::class);
     }
     public function answers(){
-        return $this->belongsToMany(Answer::class,'results');
+        return $this->belongsTo(Answer::class,'results');
     }
 }

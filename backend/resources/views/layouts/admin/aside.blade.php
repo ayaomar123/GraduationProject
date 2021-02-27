@@ -35,19 +35,20 @@
 
             <li class="m-menu__item  m-menu__item--submenu" aria-haspopup="true" m-menu-submenu-toggle="hover"><a
                     href="javascript:;" class="m-menu__link m-menu__toggle"><i
-                        class="m-menu__link-icon flaticon-settings-1 "></i><span class="m-menu__link-text">الصفحات
-                        الثابتة</span><i class="m-menu__ver-arrow la la-angle-right"></i></a>
+                        class="m-menu__link-icon flaticon-settings-1 "></i><span class="m-menu__link-text">
+                    <h6>الصفحات الثابتة</h6>
+                    </span><i class="m-menu__ver-arrow la la-angle-right"></i></a>
                 <div class="m-menu__submenu "><span class="m-menu__arrow"></span>
                     <ul class="m-menu__subnav">
 
                         <li class="m-menu__item " aria-haspopup="true"><a href='{{route("static-page.index")}}'
                                                                           class="m-menu__link "><i
                                     class="m-menu__link-bullet m-menu__link-bullet--dot"><span></span></i><span
-                                    class="m-menu__link-text">عرض الصفحات</span></a></li>
+                                    class="m-menu__link-text"><h6>عرض الصفحات</h6></span></a></li>
                         <li class="m-menu__item " aria-haspopup="true"><a href='{{route("static-page.create")}}'
                                                                           class="m-menu__link "><i
                                     class="m-menu__link-bullet m-menu__link-bullet--dot"><span></span></i><span
-                                    class="m-menu__link-text">إضافة صفحة</span></a></li>
+                                    class="m-menu__link-text"><h6>إضافة صفحة</h6></span></a></li>
 
                     </ul>
                 </div>
@@ -55,7 +56,7 @@
 
             <li class="m-menu__item  m-menu__item--submenu" aria-haspopup="true" m-menu-submenu-toggle="hover"><a
                     href="javascript:;" class="m-menu__link m-menu__toggle"><i
-                        class="m-menu__link-icon flaticon-signs-1 "></i><span class="m-menu__link-text">الأقسام</span><i
+                        class="m-menu__link-icon flaticon-signs-1 "></i><span class="m-menu__link-text"><h6>الأقسام</h6></span><i
                         class="m-menu__ver-arrow la la-angle-right"></i></a>
                 <div class="m-menu__submenu "><span class="m-menu__arrow"></span>
                     <ul class="m-menu__subnav">
@@ -63,11 +64,11 @@
                         <li class="m-menu__item " aria-haspopup="true"><a href='{{route("departments.index")}}'
                                                                           class="m-menu__link "><i
                                     class="m-menu__link-bullet m-menu__link-bullet--dot"><span></span></i><span
-                                    class="m-menu__link-text">عرض الأقسام</span></a></li>
+                                    class="m-menu__link-text"><h6>عرض الأقسام</h6></span></a></li>
                         <li class="m-menu__item " aria-haspopup="true"><a href='{{route("departments.create")}}'
                                                                           class="m-menu__link "><i
                                     class="m-menu__link-bullet m-menu__link-bullet--dot"><span></span></i><span
-                                    class="m-menu__link-text">إضافة قسم</span></a></li>
+                                    class="m-menu__link-text"><h6>إضافة قسم</h6></span></a></li>
 
                     </ul>
                 </div>
@@ -75,7 +76,7 @@
 
             <li class="m-menu__item  m-menu__item--submenu" aria-haspopup="true" m-menu-submenu-toggle="hover"><a
                     href="javascript:;" class="m-menu__link m-menu__toggle"><i
-                        class="m-menu__link-icon flaticon-coins "></i><span class="m-menu__link-text">المنح</span><i
+                        class="m-menu__link-icon flaticon-coins "></i><span class="m-menu__link-text"><h6>المنح</h6></span><i
                         class="m-menu__ver-arrow la la-angle-right"></i></a>
                 <div class="m-menu__submenu "><span class="m-menu__arrow"></span>
                     <ul class="m-menu__subnav">
@@ -83,11 +84,11 @@
                         <li class="m-menu__item " aria-haspopup="true"><a href='{{route("scholarships.index")}}'
                                                                           class="m-menu__link "><i
                                     class="m-menu__link-bullet m-menu__link-bullet--dot"><span></span></i><span
-                                    class="m-menu__link-text">عرض المنح</span></a></li>
+                                    class="m-menu__link-text"><h6>عرض المنح</h6></span></a></li>
                         <li class="m-menu__item " aria-haspopup="true"><a href='{{route("scholarships.create")}}'
                                                                           class="m-menu__link "><i
                                     class="m-menu__link-bullet m-menu__link-bullet--dot"><span></span></i><span
-                                    class="m-menu__link-text">إضافة منحة جديدة</span></a></li>
+                                    class="m-menu__link-text"><h6>إضافة منحة جديدة</h6></span></a></li>
 
                     </ul>
                 </div>
@@ -96,7 +97,7 @@
             <li class="m-menu__item  m-menu__item--submenu" aria-haspopup="true" m-menu-submenu-toggle="hover"><a
                     href="javascript:;" class="m-menu__link m-menu__toggle"><i
                         class="m-menu__link-icon flaticon-list"></i><span
-                        class="m-menu__link-text">الدورات التدريبية</span><i
+                        class="m-menu__link-text"><h6>الدورات التدريبية</h6></span><i
                         class="m-menu__ver-arrow la la-angle-right"></i></a>
                 <div class="m-menu__submenu "><span class="m-menu__arrow"></span>
                     <ul class="m-menu__subnav">
@@ -104,11 +105,11 @@
                         <li class="m-menu__item " aria-haspopup="true"><a href='{{route("courses.index")}}'
                                                                           class="m-menu__link "><i
                                     class="m-menu__link-bullet m-menu__link-bullet--dot"><span></span></i><span
-                                    class="m-menu__link-text">عرض الدورات</span></a></li>
+                                    class="m-menu__link-text"><h6>عرض الدورات</h6></span></a></li>
                         <li class="m-menu__item " aria-haspopup="true"><a href='{{route("courses.create")}}'
                                                                           class="m-menu__link "><i
                                     class="m-menu__link-bullet m-menu__link-bullet--dot"><span></span></i><span
-                                    class="m-menu__link-text">إضافة دورة جديدة</span></a></li>
+                                    class="m-menu__link-text"><h6>إضافة دورة جديدة</h6></span></a></li>
 
                     </ul>
                 </div>
@@ -117,7 +118,7 @@
             <li class="m-menu__item  m-menu__item--submenu" aria-haspopup="true" m-menu-submenu-toggle="hover"><a
                     href="javascript:;" class="m-menu__link m-menu__toggle"><i
                         class="m-menu__link-icon flaticon-doc "></i><span class="m-menu__link-text">
-                        اختبار القدرات(الأسئلة)
+                        <h6>اختبار القدرات(الأسئلة)</h6>
                     </span><i class="m-menu__ver-arrow la la-angle-right"></i></a>
                 <div class="m-menu__submenu "><span class="m-menu__arrow"></span>
                     <ul class="m-menu__subnav">
@@ -125,11 +126,11 @@
                         <li class="m-menu__item " aria-haspopup="true"><a href='{{route("question.index")}}'
                                                                           class="m-menu__link "><i
                                     class="m-menu__link-bullet m-menu__link-bullet--dot"><span></span></i><span
-                                    class="m-menu__link-text">عرض الأسئلة</span></a></li>
+                                    class="m-menu__link-text"><h6>عرض الأسئلة</h6></span></a></li>
                         <li class="m-menu__item " aria-haspopup="true"><a href='{{route("question.create")}}'
                                                                           class="m-menu__link "><i
                                     class="m-menu__link-bullet m-menu__link-bullet--dot"><span></span></i><span
-                                    class="m-menu__link-text">إضافة سؤال</span></a></li>
+                                    class="m-menu__link-text"><h6>إضافة سؤال</h6></span></a></li>
 
                     </ul>
                 </div>
@@ -137,7 +138,7 @@
 
             <li class="m-menu__item  m-menu__item--submenu" aria-haspopup="true" m-menu-submenu-toggle="hover"><a
                     href="javascript:;" class="m-menu__link m-menu__toggle"><i
-                        class="m-menu__link-icon flaticon-file "></i><span class="m-menu__link-text"> اختبار القدرات (الأجوبة)</span><i
+                        class="m-menu__link-icon flaticon-file "></i><span class="m-menu__link-text"><h6> اختبار القدرات (الأجوبة)</h6></span><i
                         class="m-menu__ver-arrow la la-angle-right"></i></a>
                 <div class="m-menu__submenu "><span class="m-menu__arrow"></span>
                     <ul class="m-menu__subnav">
@@ -145,11 +146,11 @@
                         <li class="m-menu__item " aria-haspopup="true"><a href='{{route("answers.index")}}'
                                                                           class="m-menu__link "><i
                                     class="m-menu__link-bullet m-menu__link-bullet--dot"><span></span></i><span
-                                    class="m-menu__link-text">عرض الأجوبة</span></a></li>
+                                    class="m-menu__link-text"><h6>عرض الأجوبة</h6></span></a></li>
                         <li class="m-menu__item " aria-haspopup="true"><a href='{{route("answers.create")}}'
                                                                           class="m-menu__link "><i
                                     class="m-menu__link-bullet m-menu__link-bullet--dot"><span></span></i><span
-                                    class="m-menu__link-text">إضافة جواب</span></a></li>
+                                    class="m-menu__link-text"><h6>إضافة جواب</h6></span></a></li>
 
                     </ul>
                 </div>

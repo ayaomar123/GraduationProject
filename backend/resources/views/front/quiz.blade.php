@@ -20,11 +20,11 @@
                         <div class="container">
                             <div class="row">
                                 <div class="col-md-10">
-                                    <input type="hidden" name="{{$answer->question_id}}">
+                                    <input type="hidden" name="question_id[]" value="{{$answer->question_id}}">
                                     <ul>
-                                        <li>{{$answer->answer1}} <input class="btn btn-lg" type="radio" name="answer_id" value="{{$answer->answer1}}"  id="radio-toolbar"></li>
-                                        <li>{{$answer->answer2}} <input class="btn btn-lg" type="radio" name="answer_id" value="{{$answer->answer2}}" id="radio-toolbar2"></li>
-                                        <li>{{$answer->answer3}} <input class="btn btn-lg" type="radio" name="answer_id" value="{{$answer->answer3}}" id="radio-toolbar3"></li>
+                                        <li>{{$answer->answer1}} <input class="btn btn-lg" type="radio" name="q{{$answer->question_id}}" value="{{$answer->answer1}}"  id="radio-toolbar"></li>
+                                        <li>{{$answer->answer2}} <input class="btn btn-lg" type="radio" name="q{{$answer->question_id}}" value="{{$answer->answer2}}" id="radio-toolbar2"></li>
+                                        <li>{{$answer->answer3}} <input class="btn btn-lg" type="radio" name="q{{$answer->question_id}}" value="{{$answer->answer3}}" id="radio-toolbar3"></li>
                                     </ul>
                                 </div>
 

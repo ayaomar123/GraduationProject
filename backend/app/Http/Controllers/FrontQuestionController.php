@@ -20,15 +20,24 @@ class FrontQuestionController extends Controller
     }
 
     public function store(Request $request){
+        //dd($request->all());
         $user= Auth::user();
         $requestData = $request->all();
-        $requestData['answer_id'] = $request->answer_id;
-        $answer = Result::create($requestData);
-        $answer->answers()->attach($request->question_id);
-        dd($answer);
+        foreach($requestData['question_id'] as $qid){
+            $qanswer = $requestData['q'.$qid];
+            Result::create([
+                'question_id'=>$qid,
+                'answer_id'=>$qanswer ,
+                 'user_id' => $user->id   ]
+            );
+        }
+//        $requestData['answer_id'] = $request->answer_id;
+//        $answer = Result::create($requestData);
+//        $answer->answers()->attach($request->question_id);
+//        dd($answer);
 
-
-        Session::flash("msg","s: تمت عملية الاضافة بنجاح");
+//
+        Session::flash("msg","s: تمت الجابة بنجاح");
         return redirect()->back();
     }
 }
