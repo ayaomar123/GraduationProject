@@ -12,19 +12,23 @@
                 <input type="hidden" name="user_id" value="{{auth()->user()->id}}">
                 <div class="card border-0 mb-2">
                 <!--                     <img class="card-img-top" src="images/1.jpg" alt=""> -->
-                @foreach($answers as $answer)
+                @foreach($questions as $question)
                     <div class="card-body bg-light">
                         <h3 class="card-title text-truncate">
-                            {{$answer->question->question_body}}
+                            {{$question->question_body}}
                         </h3>
                         <div class="container">
                             <div class="row">
                                 <div class="col-md-10">
-                                    <input type="hidden" name="question_id[]" value="{{$answer->question_id}}">
+                                    <input type="hidden" name="question_id[]" value="{{$question->id}}">
                                     <ul>
-                                        <li>{{$answer->answer1}} <input class="btn btn-lg" type="radio" name="q{{$answer->question_id}}" value="{{$answer->answer1}}"  id="radio-toolbar"></li>
-                                        <li>{{$answer->answer2}} <input class="btn btn-lg" type="radio" name="q{{$answer->question_id}}" value="{{$answer->answer2}}" id="radio-toolbar2"></li>
-                                        <li>{{$answer->answer3}} <input class="btn btn-lg" type="radio" name="q{{$answer->question_id}}" value="{{$answer->answer3}}" id="radio-toolbar3"></li>
+                                        @foreach($question->answers as $answer)
+                                        <li>{{$answer->answer}} <input class="btn btn-lg" type="radio" name="q{{$answer->question_id}}" value="{{$answer->id}}"  id="radio-toolbar"></li>
+                                        <input type="hidden" name="answer_weight[]" value="{{$answer->weight}}">
+                                            <p>{{$answer->weight}}</p>
+                                        @endforeach
+{{--                                        <li>{{$answer->answer2}} <input class="btn btn-lg" type="radio" name="q{{$answer->question_id}}" value="{{$answer->answer2}}" id="radio-toolbar2"></li>--}}
+                                            {{--                                        <li>{{$answer->answer3}} <input class="btn btn-lg" type="radio" name="q{{$answer->question_id}}" value="{{$answer->answer3}}" id="radio-toolbar3"></li>--}}
                                     </ul>
                                 </div>
 

@@ -15,4 +15,9 @@ class Question extends Model
     public function answers() {
         return $this->hasMany(Answer::class);
     }
+
+    public function avgweight() {
+        return $this->belongsTo(Answer::class);
+    }
+
 }

@@ -19,12 +19,18 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f8fe2947-eb27-4003-98fd-9960f1d7fc08" name="Default Changelist" comment="">
+    <list default="true" id="f8fe2947-eb27-4003-98fd-9960f1d7fc08" name="Default Changelist" comment="aya 27-2">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/app/Http/Controllers/FrontQuestionController.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/app/Http/Controllers/FrontQuestionController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/app/Models/Answer.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/app/Models/Answer.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/app/Models/Question.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/app/Models/Question.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/app/Models/Result.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/app/Models/Result.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/database/migrations/2021_02_11_073044_create_answers_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/database/migrations/2021_02_11_073044_create_answers_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/database/migrations/2021_02_12_163718_create_results_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/database/migrations/2021_02_12_163718_create_results_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/resources/views/admin/answer/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/resources/views/admin/answer/create.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/resources/views/admin/answer/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/resources/views/admin/answer/edit.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/resources/views/admin/answer/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/resources/views/admin/answer/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/resources/views/front/quiz.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/resources/views/front/quiz.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/resources/views/layouts/admin/aside.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/resources/views/layouts/admin/aside.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -188,8 +194,17 @@
       <workItem from="1613244312973" duration="452000" />
       <workItem from="1613667913092" duration="43723000" />
       <workItem from="1614186591988" duration="4540000" />
-      <workItem from="1614444990035" duration="2676000" />
+      <workItem from="1614444990035" duration="2999000" />
+      <workItem from="1614530982674" duration="15052000" />
     </task>
+    <task id="LOCAL-00001" summary="aya 27-2">
+      <created>1614453960968</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1614453960968</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -207,6 +222,10 @@
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="aya 27-2" />
+    <option name="LAST_COMMIT_MESSAGE" value="aya 27-2" />
+  </component>
   <component name="WindowStateProjectService">
     <state x="455" y="166" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1613691116757">
       <screen x="0" y="0" width="1366" height="728" />
@@ -216,14 +235,18 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="296" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1366.728@0.0.1366.728" timestamp="1613061208676" />
-    <state x="413" y="118" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1613752894057">
+    <state x="413" y="118" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1614543170784">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="413" y="118" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.728@0.0.1366.728" timestamp="1613752894057" />
+    <state x="413" y="118" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.728@0.0.1366.728" timestamp="1614543170784" />
     <state x="438" y="86" key="NewPhpClassDialog" timestamp="1613030901318">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="438" y="86" key="NewPhpClassDialog/0.0.1366.728@0.0.1366.728" timestamp="1613030901318" />
+    <state x="175" y="32" key="Vcs.Push.Dialog.v2" timestamp="1614453963444">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="175" y="32" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1614453963444" />
     <state x="262" y="0" key="search.everywhere.popup" timestamp="1613747371726">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
