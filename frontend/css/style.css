@@ -201,7 +201,7 @@ a {
 }
 
 .main-menu ul {
-    margin: 0;
+    margin: 20px;
     list-style-type: none;
     margin-bottom: 10px;
     font-family: Tajawal;
@@ -223,13 +223,15 @@ ol {
     margin-left: 0;
 }
 .myaya{
-    background-image: url('../images/ik]sm.jpg');
+    background-image: url('../images/arch6.jpg');
     background-size: cover;
     width: 100%;
     background-repeat: no-repeat;
     height: 280px;
     margin-top: 40px;
 }
+
+
 .image {
     opacity: 1;
     display: block;

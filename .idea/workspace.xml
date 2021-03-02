@@ -21,16 +21,14 @@
   <component name="ChangeListManager">
     <list default="true" id="f8fe2947-eb27-4003-98fd-9960f1d7fc08" name="Default Changelist" comment="aya 27-2">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/app/Http/Controllers/FrontQuestionController.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/app/Http/Controllers/FrontQuestionController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/app/Models/Answer.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/app/Models/Answer.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/app/Models/Question.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/app/Models/Question.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/app/Models/Result.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/app/Models/Result.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/database/migrations/2021_02_11_073044_create_answers_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/database/migrations/2021_02_11_073044_create_answers_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/database/migrations/2021_02_12_163718_create_results_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/database/migrations/2021_02_12_163718_create_results_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/resources/views/admin/answer/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/resources/views/admin/answer/create.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/resources/views/admin/answer/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/resources/views/admin/answer/edit.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/resources/views/admin/answer/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/resources/views/admin/answer/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/resources/views/front/quiz.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/resources/views/front/quiz.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/public/assets/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/backend/public/assets/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/resources/views/layouts/home/header.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/resources/views/layouts/home/header.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/Scholarship.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/Scholarship.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/computer.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/computer.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/course.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/course.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/department.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/department.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/scholarship1.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/scholarship1.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -167,12 +165,13 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/backend/app/Http/Controllers" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/frontend" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\GraduationProject\frontend" />
       <recent name="C:\xampp\htdocs\GraduationProject\backend\app\Http\Controllers" />
       <recent name="C:\xampp\htdocs\GraduationProject\backend\resources\views\front" />
       <recent name="C:\xampp\htdocs\GraduationProject\backend\app\Models" />
@@ -196,6 +195,7 @@
       <workItem from="1614186591988" duration="4540000" />
       <workItem from="1614444990035" duration="2999000" />
       <workItem from="1614530982674" duration="15052000" />
+      <workItem from="1614587553376" duration="39946000" />
     </task>
     <task id="LOCAL-00001" summary="aya 27-2">
       <created>1614453960968</created>
@@ -243,14 +243,18 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="438" y="86" key="NewPhpClassDialog/0.0.1366.728@0.0.1366.728" timestamp="1613030901318" />
+    <state x="492" y="270" key="NewPhpFileDialog" timestamp="1614594501539">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="492" y="270" key="NewPhpFileDialog/0.0.1366.728@0.0.1366.728" timestamp="1614594501539" />
     <state x="175" y="32" key="Vcs.Push.Dialog.v2" timestamp="1614453963444">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="175" y="32" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1614453963444" />
-    <state x="262" y="0" key="search.everywhere.popup" timestamp="1613747371726">
+    <state x="262" y="0" key="search.everywhere.popup" timestamp="1614594452054">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="262" y="0" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1613747371726" />
+    <state x="262" y="0" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1614594452054" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

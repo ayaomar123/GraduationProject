@@ -20,8 +20,6 @@
     <link rel="stylesheet" href="{{asset('assets/css/jquery.mCustomScrollbar.min.css')}}">
     <!-- Tweaks for older IEs-->
     <link rel="stylesheet"
-          href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
-    <link rel="stylesheet"
           href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css"
           media="screen">
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"

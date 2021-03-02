@@ -178,7 +178,7 @@ a {
 
     background-size: cover;
     background-size: 100%;
-  
+
 }
 
 
@@ -201,7 +201,7 @@ a {
 }
 
 .main-menu ul {
-    margin: 0;
+    margin: 20px;
     list-style-type: none;
     margin-bottom: 10px;
     font-family: Tajawal;
@@ -780,7 +780,7 @@ button.main_bt a:hover {
 
 
 .footer-logo {
-    
+
     margin-top: 0px;
     margin-right: -120px;
 
@@ -865,7 +865,7 @@ button.main_bt a:hover {
     overflow-x: hidden; /* Disable horizontal scroll */
     padding-top: 120px;
   }
-  
+
   /* The navigation menu links */
   .sidenav a {
     padding: 6px 8px 6px 16px;
@@ -874,18 +874,18 @@ button.main_bt a:hover {
     color: #ffffff;
     display: block;
   }
-  
+
   /* When you mouse over the navigation links, change their color */
   .sidenav a:hover {
     color: #f1f1f1;
   }
-  
+
   /* Style page content */
   .main {
     margin-right: 200px; /* Same as the width of the sidebar */
     padding: 0px 10px;
   }
-  
+
   /* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
   @media screen and (max-height: 450px) {
     .sidenav {padding-top: 15px;}
@@ -897,16 +897,16 @@ button.main_bt a:hover {
     width: 100%;
     margin-bottom: 35px;
   }
-  
+
   #scholarship td, #scholarship th {
     border: 1px solid #ddd;
     padding: 8px;
   }
-  
+
   #scholarship tr:nth-child(even){background-color: #f2f2f2;}
-  
+
   #scholarship tr:hover {background-color: #ddd;}
-  
+
   #scholarship th {
     padding-top: 12px;
     padding-bottom: 12px;
