@@ -10,15 +10,23 @@ class Course extends Model
     use HasFactory;
     protected $fillable = [
         'department_id',
+        'trainer_id',
         'name',
         'slug',
         'status',
         'description',
-        'link',
+        'image',
+        'status',
+        'cost',
+        'hours'
 
     ];
 
     public function department(){
         return $this->belongsTo(Department::class);
+    }
+
+    public function trainer(){
+        return $this->belongsTo(Trainer::class);
     }
 }

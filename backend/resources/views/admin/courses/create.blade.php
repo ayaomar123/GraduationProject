@@ -43,6 +43,13 @@
                                        class="form-control" type="text">
                             </div>
                         </div>
+                        <div class="form-group m-form__group row">
+                            <label class="col-lg-3 col-form-label">الصورة</label>
+                            <div class="col-lg-6">
+                                <input id="image" value="{{ old('image') }}" name="image"
+                                       class="form-control" type="file">
+                            </div>
+                        </div>
                         <div class="m-form__group form-group row">
                             <label class=" col-lg-3 col-form-label">فعال / غير فعال</label>
                             <div class="m-radio-inline col-lg-6">
@@ -60,9 +67,31 @@
                             <span class="m-form__help"></span>
                         </div>
                         <div class="form-group m-form__group row">
-                            <label class="col-lg-3 col-form-label">رابط التسجيل</label>
+                            <label class="col-lg-3 col-form-label">اسم المدرب </label>
                             <div class="col-lg-6">
-                                <input id="title" value="{{ old('link') }}" name="link" placeholder="أدخل رابط الدورة"
+                                <select class="form-control chosen-rtl select" name='trainer_id' id='trainer_id'>
+                                    <option selected>- اسم المدرب -</option>
+                                    @foreach($trainers as $trainer)
+                                        <option
+                                            {{old('trainer_id')==$trainer->id?'selected':''}} value='{{$trainer->id}}'>
+                                            {{$trainer->name}}</option>
+                                    @endforeach
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-group m-form__group row">
+                            <label class="col-lg-3 col-form-label">التكلفة</label>
+                            <div class="col-lg-6">
+                                <input id="cost" value="{{ old('cost') }}" name="cost" placeholder="أدخل سعر الدورة"
+                                       class="form-control" type="text">
+                            </div>
+                        </div>
+
+                        <div class="form-group m-form__group row">
+                            <label class="col-lg-3 col-form-label">عدد ساعات الدورة</label>
+                            <div class="col-lg-6">
+                                <input id="hours" value="{{ old('hours') }}" name="hours" placeholder="أدخل عدد ساعات الدورة"
                                        class="form-control" type="text">
                             </div>
                         </div>

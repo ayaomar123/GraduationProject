@@ -30,6 +30,23 @@
                                        class="form-control" type="text">
                             </div>
                         </div>
+                        <div class="form-group m-form__group row">
+                            <label class="col-lg-3 col-form-label">الصورة</label>
+                            <div class="col-lg-6">
+                                <input disabled type='file' class="form-control" name="image" id="image" />
+                                @if($item->image)
+                                    <hr>
+                                    <img style='max-width:250px' src='{{asset("storage/images/$item->image")}}' />
+                                @endif
+                            </div>
+                        </div>
+                        <div class="form-group m-form__group row">
+                            <label class="col-lg-3 col-form-label">اسم المدرب</label>
+                            <div class="col-lg-6">
+                                <input disabled id="name" value="{{ $item->trainer->name }}" name="name" placeholder="name"
+                                       class="form-control" type="text">
+                            </div>
+                        </div>
                         <div class="m-form__group form-group row">
                             <label class=" col-lg-3 col-form-label">فعال / غير فعال</label>
                             <div class="m-radio-inline col-lg-6">
@@ -49,10 +66,16 @@
                             <span class="m-form__help"></span>
                         </div>
                         <div class="form-group m-form__group row">
-                            <label class="col-lg-3 col-form-label">رابط التسجيل</label>
+                            <label class="col-lg-3 col-form-label">تكلفة الدورة</label>
                             <div class="col-lg-6">
-                                <input disabled id="link" value="{{ $item->link }}" name="link" placeholder="رابط التسجيل"
-                                       class="form-control" type="text">
+                                <input disabled id="cost" value="{{ $item->cost }}" name="cost" placeholder="عدد ساعات الدورة"                               class="form-control" type="text">
+                            </div>
+                        </div>
+
+                        <div class="form-group m-form__group row">
+                            <label class="col-lg-3 col-form-label">عدد ساعات الدورة</label>
+                            <div class="col-lg-6">
+                                <input disabled id="hour" value="{{ $item->hours }}" name="hour" placeholder="عدد ساعات الدورة"                               class="form-control" type="text">
                             </div>
                         </div>
 

@@ -36,7 +36,7 @@ class FrontQuestionController extends Controller
                 );
 
         }
-        Session::flash("msg","s: تمت الجابة بنجاح");
+        Session::flash("msg","s: تمت الإجابة بنجاح");
         return redirect()->back();
     }
 }

@@ -20,9 +20,11 @@
             <th>القسم</th>
             <th>اسم الدورة</th>
             <th>وصف قصير</th>
+            <th>الصورة</th>
             <th>الفاعلية</th>
-            <th>تفاصيل الدورة</th>
-            <th>رابط التسجيل</th>
+            <th>اسم المدرب</th>
+            <th>التكلفة</th>
+            <th>عدد ساعات الدورة</th>
             <th width="22%">خيارات</th>
         </tr>
         </thead>
@@ -33,10 +35,14 @@
                 <td>{{ $item->department->name }}</td>
                 <td>{{ $item->name }}</td>
                 <td>{{ $item->slug }}</td>
-                <td>{{ $item->status }}</td>
-                <td>{!! substr(strip_tags($item->description), 0, 150) !!} </td>
-                <td><a class="btn" target="_blank" href="{{ $item->link }}">{{ $item->link }}</a></td>
+                <td>
+                    <img style="width: 50px;" src="{{ asset('storage/images/'.$item->image)}}" />
 
+                </td>
+                <td>{{ $item->status }}</td>
+                <td>{{ $item->trainer->name }}</td>
+                <td>{{$item->cost}}</td>
+                <td>{{$item->hours}}</td>
                 <td>
                     <form method='post' action='{{asset("courses/".$item->id)}}'>
                         @csrf

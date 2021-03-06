@@ -22,4 +22,5 @@ class Result extends Model
         return $this->belongsToMany(Question::class);
     }
 
+
 }

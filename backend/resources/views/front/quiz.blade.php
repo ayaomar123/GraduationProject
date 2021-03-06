@@ -1,11 +1,11 @@
-@extends('layouts.home.frontend')
+@extends('layouts.frontlayout.frontpage')
 @section('content')
 <!-- choose start -->
-<div class="container pt-1">
+<div class="container pt-5">
     <div class="row pb-3">
         <div class="mt-5 col-lg-12 mb-4 text-right">
             <div class="card-header mb-3">
-                <h3 class="white">:أكمل الإجابة عن الأسئلة التالية</h3>
+                <h3 class="white">أكمل الإجابة عن الأسئلة التالية</h3>
             </div>
             <form method='post' action="{{route('quiz.index')}}">
                 @csrf
@@ -23,8 +23,8 @@
                                     <input type="hidden" name="question_id[]" value="{{$question->id}}">
                                     <ul>
                                         @foreach($question->answers as $answer)
-                                        <li>{{$answer->answer}} <input class="btn btn-lg" type="radio" name="q{{$answer->question_id}}" value="{{$answer->id}}"  id="radio-toolbar"></li>
-                                        <input type="hidden" name="answer_weight[]" value="{{$answer->weight}}">
+                                        <li> <input class="btn btn-lg" type="radio" name="q{{$answer->question_id}}" value="{{$answer->id}}"  id="radio-toolbar"> {{$answer->answer}}</li>
+                                        <input type="hidden" name="answer[]" value="{{$answer->weight}}">
                                             <p>{{$answer->weight}}</p>
                                         @endforeach
 {{--                                        <li>{{$answer->answer2}} <input class="btn btn-lg" type="radio" name="q{{$answer->question_id}}" value="{{$answer->answer2}}" id="radio-toolbar2"></li>--}}
@@ -44,7 +44,7 @@
             </div>
             <div class="col-md-7">
 {{--                <button class="myBtn btn btn-lg">التالــي</button>--}}
-                <button type="submit" class="col-3 btn btn-lg btn-primary">التقييم</button>
+                <button type="submit" class="col-3 btn btn-lg" style="background-color: #0b3b65;color: white">التقييم</button>
             </div>
             </form>
         </div>

@@ -7,10 +7,12 @@ use App\Http\Controllers\Admin\DepartmentController;
 use App\Http\Controllers\Admin\QestionController;
 use App\Http\Controllers\Admin\ScholarController;
 use App\Http\Controllers\Admin\StaticPageController;
+use App\Http\Controllers\Admin\TrainerController;
 use App\Http\Controllers\Admin\UserController;
 use App\Http\Controllers\Admin\UserProfileController;
 use App\Http\Controllers\Auth\ChangePasswordController;
 use App\Http\Controllers\CustomerHomeController;
+use App\Http\Controllers\front\FrontCourseController;
 use App\Http\Controllers\front\FrontDepartmentController;
 use App\Http\Controllers\front\FrontScholarController;
 use App\Http\Controllers\FrontQuestionController;
@@ -45,6 +47,8 @@ Route::get("getScholar",[FrontScholarController::class,'index'])->name('scolarss
 Route::get("getScholar/internal",[FrontScholarController::class,'internal'])->name('internal');
 Route::get("getScholar/external",[FrontScholarController::class,'external'])->name('external');
 Route::get('/getScholar/{slug}', [FrontScholarController::class,'details'])->name("getScholarDetails");
+Route::get("getCourses",[FrontCourseController::class,'index'])->name('getCourses');
+Route::get('/getCourses/{slug}', [FrontCourseController::class,'details'])->name("getCoursesDetails");
 
 Route::prefix("admin")->middleware(['auth','role:admin'])->group(function() {
     Route::get('/', function () {
@@ -60,11 +64,15 @@ Route::prefix("admin")->middleware(['auth','role:admin'])->group(function() {
     Route::resource("static-page", StaticPageController::class);
     Route::get("static-page/{id}/delete", [StaticPageController::class, 'destroy'])->name("static-page.delete");
 
+    Route::resource("trainers", TrainerController::class);
+    Route::get("trainers/{id}/delete", [TrainerController::class, 'destroy'])->name("trainers.delete");
+
     Route::resource("departments", DepartmentController::class);
     Route::get("departments/{id}/delete", [DepartmentController::class, 'destroy'])->name("departments.delete");
 
     Route::resource("scholarships", ScholarController::class);
     Route::get("scholarships/{id}/delete", [ScholarController::class, 'destroy'])->name("scholarships.delete");
+
 
     Route::resource("courses", CourseController::class);
     Route::get("courses/{id}/delete", [CourseController::class, 'destroy'])->name("courses.delete");

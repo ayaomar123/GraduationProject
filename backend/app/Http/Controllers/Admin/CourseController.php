@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Admin;
 use App\Http\Controllers\Controller;
 use App\Models\Department;
 use App\Models\Course;
+use App\Models\Trainer;
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
 use Session;
@@ -33,7 +34,8 @@ class CourseController extends Controller
     public function create()
     {
         $departments = Department::all();
-        return view("admin.courses.create",compact('departments'));
+        $trainers = Trainer::all();
+        return view("admin.courses.create",compact('departments','trainers'));
 
     }
 
@@ -82,12 +84,13 @@ class CourseController extends Controller
     public function edit($id)
     {
         $departments = Department::all();
+        $trainers = Trainer::all();
         $item = Course::find($id);
         if(!$item){
             session()->flash("msg","e:غير متاح");
             return redirect(route("courses.index"));
         }
-        return view("admin.courses.edit",compact('item','departments'));
+        return view("admin.courses.edit",compact('item','departments','trainers'));
     }
 
     /**
