@@ -13,8 +13,10 @@ class Scholarship extends Model
         'slug',
         'description',
         'link',
-        'secondary_grades',
         'status',
-        'rate'
+        'percent',
+        'image',
+        'internal',
+        'last_Day'
     ];
 }

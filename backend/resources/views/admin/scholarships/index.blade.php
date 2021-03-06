@@ -18,9 +18,9 @@
         <tr>
             <th width="5%">#</th>
             <th>عنوان</th>
-            <th>وصف قصير</th>
+            <th>آخر موعد للتقديم</th>
             <th>الفاعلية</th>
-            <th>الحد الأدنى لمعدل الثانوية</th>
+            <th>داخلية</th>
             <th>نسبة تغطية المنحة من الرسوم</th>
             <th width="22%">خيارات</th>
         </tr>
@@ -30,10 +30,10 @@
             <tr>
                 <td>{{ $item->id }}</td>
                 <td>{{ $item->name }}</td>
-                <td>{{ $item->slug }}</td>
-                <td>{{ $item->status }}</td>
-                <td>%{{ $item->secondary_grades }}</td>
-                <td>%{{ $item->rate }}</td>
+                <td>{{ $item->last_Day }}</td>
+                <td>{{ $item->status == '1' ? "فعال" : "غير فعال" }}</td>
+                <td>{{ $item->internal == '1' ? "داخلية" : "خارجية" }}</td>
+                <td>%{{ $item->percent }}</td>
 
                 <td>
                     <form method='post' action='{{asset("scholarships/".$item->id)}}'>

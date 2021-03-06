@@ -14,13 +14,13 @@
     <meta content="" name="description">
     <meta content="" name="author">
     <!-- bootstrap css -->
-    <link rel="stylesheet" type="text/css" href="{{asset('assets/css/bootstrap.min.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{asset('assets/newfolder/css/bootstrap.min.css')}}">
     <!-- style css -->
-    <link rel="stylesheet" type="text/css" href="{{asset('assets/css/style.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{asset('assets/newfolder/css/style.css')}}">
     <!-- Responsive-->
-    <link rel="stylesheet" href="{{asset('assets/css/responsive.css')}}">
+    <link rel="stylesheet" href="{{asset('assets/newfolder/css/responsive.css')}}">
     <!-- Scrollbar Custom CSS -->
-    <link rel="stylesheet" href="{{asset('assets/css/jquery.mCustomScrollbar.min.css')}}">
+    <link rel="stylesheet" href="{{asset('assets/newfolder/css/jquery.mCustomScrollbar.min.css')}}">
     <!-- Tweaks for older IEs-->
     <link href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css"
           rel="stylesheet">
@@ -59,7 +59,7 @@
                         </div>
                     </div>
                     <div class="col-xl-1">
-                        <img alt="" class="mt-1" src="{{asset('assets/images/dal.png')}}" style="max-width: 100px;">
+                        <img alt="" class="mt-1" src="{{asset('assets/newfolder/images/dal.png')}}" style="max-width: 100px;">
                     </div>
 
                 </div>
@@ -111,7 +111,7 @@
         <div class="row">
             <div class="col-md-6">
                 <div class="images">
-                    <img src="{{asset('assets/images/child.jpg')}}" style="max-width:
+                    <img src="{{asset('assets/newfolder/images/child.jpg')}}" style="max-width:
                                     100%; border-radius: 4%;">
                 </div>
             </div>
@@ -167,7 +167,7 @@
         </div>
         <div class="col-md-6">
             <div class="images">
-                <img src="{{asset('assets/images/ng.jpg')}}" style="max-width: 100%;
+                <img src="{{asset('assets/newfolder/images/ng.jpg')}}" style="max-width: 100%;
                                 height: 350px; border-radius: 5%;">
             </div>
         </div>
@@ -179,7 +179,7 @@
     <div class="row">
         <div class="col-md-6">
             <div class="images">
-                <img src="{{asset('assets/images/train.jpg')}}" style="max-width: 100%;
+                <img src="{{asset('assets/newfolder/images/train.jpg')}}" style="max-width: 100%;
                                 height: 350px; border-radius: 5%;">
             </div>
         </div>
@@ -226,7 +226,7 @@
         </div>
         <div class="col-md-6">
             <div class="images">
-                <img src="{{asset('assets/images/mo.jpg')}}" style="max-width: 100%;
+                <img src="{{asset('assets/newfolder/images/mo.jpg')}}" style="max-width: 100%;
                                 height: 350px; border-radius: 5%;">
             </div>
         </div>
@@ -238,7 +238,7 @@
     <div class="row">
         <div class="col-md-6">
             <div class="images">
-                <img src="{{asset('assets/images/abi.jpg')}}" style="max-width: 100%;
+                <img src="{{asset('assets/newfolder/images/abi.jpg')}}" style="max-width: 100%;
                                 height: 350px; border-radius: 5%;">
             </div>
         </div>
@@ -326,7 +326,7 @@
                     </ul>
                 </div>
                 <div class="col-md-4 col-lg-3 text-center">
-                    <img class="w-50 footer-logo" src="{{asset('assets/images/dal.png')}}"/>
+                    <img class="w-50 footer-logo" src="{{asset('assets/newfolder/images/dal.png')}}"/>
                     <h3 class="mt-3 text-right" style="color:
                                     #fff;">
                         منصة إرشادية للطلاب الراغبين بدخول كلية
@@ -361,13 +361,13 @@
     </div>
 
 </div>
-<script src="{{asset('assets/js/jquery.min.js')}}"></script>
-<script src="{{asset('assets/js/popper.min.js')}}"></script>
-<script src="{{asset('assets/js/bootstrap.bundle.min.js')}}"></script>
-<script src="{{asset('assets/js/plugin.js')}}"></script>
+<script src="{{asset('assets/newfolder/js/jquery.min.js')}}"></script>
+<script src="{{asset('assets/newfolder/js/popper.min.js')}}"></script>
+<script src="{{asset('assets/newfolder/js/bootstrap.bundle.min.js')}}"></script>
+<script src="{{asset('assets/newfolder/js/plugin.js')}}"></script>
 <!-- sidebar -->
-<script src="{{asset('assets/js/jquery.mCustomScrollbar.concat.min.js')}}"></script>
-<script src="{{asset('assets/js/custom.js')}}"></script>
+<script src="{{asset('assets/newfolder/js/jquery.mCustomScrollbar.concat.min.js')}}"></script>
+<script src="{{asset('assets/newfolder/js/custom.js')}}"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"></script>
 
 <!-- javascript -->

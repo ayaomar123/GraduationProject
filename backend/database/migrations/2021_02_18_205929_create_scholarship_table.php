@@ -17,11 +17,13 @@ class CreateScholarshipTable extends Migration
             $table->id();
             $table->string('name');
             $table->string('slug')->unique();
-            $table->string('link');
-            $table->float('secondary_grades', 8, 2);
-            $table->float('rate', 8, 2);
+            $table->double('percent');
+            $table->string('image');
+            $table->string('link')->nullable();
             $table->boolean('status');
+            $table->boolean('internal');
             $table->longText('description');
+            $table->date('last_Day');
             $table->timestamps();
         });
     }

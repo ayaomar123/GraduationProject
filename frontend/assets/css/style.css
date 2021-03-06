@@ -56,8 +56,8 @@ section{
 .number{
 	color: #fffde7;
 }
-h2, h3,h4, h5{
-	font-weight: bold;
+.mycard{
+	background-color: #f8f9fa;
 }
 .animated__delay-8s{
 	animation-delay: 8s;
@@ -539,6 +539,10 @@ footer form textarea{
     line-height: 30px;
     text-align: center;
 }
+.myBtn:hover{
+	background-color: #b97f7f;
+	color: white;
+}
 .sale p{color: #fff;font-weight: 500;font-size:14px;line-height: 2.2;}
 
 .sale.bg-1{background: #e2adab;}
@@ -572,6 +576,17 @@ p.arrival-review span {margin-right: 15px;}
     visibility:visible;
     bottom:0px;
 	background-color: #0b3b65;
+}
+.card-header{
+	background-color: #0b3b65;
+}
+.white{
+	color: #fff;
+}
+.myBtn{
+	width: 140px;
+	background-color: #0b3b65;
+	color: #fff;
 }
 .single-new-arrival  h4 a{
     color:#5f5b57;

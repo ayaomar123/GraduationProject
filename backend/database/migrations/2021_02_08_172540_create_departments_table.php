@@ -18,7 +18,6 @@ class CreateDepartmentsTable extends Migration
             $table->string('name');
             $table->string('slug')->unique();
             $table->string('image');
-            //$table->string('short_description');
             $table->longText('description');
             $table->boolean('status');
             $table->rememberToken();

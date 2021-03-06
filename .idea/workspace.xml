@@ -16,11 +16,60 @@
         <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
       </path>
     </expand>
-    <select />
+    <select>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:origin/NoorFront" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </select>
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f8fe2947-eb27-4003-98fd-9960f1d7fc08" name="Default Changelist" comment="aya 2-3">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/app/Models/Scholarship.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/app/Models/Scholarship.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/database/migrations/2021_02_08_172540_create_departments_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/database/migrations/2021_02_08_172540_create_departments_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/database/migrations/2021_02_18_205929_create_scholarship_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/database/migrations/2021_02_18_205929_create_scholarship_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/public/assets/css/animate.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/backend/public/assets/css/animate.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/public/assets/css/bootstrap.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/public/assets/css/jquery-ui.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/public/assets/css/jquery.mCustomScrollbar.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/public/assets/css/meanmenu.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/public/assets/css/nice-select.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/public/assets/css/normalize.css" beforeDir="false" afterPath="$PROJECT_DIR$/backend/public/assets/css/normalize.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/public/assets/css/owl.carousel.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/public/assets/css/responsive.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/public/assets/css/slick.css" beforeDir="false" afterPath="$PROJECT_DIR$/backend/public/assets/css/slick.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/public/assets/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/backend/public/assets/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/public/assets/images/gallery_item_1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/public/assets/img/dal.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/public/assets/js/bootstrap.bundle.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/public/assets/js/custom.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/public/assets/js/custom.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/public/assets/js/jquery-3.0.0.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/public/assets/js/jquery.mCustomScrollbar.concat.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/public/assets/js/jquery.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/public/assets/js/jquery.validate.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/public/assets/js/plugin.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/public/assets/js/popper.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/resources/views/admin/scholarships/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/resources/views/admin/scholarships/create.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/resources/views/admin/scholarships/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/resources/views/admin/scholarships/edit.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/resources/views/admin/scholarships/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/resources/views/admin/scholarships/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/resources/views/admin/scholarships/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/resources/views/admin/scholarships/show.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/resources/views/front/CustomerHome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/resources/views/front/CustomerHome.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/Scholarship.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/Scholarship.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/assets/css/bootstrap.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/assets/css/bootstrap.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/assets/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/assets/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/call.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/call.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/computer.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/computer.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/course.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/course.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/course1.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/course1.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/department.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/department.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/scholarship1.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/scholarship1.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/test.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/test.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/who.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/who.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -157,7 +206,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/frontend" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -188,6 +237,9 @@
       <workItem from="1614444990035" duration="2999000" />
       <workItem from="1614530982674" duration="15052000" />
       <workItem from="1614587553376" duration="42418000" />
+      <workItem from="1614947446897" duration="401000" />
+      <workItem from="1614954977764" duration="10965000" />
+      <workItem from="1614966104226" duration="10487000" />
     </task>
     <task id="LOCAL-00001" summary="aya 27-2">
       <created>1614453960968</created>
@@ -214,7 +266,19 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="origin/NoorFront" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
@@ -235,22 +299,26 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="296" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1366.728@0.0.1366.728" timestamp="1613061208676" />
-    <state x="413" y="118" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1614543170784">
+    <state x="413" y="118" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1614970502204">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="413" y="118" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.728@0.0.1366.728" timestamp="1614543170784" />
+    <state x="413" y="118" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.728@0.0.1366.728" timestamp="1614970502204" />
+    <state x="410" y="60" key="FileChooserDialogImpl" timestamp="1614966026934">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="410" y="60" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1614966026934" />
     <state x="438" y="86" key="NewPhpClassDialog" timestamp="1613030901318">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="438" y="86" key="NewPhpClassDialog/0.0.1366.728@0.0.1366.728" timestamp="1613030901318" />
-    <state x="492" y="270" key="NewPhpFileDialog" timestamp="1614594501539">
+    <state x="492" y="270" key="NewPhpFileDialog" timestamp="1614971120159">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="492" y="270" key="NewPhpFileDialog/0.0.1366.728@0.0.1366.728" timestamp="1614594501539" />
-    <state x="175" y="32" key="Vcs.Push.Dialog.v2" timestamp="1614710107160">
+    <state x="492" y="270" key="NewPhpFileDialog/0.0.1366.728@0.0.1366.728" timestamp="1614971120159" />
+    <state x="175" y="32" key="Vcs.Push.Dialog.v2" timestamp="1614947461606">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="175" y="32" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1614710107160" />
+    <state x="175" y="32" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1614947461606" />
     <state x="262" y="0" key="search.everywhere.popup" timestamp="1614594452054">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -266,7 +334,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="php">
           <url>file://$PROJECT_DIR$/backend/resources/views/admin/scholarships/create.blade.php</url>
-          <line>66</line>
+          <line>81</line>
           <option name="timeStamp" value="4" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="php">

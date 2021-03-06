@@ -1,5 +1,5 @@
 @extends("layouts.admin")
-@section("name","تعديل المنحة")
+@section("title","تعديل المنحة")
 
 @section("name-side")
 
@@ -50,26 +50,50 @@
                             <span class="m-form__help"></span>
                         </div>
                         <div class="form-group m-form__group row">
-                            <label class="col-lg-3 col-form-label">الحد الأدنى لمعدل الثانوية العامة %</label>
+                            <label class="col-lg-3 col-form-label">الصورة</label>
                             <div class="col-lg-6">
-                                <input id="title" value="{{ old('secondary_grades',$item->secondary_grades) }}" name="secondary_grades" placeholder="الحد الأدنى لمعدل الثانوية العامة %"
-                                       class="form-control" type="number">
+                                <input type='file' class="form-control" name="image" id="image" />
+                                @if($item->image)
+                                    <hr>
+                                    <img style='max-width:250px' src='{{asset("storage/images/$item->image")}}' />
+                                @endif
                             </div>
                         </div>
 
                         <div class="form-group m-form__group row">
                             <label class="col-lg-3 col-form-label">نسبة تغطية المنحة من الرسوم %</label>
                             <div class="col-lg-6">
-                                <input id="title" value="{{ old('rate',$item->rate) }}" name="rate" placeholder="نسبة تغطية المنحة من الرسوم %"
+                                <input id="title" value="{{ old('percent',$item->percent) }}" name="percent" placeholder="نسبة تغطية المنحة من الرسوم %"
                                        class="form-control" type="number">
                             </div>
                         </div>
-
+                        <div class="m-form__group form-group row">
+                            <label class=" col-lg-3 col-form-label">فعال / غير فعال</label>
+                            <div class="m-radio-inline col-lg-6">
+                                <label class="m-radio m-radio--solid m-radio--brand">
+                                    <input {{$item->internal=='1'?"داخلية":""}} type="radio" name="internal" checked=""
+                                           value="1" aria-describedby="account_group-error"> داخلية
+                                    <span></span>
+                                </label>
+                                <label class="m-radio m-radio--solid m-radio--brand">
+                                    <input {{$item->internal=='0'?"خارجية":""}} type="radio" name="internal" value="0">                                   خارجية
+                                    <span></span>
+                                </label>
+                            </div>
+                            <span class="m-form__help"></span>
+                        </div>
                         <div class="form-group m-form__group row">
                             <label class="col-lg-3 col-form-label">رابط التسجيل</label>
                             <div class="col-lg-6">
                                 <input id="title" value="{{ old('link',$item->link) }}" name="link" placeholder="رابط التسجيل"
                                        class="form-control" type="text">
+                            </div>
+                        </div>
+                        <div class="form-group m-form__group row">
+                            <label class="col-lg-3 col-form-label">آخر موعد للتقديم</label>
+                            <div class="col-lg-6">
+                                <input id="last_Day" value="{{ old('last_Day',$item->last_Day) }}" name="last_Day" placeholder="رابط التسجيل"
+                                       class="form-control" type="date">
                             </div>
                         </div>
 
