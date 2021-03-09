@@ -365,9 +365,16 @@ footer form textarea{
 	transition: 0.5s all ease-in-out;
 	width: 100%;
 }
-
-
 .myaya{
+    background-image: url('../images/Capture2.PNG');
+    background-size: cover;
+    width: 100%;
+    background-repeat: no-repeat;
+    height: 280px;
+    margin-top: 40px;
+}
+
+.myaya2{
 	background-image: url('../images/Capture2.PNG');
 	background-size: cover;
 	width: 100%;

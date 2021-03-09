@@ -6,14 +6,20 @@
 		<meta name="description" content="Latest updates and statistic charts">
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no">
 
-		
+
 		<link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Tajawal&display=swap" rel="stylesheet">
 
 		<!--begin::Global Theme Styles -->
-		<link href="{{asset('metronic/assets/vendors/base/vendors.bundle.rtl.css')}}" rel="stylesheet" type="text/css" />
+		<link href="{{asset('metronic/assets/vendors/base/vendors.bundle.rtl.css')}}" rel="stylesheet" type="text/css"/>
 
-		<!--RTL version:<link href="{{asset('metronic/assets/vendors/base/vendors.bundle.rtl.css')}}" rel="stylesheet" type="text/css" />-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+        <link rel="stylesheet" type="text/css"
+              href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
+    <!--RTL version:<link href="{{asset('metronic/assets/vendors/base/vendors.bundle.rtl.css')}}" rel="stylesheet" type="text/css" />-->
 		<link href="{{asset('metronic/assets/demo/default/base/style.bundle.rtl.css')}}" rel="stylesheet" type="text/css" />
 		<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
@@ -51,36 +57,42 @@
 				border:none;
 				margin-top:25px;
 				border-bottom:1px solid #ebedf2;
-				
-			}
-			.my-active span{
-				background-color: #00c5dc !important;
-				color: white !important;
-				border-color: #00c5dc !important;
+
 			}
 
-			.fade{
-				opacity: 1;
-				-webkit-transition: opacity .15s linear;
-				-o-transition: opacity .15s linear;
-				transition: opacity .15s linear;		
-			}
-			.sorting{
-				text-align:center;
-			}
-			th{
-				text-align:right !important;
-			}
-			.m-radio, .m-checkbox{
-				margin-bottom:0px !important;
-			}
-			select.form-control{
-				padding-top:5px;
-			}	
+            .my-active span {
+                background-color: #00c5dc !important;
+                color: white !important;
+                border-color: #00c5dc !important;
+            }
+
+            .fade {
+                opacity: 1;
+                -webkit-transition: opacity .15s linear;
+                -o-transition: opacity .15s linear;
+                transition: opacity .15s linear;
+            }
+
+            .sorting {
+                text-align: center;
+            }
+
+            th {
+                text-align: right !important;
+            }
+
+            .m-radio, .m-checkbox {
+                margin-bottom: 0px !important;
+            }
+
+            select.form-control {
+                padding-top: 5px;
+            }
+
             .custom-arrow-style {
                 right: auto !important;
                 left: 13px !important;
-            }		
+            }
         </style>
         @yield("css")
     </head>
@@ -106,38 +118,36 @@
 
 					<!-- BEGIN: Subheader -->
                     <div class="m-subheader ">
-						<div class="d-flex align-items-center">
-							<div class="mr-auto">
-								<h3 class="m-subheader__title ">@yield("title")</h3>
-							</div>
-							@yield("title-side")
-						</div>
-					</div>
-					<!-- END: Subheader -->
-					<div class="m-content">
+                        <div class="d-flex align-items-center">
+                            <div class="mr-auto">
+                                <h3 class="m-subheader__title ">@yield("title")</h3>
+                            </div>
+                            @yield("title-side")
+                        </div>
+                    </div>
+                    <!-- END: Subheader -->
+                    <div class="m-content">
 
-						@include("layouts.shared.msg")
+                        @include("layouts.shared.msg")
                         @yield("content")
-						
-					</div>
-				</div>
-			</div>
 
-			<!-- end:: Body -->
+                    </div>
+                </div>
+            </div>
 
-			@include("layouts.admin.footer")
-		</div>
+            <!-- end:: Body -->
 
-		
+            @include("layouts.admin.footer")
+        </div>
 
-		<!-- begin::Scroll Top -->
+
+        <!-- begin::Scroll Top -->
 		<div id="m_scroll_top" class="m-scroll-top">
 			<i class="la la-arrow-up"></i>
 		</div>
 
 
-		
-		<!--begin::Global Theme Bundle -->
+        <!--begin::Global Theme Bundle -->
 		<script src="{{asset('metronic/assets/vendors/base/vendors.bundle.js')}}" type="text/javascript"></script>
 		<script src="{{asset('metronic/assets/demo/default/base/scripts.bundle.js')}}" type="text/javascript"></script>
 

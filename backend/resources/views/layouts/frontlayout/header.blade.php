@@ -29,19 +29,19 @@
             <div class="collapse navbar-collapse" id="navbarCollapse" style="margin-right: 50px">
                 <ul class="navbar-nav">
                     <li class="nav-item active">
-                        <a class="nav-link" href="index.html">الرئيسية </a>
+                        <a class="nav-link" href="{{asset('')}}">الرئيسية </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="department.html"> التخصصات </a>
+                        <a class="nav-link" href="{{asset('getDepartments')}}"> التخصصات </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="test.html"> اختبار القدرات </a>
+                        <a class="nav-link" href="{{asset('quiz')}}"> اختبار القدرات </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="course.html"> الدورات التدريبية </a>
+                        <a class="nav-link" href="{{asset('getCourses')}}"> الدورات التدريبية </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="scholarship.html"> المنح الجامعية </a>
+                        <a class="nav-link" href="{{asset('getScholar')}}"> المنح الجامعية </a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="who.html"> من نحن </a>

@@ -63,7 +63,7 @@ class DepartmentController extends Controller
     {
         $item = Department::find($id);
         if(!$item){
-            session()->flash("msg","w:غير متاح");
+            session()->flash("error","w:غير متاح");
             return redirect(route("departments.index"));
         }
         return view("admin.departments.show",compact('item'));

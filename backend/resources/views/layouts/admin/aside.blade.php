@@ -130,7 +130,7 @@
                         <li class="m-menu__item " aria-haspopup="true"><a href='{{route("question.create")}}'
                                                                           class="m-menu__link "><i
                                     class="m-menu__link-bullet m-menu__link-bullet--dot"><span></span></i><span
-                                    class="m-menu__link-text"><h6>إضافة سؤال</h6></span></a></li>
+                                    class="m-menu__link-text"><h6 class="white">إضافة سؤال</h6></span></a></li>
 
                     </ul>
                 </div>

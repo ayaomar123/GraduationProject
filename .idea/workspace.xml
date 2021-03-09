@@ -28,24 +28,15 @@
   <component name="ChangeListManager">
     <list default="true" id="f8fe2947-eb27-4003-98fd-9960f1d7fc08" name="Default Changelist" comment="aya 2-3">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/app/Http/Controllers/Admin/CourseController.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/app/Http/Controllers/Admin/CourseController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/app/Http/Controllers/FrontQuestionController.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/app/Http/Controllers/FrontQuestionController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/app/Models/Answer.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/app/Models/Answer.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/app/Models/Course.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/app/Models/Course.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/app/Models/Question.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/app/Models/Question.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/app/Models/Result.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/app/Models/Result.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/database/migrations/2021_02_18_220103_create_courses_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/database/migrations/2021_02_18_220103_create_courses_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/app/Http/Controllers/Admin/DepartmentController.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/app/Http/Controllers/Admin/DepartmentController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/public/assets/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/backend/public/assets/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/resources/views/admin/courses/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/resources/views/admin/courses/create.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/resources/views/admin/courses/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/resources/views/admin/courses/edit.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/resources/views/admin/courses/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/resources/views/admin/courses/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/resources/views/admin/courses/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/resources/views/admin/courses/show.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/resources/views/front/quiz.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/resources/views/front/quiz.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/resources/views/static-page/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/resources/views/admin/static-page/create.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/resources/views/static-page/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/resources/views/admin/static-page/edit.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/resources/views/static-page/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/resources/views/admin/static-page/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/resources/views/static-page/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/resources/views/admin/static-page/show.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/resources/views/auth/auth-layout.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/resources/views/auth/auth-layout.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/resources/views/front/CustomerHome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/resources/views/front/CustomerHome.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/resources/views/front/courses/courseDetails.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/resources/views/front/courses/courseDetails.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/resources/views/layouts/admin.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/resources/views/layouts/admin.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/resources/views/layouts/admin/aside.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/resources/views/layouts/admin/aside.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/resources/views/layouts/admin/header.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/resources/views/layouts/admin/header.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/resources/views/layouts/frontlayout/header.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/resources/views/layouts/frontlayout/header.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -182,7 +173,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/backend/resources/views/front" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../ayaBlog" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -219,6 +210,9 @@
       <workItem from="1614947446897" duration="401000" />
       <workItem from="1614954977764" duration="10965000" />
       <workItem from="1614966104226" duration="25374000" />
+      <workItem from="1615050071520" duration="947000" />
+      <workItem from="1615052932256" duration="3091000" />
+      <workItem from="1615220614220" duration="1841000" />
     </task>
     <task id="LOCAL-00001" summary="aya 27-2">
       <created>1614453960968</created>
@@ -282,10 +276,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="413" y="118" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.728@0.0.1366.728" timestamp="1614970502204" />
-    <state x="410" y="60" key="FileChooserDialogImpl" timestamp="1614966026934">
+    <state x="410" y="60" key="FileChooserDialogImpl" timestamp="1615224735211">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="410" y="60" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1614966026934" />
+    <state x="410" y="60" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1615224735211" />
     <state x="438" y="86" key="NewPhpClassDialog" timestamp="1613030901318">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -306,11 +300,6 @@
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/backend/resources/views/layouts/admin/aside.blade.php</url>
-          <line>142</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
         <line-breakpoint enabled="true" type="php">
           <url>file://$PROJECT_DIR$/backend/resources/views/admin/scholarships/create.blade.php</url>
           <line>81</line>

@@ -47,11 +47,11 @@
                                     <ul class="menu-area-main">
                                         <li><a href="{{asset('quiz')}}">اختبار
                                                 القدرات <i class="fas fa-tasks"></i></a></li>
-                                        <li><a href="Scholarship.html">المنح
+                                        <li><a href="{{asset('getScholar')}}">المنح
                                                 الجامعية <i class="fas fa-hand-holding-usd"></i></a></li>
-                                        <li><a href="course.html">الدورات
+                                        <li><a href="{{asset('getCourses')}}">الدورات
                                                 التدريبية <i class="fas fa-chalkboard-teacher"></i></a></li>
-                                        <li><a href="department.html">التخصصات <i class="fas fa-laptop"></i></a></li>
+                                        <li><a href="{{asset('getDepartments')}}">التخصصات <i class="fas fa-laptop"></i></a></li>
                                         <li><a href="{{asset('')}}">الرئيسية <i class="fas fa-home"></i></a></li>
                                     </ul>
                                 </nav>

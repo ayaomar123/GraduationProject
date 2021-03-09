@@ -8,7 +8,7 @@
                     <div class="m-stack__item m-stack__item--middle m-brand__logo">
                         <a href="index.html" class="m-brand__logo-wrapper">
                             <img alt="a"
-                                 src="{{asset('assets/img/dal.png')}}" style="max-width: 100px"/>
+                                 src="{{asset('assets/images/dal.png')}}" style="max-width: 100px"/>
                         </a>
                     </div>
                     <div class="m-stack__item m-stack__item--middle m-brand__tools">
