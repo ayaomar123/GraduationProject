@@ -14,6 +14,7 @@ use App\Http\Controllers\Auth\ChangePasswordController;
 use App\Http\Controllers\CustomerHomeController;
 use App\Http\Controllers\front\FrontCourseController;
 use App\Http\Controllers\front\FrontDepartmentController;
+use App\Http\Controllers\front\FrontResultController;
 use App\Http\Controllers\front\FrontScholarController;
 use App\Http\Controllers\FrontQuestionController;
 use Illuminate\Support\Facades\Route;
@@ -48,7 +49,11 @@ Route::get("getScholar/internal",[FrontScholarController::class,'internal'])->na
 Route::get("getScholar/external",[FrontScholarController::class,'external'])->name('external');
 Route::get('/getScholar/{slug}', [FrontScholarController::class,'details'])->name("getScholarDetails");
 Route::get("getCourses",[FrontCourseController::class,'index'])->name('getCourses');
+Route::get("getCourses/subscription/{slug}",[FrontCourseController::class,'subscription'])->name('subscription');
 Route::get('/getCourses/{slug}', [FrontCourseController::class,'details'])->name("getCoursesDetails");
+Route::get('/menu/{slug}', [FrontCourseController::class,'menu'])->name("menu");
+Route::get("getResult",[FrontResultController::class,'index'])->name('getResult');
+
 
 Route::prefix("admin")->middleware(['auth','role:admin'])->group(function() {
     Route::get('/', function () {

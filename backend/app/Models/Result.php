@@ -21,6 +21,10 @@ class Result extends Model
     {
         return $this->belongsToMany(Question::class);
     }
+    public function user()
+    {
+        return $this->belongsTo(User::class);
+    }
 
 
 }

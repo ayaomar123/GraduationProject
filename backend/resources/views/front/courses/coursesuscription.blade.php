@@ -6,7 +6,7 @@
                 <h4 class="btn" style="margin-top: 40px;margin-left: 1000px">
                     <nav aria-label="breadcrumb">
                         <ol class="breadcrumb">
-                            <li class="breadcrumb-item"><a href="{{asset('')}}">الرئيسية</a></li>
+                            <li class="breadcrumb-item"><a href="index.html">الرئيسية</a></li>
                             <li class="breadcrumb-item active" aria-current="page">الدورات التدريبية</li>
                         </ol>
                     </nav>
@@ -31,7 +31,6 @@
 
             <div class="row bar">
                 <div class="col-md-3 img-back aside-left-line">
-                    <!-- MENUS AND FILTERS-->
                     <div class="panel panel-default sidebar-menu ">
 
                         <div class="panel-body">
@@ -45,12 +44,12 @@
                                     </a>
                                 </li>
                                 @foreach($departments as $dep)
-                                <li class="nav-item">
-                                    <a class="mt-4 nav-link d-flex align-items-center justify-content-between"
-                                       href="{{asset('menu/'.$dep->id)}}">
-                                        <span>{{$dep->name}}</span>
-                                    </a>
-                                </li>
+                                    <li class="nav-item">
+                                        <a class="mt-4 nav-link d-flex align-items-center justify-content-between"
+                                           href="{{asset('menu/'.$dep->id)}}">
+                                            <span>{{$dep->name}}</span>
+                                        </a>
+                                    </li>
                                 @endforeach
                             </ul>
                         </div>
@@ -61,28 +60,15 @@
                 <div class="col-md-9">
 
                     <div class="new-arrivals-content">
-                        <div class="row">
-                            @foreach($courses as $course)
-                                <div class="col-md-4">
-                                    <div class="single-new-arrival">
-                                        <a href="{{asset('getCourses/'.$course->slug)}}">
-                                            <div class="single-new-arrival-bg">
-                                                <img alt="new-arrivals images" src="{{asset('storage/images/'.$course->image)}}">
-                                                <div class="single-new-arrival-bg-overlay"></div>
-                                                <div class="new-arrival-cart">
-                                                    <p class="arrival-review pull-right">
-                                                        <span class="lnr lnr-heart"></span>
-                                                    </p>
-                                                </div>
-                                            </div>
-                                        </a>
-                                        <h4><a href="{{asset('getCourses/'.$course->slug)}}">{{$course->name}}</a></h4>
-                                        <p class="arrival-product-price"><a href="{{asset('getCourses/subscription/'.$course->slug)}}" class="btn btn-light">التحق
-                                                بالدورة</a></p>
-                                    </div>
-                                </div>
-                            @endforeach
+                        <div class="row mr-4">
+                            <h2 class="col-12 text-right alert-danger">لقد قمت بالتسجيل في دورة {{$subscription->name}}</h2>
+                            <br>
+                            <h2>{!! $subscription->description!!}</h2>
+                            <br>
+
                         </div>
+                        <h3>سيتم التواصل معك </h3>
+
                     </div>
 
                 </div>

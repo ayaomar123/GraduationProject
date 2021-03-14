@@ -19,9 +19,7 @@ class Answer extends Model
         return $this->belongsTo(Question::class);
     }
 
-    public function answeight() {
-        return $this->belongsTo(Answer::class);
-    }
+
 
 
 }

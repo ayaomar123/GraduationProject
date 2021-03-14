@@ -6,8 +6,8 @@
                 <h4 class="btn" style="margin-top: 40px;margin-left: 988px">
                     <nav style="background-color: #0b2e13">
                         <ol class="breadcrumb">
-                            <li class="breadcrumb-item"><a href="index.html">الرئيسية</a></li>
-                            <li class="breadcrumb-item"><a href="scholarship.html">المنح</a></li>
+                            <li class="breadcrumb-item"><a href="{{asset('')}}">الرئيسية</a></li>
+                            <li class="breadcrumb-item"><a href="{{asset('getScholar')}}">المنح</a></li>
                             <li aria-current="page" class="breadcrumb-item active">{{$scholarDetails->name}}</li>
                         </ol>
                     </nav>

@@ -6,8 +6,8 @@
                 <h4 class="btn" style="margin-top: 40px;margin-left: 900px">
                     <nav aria-label="breadcrumb">
                         <ol class="breadcrumb">
-                            <li class="breadcrumb-item"><a href="index.html">الرئيسية</a></li>
-                            <li class="breadcrumb-item"><a href="index.html">الدورات التدريبية</a></li>
+                            <li class="breadcrumb-item"><a href="{{asset('')}}">الرئيسية</a></li>
+                            <li class="breadcrumb-item"><a href="{{asset('getCourses')}}">الدورات التدريبية</a></li>
                             <li aria-current="page" class="breadcrumb-item active">{{$courseDetails->name}}</li>
                         </ol>
                     </nav>

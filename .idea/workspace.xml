@@ -28,15 +28,16 @@
   <component name="ChangeListManager">
     <list default="true" id="f8fe2947-eb27-4003-98fd-9960f1d7fc08" name="Default Changelist" comment="aya 2-3">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/app/Http/Controllers/Admin/DepartmentController.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/app/Http/Controllers/Admin/DepartmentController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/public/assets/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/backend/public/assets/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/resources/views/auth/auth-layout.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/resources/views/auth/auth-layout.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/resources/views/front/CustomerHome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/resources/views/front/CustomerHome.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/app/Http/Controllers/FrontQuestionController.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/app/Http/Controllers/FrontQuestionController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/app/Http/Controllers/front/FrontCourseController.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/app/Http/Controllers/front/FrontCourseController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/app/Models/Answer.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/app/Models/Answer.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/app/Models/Result.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/app/Models/Result.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/resources/views/front/courses/course.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/resources/views/front/courses/course.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/resources/views/front/courses/courseDetails.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/resources/views/front/courses/courseDetails.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/resources/views/layouts/admin.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/resources/views/layouts/admin.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/resources/views/layouts/admin/aside.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/resources/views/layouts/admin/aside.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/resources/views/layouts/admin/header.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/resources/views/layouts/admin/header.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/resources/views/layouts/frontlayout/header.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/resources/views/layouts/frontlayout/header.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/resources/views/front/quiz.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/resources/views/front/quiz.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/resources/views/front/scholars/scholar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/resources/views/front/scholars/scholar.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/resources/views/front/scholars/scholarDetails.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/resources/views/front/scholars/scholarDetails.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -173,20 +174,20 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../ayaBlog" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/backend/resources/views/front/courses" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\xampp\htdocs\GraduationProject\backend\resources\views\admin" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\GraduationProject\backend\resources\views\front\courses" />
       <recent name="C:\xampp\htdocs\GraduationProject\backend\resources\views\front" />
       <recent name="C:\xampp\htdocs\GraduationProject\backend\app\Http\Controllers\front" />
       <recent name="C:\xampp\htdocs\GraduationProject\backend\resources\views\admin" />
       <recent name="C:\xampp\htdocs\GraduationProject\backend\app\Http\Requests" />
-      <recent name="C:\xampp\htdocs\GraduationProject\backend\app\Models" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\GraduationProject\backend\resources\views\admin" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -213,6 +214,7 @@
       <workItem from="1615050071520" duration="947000" />
       <workItem from="1615052932256" duration="3091000" />
       <workItem from="1615220614220" duration="1841000" />
+      <workItem from="1615564550893" duration="15479000" />
     </task>
     <task id="LOCAL-00001" summary="aya 27-2">
       <created>1614453960968</created>
@@ -272,10 +274,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="296" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1366.728@0.0.1366.728" timestamp="1613061208676" />
-    <state x="413" y="118" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1614970502204">
+    <state x="413" y="118" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1615570058809">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="413" y="118" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.728@0.0.1366.728" timestamp="1614970502204" />
+    <state x="413" y="118" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.728@0.0.1366.728" timestamp="1615570058809" />
     <state x="410" y="60" key="FileChooserDialogImpl" timestamp="1615224735211">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -292,10 +294,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="175" y="32" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1614947461606" />
-    <state x="262" y="0" key="search.everywhere.popup" timestamp="1614594452054">
+    <state x="262" y="0" width="840" height="1034" key="search.everywhere.popup" timestamp="1615570778186">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="262" y="0" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1614594452054" />
+    <state x="262" y="0" width="840" height="1034" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1615570778186" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -314,6 +316,16 @@
           <url>file://$PROJECT_DIR$/backend/resources/views/layouts/admin/header.blade.php</url>
           <line>1</line>
           <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/backend/resources/views/front/courses/coursesuscription.blade.php</url>
+          <line>61</line>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/backend/resources/views/front/courses/menu.blade.php</url>
+          <line>61</line>
+          <option name="timeStamp" value="9" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

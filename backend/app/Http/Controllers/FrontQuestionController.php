@@ -24,19 +24,20 @@ class FrontQuestionController extends Controller
         //dd($request->all());
         $user= Auth::user();
         $requestData = $request->all();
+//        dd($requestData);
         foreach($requestData['question_id'] as $qid){
             //dd($qid);
                 $qanswer = $requestData['q' . $qid];
                 Result::create([
+                        'user_id' => $user->id,
                         'question_id' => $qid,
                         'answer_id' => $qanswer,
-                        'user_id' => $user->id,
                         'answer_weight'=> 1
                     ]
                 );
 
         }
         Session::flash("msg","s: تمت الإجابة بنجاح");
-        return redirect()->back();
+        return redirect()->route('getResult');
     }
 }

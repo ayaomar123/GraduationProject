@@ -25,10 +25,7 @@
                                         @foreach($question->answers as $answer)
                                         <li> <input class="btn btn-lg" type="radio" name="q{{$answer->question_id}}" value="{{$answer->id}}"  id="radio-toolbar"> {{$answer->answer}}</li>
                                         <input type="hidden" name="answer[]" value="{{$answer->weight}}">
-                                            <p>{{$answer->weight}}</p>
                                         @endforeach
-{{--                                        <li>{{$answer->answer2}} <input class="btn btn-lg" type="radio" name="q{{$answer->question_id}}" value="{{$answer->answer2}}" id="radio-toolbar2"></li>--}}
-                                            {{--                                        <li>{{$answer->answer3}} <input class="btn btn-lg" type="radio" name="q{{$answer->question_id}}" value="{{$answer->answer3}}" id="radio-toolbar3"></li>--}}
                                     </ul>
                                 </div>
 
@@ -44,7 +41,7 @@
             </div>
             <div class="col-md-7">
 {{--                <button class="myBtn btn btn-lg">التالــي</button>--}}
-                <button type="submit" class="col-3 btn btn-lg" style="background-color: #0b3b65;color: white">التقييم</button>
+                <button type="submit" class="col-3 btn btn-lg" style="background-color: #0b3b65;color: white;margin-right: 70%">التقييم</button>
             </div>
             </form>
         </div>

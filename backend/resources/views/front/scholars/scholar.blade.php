@@ -6,7 +6,7 @@
                 <h4 class="btn" style="margin-top: 40px;margin-left: 1000px">
                     <nav aria-label="breadcrumb">
                         <ol class="breadcrumb">
-                            <li class="breadcrumb-item"><a href="index.html">الرئيسية</a></li>
+                            <li class="breadcrumb-item"><a href="{{asset('')}}">الرئيسية</a></li>
                             <li class="breadcrumb-item active" aria-current="page">المنح</li>
                         </ol>
                     </nav>
@@ -41,21 +41,23 @@
                         <div class="row">
                             @foreach($scholars as $scholar)
                                 <div class="col-md-4">
-                                    <div class="single-new-arrival">
-                                        <div class="single-new-arrival-bg">
-                                            <img alt="new-arrivals images"
-                                                 src="{{asset('storage/images/'.$scholar->image)}}">
-                                            <div class="single-new-arrival-bg-overlay"></div>
-                                            <div class="sale {{$scholar->internal == '1' ? "bg-1": "bg-2"}}">
-                                                <p>{{$scholar->internal == '1' ? "داخلية": "خارجية"}}</p>
-                                            </div>
-                                            <div class="new-arrival-cart">
-                                                <p class="arrival-review pull-right">
+                                    <a href="{{route('getScholarDetails',$scholar->slug)}}">
+                                        <div class="single-new-arrival">
+                                            <div class="single-new-arrival-bg">
+                                                <img alt="new-arrivals images"
+                                                     src="{{asset('storage/images/'.$scholar->image)}}">
+                                                <div class="single-new-arrival-bg-overlay"></div>
+                                                <div class="sale {{$scholar->internal == '1' ? "bg-1": "bg-2"}}">
+                                                    <p>{{$scholar->internal == '1' ? "داخلية": "خارجية"}}</p>
+                                                </div>
+                                                <div class="new-arrival-cart">
+                                                    <p class="arrival-review pull-right">
                                                     <span
                                                         class="lnr text-right white">أخر موعد للالتحاق: {{$scholar->last_Day}}  </span>
-                                                </p>
+                                                    </p>
+                                                </div>
                                             </div>
-                                        </div>
+                                    </a>
                                         <h4><a href="{{route('getScholarDetails',$scholar->slug)}}">{{$scholar->name}}</a></h4>
                                         <p class="arrival-product-price">{{$scholar->percent}}%</p>
                                     </div>
