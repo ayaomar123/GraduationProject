@@ -16,6 +16,8 @@ use App\Http\Controllers\front\FrontCourseController;
 use App\Http\Controllers\front\FrontDepartmentController;
 use App\Http\Controllers\front\FrontResultController;
 use App\Http\Controllers\front\FrontScholarController;
+use App\Http\Controllers\front\FrontStaticPageController;
+
 use App\Http\Controllers\FrontQuestionController;
 use Illuminate\Support\Facades\Route;
 
@@ -53,6 +55,8 @@ Route::get("getCourses/subscription/{slug}",[FrontCourseController::class,'subsc
 Route::get('/getCourses/{slug}', [FrontCourseController::class,'details'])->name("getCoursesDetails");
 Route::get('/menu/{slug}', [FrontCourseController::class,'menu'])->name("menu");
 Route::get("getResult",[FrontResultController::class,'index'])->name('getResult');
+Route::get("getPages/who",[FrontStaticPageController::class,'index'])->name('getPages/who');
+Route::get("getPages/calls",[FrontStaticPageController::class,'calls'])->name('getPages/calls');
 
 
 Route::prefix("admin")->middleware(['auth','role:admin'])->group(function() {
@@ -77,7 +81,6 @@ Route::prefix("admin")->middleware(['auth','role:admin'])->group(function() {
 
     Route::resource("scholarships", ScholarController::class);
     Route::get("scholarships/{id}/delete", [ScholarController::class, 'destroy'])->name("scholarships.delete");
-
 
     Route::resource("courses", CourseController::class);
     Route::get("courses/{id}/delete", [CourseController::class, 'destroy'])->name("courses.delete");

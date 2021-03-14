@@ -43,11 +43,12 @@
                     <li class="nav-item">
                         <a class="nav-link" href="{{asset('getScholar')}}"> المنح الجامعية </a>
                     </li>
+                        
                     <li class="nav-item">
-                        <a class="nav-link" href="who.html"> من نحن </a>
+                        <a class="nav-link" href="{{asset('getPages/who')}}"> من نحن </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="call.html"> اتصل بنا</a>
+                        <a class="nav-link" href="{{asset('getPages/calls')}}"> اتصل بنا</a>
                     </li>
                 </ul>
 
