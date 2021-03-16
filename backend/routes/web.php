@@ -17,6 +17,8 @@ use App\Http\Controllers\front\FrontDepartmentController;
 use App\Http\Controllers\front\FrontResultController;
 use App\Http\Controllers\front\FrontScholarController;
 use App\Http\Controllers\front\FrontStaticPageController;
+use App\Http\Controllers\front\MsgController;
+use App\Http\Controllers\RatingController;
 
 use App\Http\Controllers\FrontQuestionController;
 use Illuminate\Support\Facades\Route;
@@ -57,7 +59,8 @@ Route::get('/menu/{slug}', [FrontCourseController::class,'menu'])->name("menu");
 Route::get("getResult",[FrontResultController::class,'index'])->name('getResult');
 Route::get("getPages/who",[FrontStaticPageController::class,'index'])->name('getPages/who');
 Route::get("getPages/calls",[FrontStaticPageController::class,'calls'])->name('getPages/calls');
-
+Route::resource('msg', MsgController::class);
+Route::get('rating/{star}', [RatingController::class, 'postRating'])->name('rating');
 
 Route::prefix("admin")->middleware(['auth','role:admin'])->group(function() {
     Route::get('/', function () {

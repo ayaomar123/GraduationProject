@@ -1,7 +1,20 @@
 @extends('layouts.frontlayout.frontpage')
+@section('style')
+<style>
+    .myphoto{
+        background-size: cover;
+        background-image:url('../storage/images/{{$scholarDetails->image}}');
+        width: 100%;
+        background-repeat: no-repeat;
+        height: 280px;
+        margin-top: 40px;
+        }
+</style>
+    
+@endsection
 @section('content')
     <div id="content pt-5">
-        <div class="text-center myaya2">
+        <div class="text-center myphoto">
             <div class="">
                 <h4 class="btn" style="margin-top: 40px;margin-left: 988px">
                     <nav style="background-color: #0b2e13">

@@ -18,9 +18,9 @@
                     <div class="card-header white"><h3>تهــــــانــيــنــا ! </h3></div>
                     <div class="mycard card-body" style="color:#0b3b65;">
                         <h3>لقد حصلت على :</h3>
-                        @foreach($aya as $answer)
-                        <h3 style="color: #e03168">نسبة {{$answer->weight}}% في تخصص الحاسوب</h3>
-                        @endforeach
+                        
+                        <h3 style="color: #e03168">نسبة {{$aya}}% في تخصص الحاسوب</h3>
+                        
                         <br>
                         <h3>لقد قدمت نموذجاً رائعاً لمهارتك</h3>
                         <br>

@@ -32,17 +32,18 @@
                 </ul>
             </div>
             <div class="col-md-4 col-lg-3 text-center">
-                <form>
+                <form method="post" action='{{route("msg.index")}}'>
+                    @csrf
                     <div class="form-group">
-                        <input class="form-control" id="exampleFormControlInput2" placeholder="أدخل اسمك"
-                               type="text">
+                        <input name="name" class="form-control" id="exampleFormControlInput2" placeholder="أدخل اسمك"
+                               type="text" value="{{auth()->user()->name??''}}">
                     </div>
                     <div class="form-group">
-                        <input class="form-control" id="exampleFormControlInput1" placeholder="بريدك الالكتروني"
-                               type="email">
+                        <input name="email" class="form-control" id="exampleFormControlInput1" placeholder="بريدك الالكتروني"
+                               type="email" value="{{auth()->user()->email??''}}">
                     </div>
                     <div class="form-group">
-                <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="أدخل رسالتك"
+                <textarea name="myMsg" class="form-control" id="exampleFormControlTextarea1" placeholder="أدخل رسالتك"
                           rows="3"></textarea>
                     </div>
                     <button class="btn main-color" type="submit">أرسل</button>

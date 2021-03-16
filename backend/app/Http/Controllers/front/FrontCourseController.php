@@ -4,6 +4,7 @@ namespace App\Http\Controllers\front;
 
 use App\Http\Controllers\Controller;
 use App\Models\Course;
+use App\Models\Rating;
 use App\Models\Department;
 
 class FrontCourseController extends Controller
@@ -38,8 +39,10 @@ class FrontCourseController extends Controller
         $courseDetails = Course::where('Courses.slug', $slug)
             ->where('status', 1)
             ->first();
-         //dd($scholarDetails);
+         //dd($courseDetails->id);
+         $ratings = Rating::where('course_id',$courseDetails->id)->avg('rating');
+         //dd($ratings);
 
-        return view('front.courses.courseDetails', compact('courseDetails'));
+        return view('front.courses.courseDetails', compact('courseDetails','ratings'));
     }
 }

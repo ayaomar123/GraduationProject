@@ -22,43 +22,7 @@
                         <div class="mt-5 text-center py-2 mb-5" style="background-color: #0b3b65;color:white">
                             <h2>نحن هنا من أجل الطالب</h2>
                         </div>
-                        <form class="mb-5">
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                        <label for="firstname">الاسم الأول</label>
-                                        <input id="firstname" type="text" class="form-control">
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                        <label for="lastname">الاسم الأخير</label>
-                                        <input id="lastname" type="text" class="form-control">
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                        <label for="email">الايميل</label>
-                                        <input id="email" type="text" class="form-control">
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                        <label for="subject">العنوان</label>
-                                        <input id="subject" type="text" class="form-control">
-                                    </div>
-                                </div>
-                                <div class="col-md-12">
-                                    <div class="form-group">
-                                        <label for="message">الرسالة</label>
-                                        <textarea id="message" class="form-control"></textarea>
-                                    </div>
-                                </div>
-                                <div class="col-md-12 text-center">
-                                    <button type="submit" class="btn" style="background-color: #0b3b65;color: white"><i class="fa fa-envelope-o"></i> أرسل الرسالة</button>
-                                </div>
-                            </div>
-                        </form>
+                        
                 </div>
                 <div class="col-md-1"></div>
                 <div class="col-md-3">

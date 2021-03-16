@@ -13,14 +13,13 @@ class FrontResultController extends Controller
     {
         $answers = Result::where('user_id',auth()->user()->id)
             ->get();
-
-        foreach ($answers as $answer){
-//            dd($answers);
-            $aya =  Answer::where('id',$answer->answer_id)
-                ->get();
-//            dd($aya);
+            
+            foreach ($answers as $answer){
+//            
+            $aya =  Answer::where('id',$answer->answer_id)->avg('weight');
+            //dd($aya);
         }
-        return view('Front.result',compact('aya'));
+        return view('Front.result',compact('answers','aya'));
 
     }
 
