@@ -13,7 +13,6 @@ class Result extends Model
         'user_id',
         'question_id',
         'answer_id',
-        'answer_weight'
     ];
 
 

@@ -17,8 +17,12 @@ class CreateDepartmentsTable extends Migration
             $table->bigIncrements('id');
             $table->string('name');
             $table->string('slug')->unique();
-            $table->string('image');
-            $table->longText('description');
+            $table->string('image')->nullable();
+            $table->longText('definition');
+            $table->longText('qualities');
+            $table->longText('advantages');
+            $table->longText('disadvantages');
+            $table->longText('workfields');
             $table->boolean('status');
             $table->rememberToken();
             $table->timestamps();

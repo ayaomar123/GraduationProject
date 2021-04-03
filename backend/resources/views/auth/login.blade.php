@@ -1,6 +1,6 @@
 @extends("auth.auth-layout")
-@section('title','الدخول إلى لوحة التحكم')
-@section('main-title','الدخول إلى لوحة التحكم')
+@section('title','تسجيل الدخول')
+@section('main-title','تسجيل الدخول')
 
 @section('content')
     <form class="m-login__form m-form" method="POST" action="{{ route('login') }}">

@@ -17,13 +17,17 @@ class CreateCoursesTable extends Migration
             $table->id();
             $table->string('name');
             $table->string('slug')->unique();
-            $table->string('image');
+            $table->string('image')->nullable();
             $table->longText('description');
             $table->boolean('status');
-            $table->integer('department_id');
-            $table->integer('trainer_id');
+            $table->unsignedBigInteger('trainer_id')->nullable();
+//            $table->foreign('trainer_id')->references('id')->on('trainers');
+            $table->bigInteger('department_id')->unsigned()->nullable();
+            $table->foreign('department_id')->references('id')->on('departments');
+
             $table->integer('cost');
             $table->integer('hours');
+
 
             $table->timestamps();
         });

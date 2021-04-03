@@ -58,19 +58,76 @@
 
                 </div>
                 <div class="col-md-9">
-
-                    <div class="new-arrivals-content">
-                        <div class="row mr-4">
-                            <h2 class="col-12 text-right alert-danger">لقد قمت بالتسجيل في دورة {{$subscription->name}}</h2>
-                            <br>
-                            <h2>{!! $subscription->description!!}</h2>
-                            <br>
-
-                        </div>
-                        <h3>سيتم التواصل معك </h3>
-
+                    <div class="card-header">
+                        <h3 class="text-right white">{{$subscription->name}}</h3>
                     </div>
+                    <h3 class="alert-danger text-right py-2 pr-5">املأ بياناتك لتتمكن من التسجيل في الدورة بنجاح</h3>
 
+                    <div class="card mt-3 mr-3">
+                        <div class="m-portlet m-portlet--mobile">
+                            <form enctype='multipart/form-data' method="post" action='{{asset("getCourses/subscription/$subscription->name")}}'>
+                                @csrf
+                                <div class='m-form'>
+                                    <div class="m-portlet__body">
+                                        <div class="m-form__section m-form__section--first">
+                                            <div class="form-group m-form__group row mt-4 ml-4">
+                                                <label class="col-lg-3 col-form-label">الاسم كاملاً</label>
+                                                <div class="col-lg-9">
+                                                    <input type="hidden" name="course_id" value="{{$subscription->id}}">
+                                                    @auth()
+                                                    <input type="hidden" name="user_id" value="{{auth()->user()->id}}">
+                                                    @endauth
+
+
+                                                    <input id="name" value="{{ auth()->user()?auth()->user()->name:"" }}" name="name"
+                                                           placeholder="الاسم كاملاً"
+                                                           class="form-control" type="text">
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group m-form__group row mt-4 ml-4">
+                                                <label class="col-lg-3 col-form-label">الايميل</label>
+                                                <div class="col-lg-9">
+                                                    <input id="email" value="{{ auth()->user()?auth()->user()->email:"" }}" name="email"
+                                                           placeholder="الايميل" class="form-control" type="text">
+                                                </div>
+                                            </div>
+                                            <div class="form-group m-form__group row mt-4 ml-4">
+                                                <label class="col-lg-3 col-form-label">رقم الجوال</label>
+                                                <div class="col-lg-9">
+                                                    <input id="phone" value="{{ old('phone') }}" name="phone"
+                                                           placeholder="رقم الجوال"
+                                                           class="form-control" type="text">
+                                                </div>
+                                            </div>
+                                            <div class="form-group m-form__group row mt-4 ml-4">
+                                                <label class="col-lg-3 col-form-label">ملاحظاتك</label>
+                                                <div class="col-lg-9">
+                                                    <textarea id="notes" rows='8' name="notes" placeholder="أدخل ملاحظاتك"
+                                                        class="form-control summernote">{{old("notes")}}</textarea>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="m-portlet__foot m-portlet__foot--fit mb-4 ml-4">
+                                        <div class="m-form__actions m-form__actions">
+                                            <div class="row">
+                                                <div class="col-lg-3"></div>
+                                                <div class="col-lg-9">
+                                                    <button type="submit" class="btn"
+                                                            style="background-color: #0b3b65;color: white">اضافة
+                                                    </button>
+                                                    <a href="{{asset('admin/trainers')}}" class="btn btn-secondary">الغاء
+                                                        الامر</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

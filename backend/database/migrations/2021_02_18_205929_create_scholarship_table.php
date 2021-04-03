@@ -18,12 +18,12 @@ class CreateScholarshipTable extends Migration
             $table->string('name');
             $table->string('slug')->unique();
             $table->double('percent');
-            $table->string('image');
+            $table->string('image')->nullable();
             $table->string('link')->nullable();
             $table->boolean('status');
             $table->boolean('internal');
             $table->longText('description');
-            $table->date('last_Day');
+            $table->date('last_Day')->nullable();
             $table->timestamps();
         });
     }

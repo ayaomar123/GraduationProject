@@ -18,7 +18,7 @@ class CreateTrainersTable extends Migration
             $table->string('name');
             $table->integer('phone');
             $table->string('email');
-            $table->string('image');
+            $table->string('image')->nullable();
             $table->longText('description');
             $table->timestamps();
         });

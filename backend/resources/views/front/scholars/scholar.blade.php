@@ -17,9 +17,17 @@
 
                     <div class="main">
                         <div class="form-group has-search">
-                            <span class="fa fa-search form-control-feedback"></span>
-                            <input type="text" class="mr-5 form-control" placeholder="ابجث هنا عن المنحة...">
+                            <div class="form-group has-search">
+                                <div class="form-group has-search">
+                                    <form class='row mb-3'>
+                                        <span class="fa fa-search form-control-feedback"></span>
+                                        <input name='q' value='{{request()->q}}' type="text" class="mr-5 form-control" placeholder="ابجث هنا عن الدورة...">
+                                    </form>
+                                </div>
+                            </div>
                         </div>
+                        {{--                            <span class="fa fa-search form-control-feedback"></span>--}}
+                        {{--                            <input name='q' id='q' value='{{request()->q}}' type="text" class="mr-5 form-control" placeholder="ابجث هنا عن المنحة...">--}}
                     </div>
                 </h4>
             </div>
@@ -45,50 +53,40 @@
                                         <div class="single-new-arrival">
                                             <div class="single-new-arrival-bg">
                                                 <img alt="new-arrivals images"
-                                                     src="{{asset('storage/images/'.$scholar->image)}}">
+                                                     src="{{$scholar->image?asset('storage/images/'.$scholar->image):asset('assets/images/scholarship-online.png')}}">
                                                 <div class="single-new-arrival-bg-overlay"></div>
                                                 <div class="sale {{$scholar->internal == '1' ? "bg-1": "bg-2"}}">
                                                     <p>{{$scholar->internal == '1' ? "داخلية": "خارجية"}}</p>
                                                 </div>
-                                                <div class="new-arrival-cart">
-                                                    <p class="arrival-review pull-right">
+                                                @if($scholar->lastDay!=null)
+                                                    <div class="new-arrival-cart">
+                                                        <p class="arrival-review pull-right">
                                                     <span
                                                         class="lnr text-right white">أخر موعد للالتحاق: {{$scholar->last_Day}}  </span>
-                                                    </p>
-                                                </div>
+                                                        </p>
+                                                    </div>
+                                                @endif
                                             </div>
+
                                     </a>
-                                        <h4><a href="{{route('getScholarDetails',$scholar->slug)}}">{{$scholar->name}}</a></h4>
-                                        <p class="arrival-product-price">{{$scholar->percent}}%</p>
-                                    </div>
+
+                                    <h4><a href="{{route('getScholarDetails',$scholar->slug)}}">{{$scholar->name}}</a>
+                                    </h4>
+                                    <p class="arrival-product-price">{{$scholar->percent}}%</p>
                                 </div>
-                            @endforeach
-                            {{--                            <div class="col-md-4">--}}
-                            {{--                                <div class="single-new-arrival">--}}
-                            {{--                                    <div class="single-new-arrival-bg">--}}
-                            {{--                                        <img alt="new-arrivals images" src="images/quran.jpg">--}}
-                            {{--                                        <div class="single-new-arrival-bg-overlay"></div>--}}
-                            {{--                                        <div class="sale bg-2">--}}
-                            {{--                                            <p>خارجبة</p>--}}
-                            {{--                                        </div>--}}
-                            {{--                                        <div class="new-arrival-cart">--}}
-                            {{--                                            <p class="arrival-review pull-right">--}}
-                            {{--                                                <span class="lnr lnr-heart"></span>--}}
-                            {{--                                            </p>--}}
-                            {{--                                        </div>--}}
-                            {{--                                    </div>--}}
-                            {{--                                    <h4><a href="#">منحة الفاخورة</a></h4>--}}
-                            {{--                                    <p class="arrival-product-price">منحة كاملة</p>--}}
-                            {{--                                </div>--}}
-                            {{--                            </div>--}}
-
-
                         </div>
-                    </div>
+                        @endforeach
 
+                    </div>
+                    <div class="pages text-center">
+
+                        {{ $scholars->links() }}
+                    </div>
                 </div>
+
             </div>
         </div>
+    </div>
     </div>
 
 @endsection

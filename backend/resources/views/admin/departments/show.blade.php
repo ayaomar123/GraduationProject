@@ -2,6 +2,7 @@
 @section("name","عرض")
 @section("name-side")
 @endsection
+
 @section("content")
     <div class="m-portlet m-portlet--mobile">
         <form method='post' action='{{route("departments.index")}}'>
@@ -42,10 +43,38 @@
                             <span class="m-form__help"></span>
                         </div>
                         <div class="form-group m-form__group row">
-                            <label class="col-lg-3 col-form-label">التفاصيل</label>
+                            <label class="col-lg-3 col-form-label">تعريف الكلية</label>
                             <div class="col-lg-6">
-                            <textarea disabled id="description" rows='8' name="description" placeholder="أدخل التفاصيل"
-                                      class="form-control">{{ $item->description }}</textarea>
+                            <textarea disabled id="definition" rows='8' name="definition" placeholder="أدخل التفاصيل"
+                                      class="form-control ">{!! $item->definition !!}</textarea>
+                            </div>
+                        </div>
+                        <div class="form-group m-form__group row">
+                            <label class="col-lg-3 col-form-label">صفات المهندس الناجح</label>
+                            <div class="col-lg-6">
+                            <textarea disabled id="qualities" rows='8' name="qualities" placeholder="أدخل التفاصيل"
+                                      class="form-control summernote">{!! $item->qualities !!}</textarea>
+                            </div>
+                        </div>
+                        <div class="form-group m-form__group row">
+                            <label class="col-lg-3 col-form-label">إيجابيات دراسة التخصص</label>
+                            <div class="col-lg-6">
+                            <textarea disabled id="advantages" rows='8' name="advantages" placeholder="أدخل التفاصيل"
+                                      class="form-control summernote">{!! $item->advantages !!}</textarea>
+                            </div>
+                        </div>
+                        <div class="form-group m-form__group row">
+                            <label class="col-lg-3 col-form-label">سلبيات دراسة التخصص</label>
+                            <div class="col-lg-6">
+                            <textarea disabled id="disadvantages" rows='8' name="disadvantages" placeholder="أدخل التفاصيل"
+                                      class="form-control summernote">{!! $item->disadvantages !!}</textarea>
+                            </div>
+                        </div>
+                        <div class="form-group m-form__group row">
+                            <label class="col-lg-3 col-form-label">مجالات العمل</label>
+                            <div class="col-lg-6">
+                            <textarea disabled id="workfields" rows='8' name="workfields" placeholder="أدخل التفاصيل"
+                                      class="form-control summernote">{!! $item->workfields !!}</textarea>
                             </div>
                         </div>
                         <div class="form-group m-form__group row">

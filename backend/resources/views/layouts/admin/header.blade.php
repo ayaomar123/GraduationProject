@@ -72,7 +72,7 @@
                                         @if(Auth()->user()->image == '')
                                             <img src="{{asset('metronic/assets/app/media/img/users/user.png')}}" alt="">
                                         @else
-                                            <img src="{{asset('storage/user-images/'.auth()->user()->image)}}"
+                                            <img src="{{asset('storage/images/'.auth()->user()->image)}}"
                                                  class="circular--portrait"  style="position: relative;width: 50px;height: 40px;overflow: hidden;border-radius: 50%;">
                                         @endif
                                     </span>
@@ -117,6 +117,13 @@
                                                                     <span class="m-nav__link-text"><h5>الملف الشخصي</h5></span>
                                                                 </span>
                                                             </span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="m-nav__item">
+                                                        <a href="{{route('msg.show')}}" class="m-nav__link">
+                                                            <i class="m-nav__link-icon flaticon-share"></i>
+                                                            <span
+                                                                class="m-nav__link-text"><h5>الرسائل</h5></span>
                                                         </a>
                                                     </li>
                                                     <li class="m-nav__item">

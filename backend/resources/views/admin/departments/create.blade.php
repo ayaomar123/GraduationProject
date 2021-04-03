@@ -47,10 +47,38 @@
                             <span class="m-form__help"></span>
                         </div>
                         <div class="form-group m-form__group row">
-                            <label class="col-lg-3 col-form-label">التفاصيل</label>
+                            <label class="col-lg-3 col-form-label">تعريف الكلية</label>
                             <div class="col-lg-6">
-                            <textarea id="details" rows='8' name="description" placeholder="أدخل التفاصيل"
-                                      class="form-control summernote">{{old("description")}}</textarea>
+                            <textarea id="definition" rows='8' name="definition" placeholder="أدخل التفاصيل"
+                                      class="form-control summernote">{{old("definition")}}</textarea>
+                            </div>
+                        </div>
+                        <div class="form-group m-form__group row">
+                            <label class="col-lg-3 col-form-label">صفات المهندس الناجح</label>
+                            <div class="col-lg-6">
+                            <textarea id="qualities" rows='8' name="qualities" placeholder="أدخل التفاصيل"
+                                      class="form-control summernote">{{old("qualities")}}</textarea>
+                            </div>
+                        </div>
+                        <div class="form-group m-form__group row">
+                            <label class="col-lg-3 col-form-label">إيجابيات دراسة التخصص</label>
+                            <div class="col-lg-6">
+                            <textarea id="advantages" rows='8' name="advantages" placeholder="أدخل التفاصيل"
+                                      class="form-control summernote">{{old("advantages")}}</textarea>
+                            </div>
+                        </div>
+                        <div class="form-group m-form__group row">
+                            <label class="col-lg-3 col-form-label">سلبيات دراسة التخصص</label>
+                            <div class="col-lg-6">
+                            <textarea id="disadvantages" rows='8' name="disadvantages" placeholder="أدخل التفاصيل"
+                                      class="form-control summernote">{{old("disadvantages")}}</textarea>
+                            </div>
+                        </div>
+                        <div class="form-group m-form__group row">
+                            <label class="col-lg-3 col-form-label">مجالات العمل</label>
+                            <div class="col-lg-6">
+                            <textarea id="workfields" rows='8' name="workfields" placeholder="أدخل التفاصيل"
+                                      class="form-control summernote">{{old("workfields")}}</textarea>
                             </div>
                         </div>
                         <div class="form-group m-form__group row">

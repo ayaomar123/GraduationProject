@@ -12,32 +12,34 @@ class FrontQuestionController extends Controller
 {
     public function index()
     {
-        if (auth()->user()) {
             $questions = Question::with('answers')->get();
             return view('front.quiz', compact('questions'));
-        } else {
-            return view('auth.login');
-        }
     }
 
     public function store(Request $request){
-        //dd($request->all());
         $user= Auth::user();
         $requestData = $request->all();
-//        dd($requestData);
         foreach($requestData['question_id'] as $qid){
-            //dd($qid);
                 $qanswer = $requestData['q' . $qid];
                 Result::create([
                         'user_id' => $user->id,
                         'question_id' => $qid,
                         'answer_id' => $qanswer,
-                        'answer_weight'=> 1
                     ]
                 );
 
         }
         Session::flash("msg","s: تمت الإجابة بنجاح");
         return redirect()->route('getResult');
+    }
+
+    public function showQuiz(){
+        if (auth()->user()) {
+            $questions = Question::with('answers')->get();
+            return view('front.ComputerQuiz', compact('questions'));
+        } else {
+            session()->flash('msg', 's:قم بتسجيل الدخول كي تتمكن من حل اختبار القدرات');
+            return view('auth.login');
+        }
     }
 }

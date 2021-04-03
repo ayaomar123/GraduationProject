@@ -159,7 +159,7 @@
                     بعدها .. ونتقاعد ونحن لم نحقق الأهداف التي كنا
                     نحلم بها .. لا تجدنا نشعر بالفخر لما قضينا فيه
                     أعمارنا .. </p>
-                <a href="department.html">
+                <a href="{{asset('getDepartments')}}">
                     <button class="btn btn-lg more">المزيد
                     </button>
                 </a>
@@ -196,7 +196,7 @@
                     بعدها .. ونتقاعد ونحن لم نحقق الأهداف التي كنا
                     نحلم بها .. لا تجدنا نشعر بالفخر لما قضينا فيه
                     أعمارنا .. </p>
-                <a href="course.html">
+                <a href="{{asset('getCourses')}}">
                     <button class="btn btn-lg
                                      more">المزيد
                     </button>
@@ -221,7 +221,9 @@
                     بعدها .. ونتقاعد ونحن لم نحقق الأهداف التي كنا
                     نحلم بها .. لا تجدنا نشعر بالفخر لما قضينا فيه
                     أعمارنا .. </p>
+                <a href="{{asset('getScholar')}}">
                 <button class="btn btn-lg  more">المزيد</button>
+                </a>
             </div>
         </div>
         <div class="col-md-6">
@@ -255,7 +257,9 @@
                     بعدها .. ونتقاعد ونحن لم نحقق الأهداف التي كنا
                     نحلم بها .. لا تجدنا نشعر بالفخر لما قضينا فيه
                     أعمارنا .. </p>
+                <a href="{{asset('quiz')}}">
                 <button class="btn btn-lg  more">المزيد</button>
+                </a>
             </div>
         </div>
     </div>

@@ -7,7 +7,7 @@
 
 @section("js")
     <script>
-        $(".summernote").summernote({height:400})
+        $(".summernote").summernote({height:200})
     </script>
 @endsection
 @section("content")
@@ -51,10 +51,39 @@
                         </div>
 
                         <div class="form-group m-form__group row">
-                            <label class="col-lg-3 col-form-label">التفاصيل</label>
+                            <label class="col-lg-3 col-form-label">تعريف {{ $item->name }}</label>
                             <div class="col-lg-6">
-                            <textarea id="description" rows='8' style='height:350px;' name="description" placeholder="أدخل التفاصيل"
-                                      class="summernote form-control">{{ old('description',$item->description) }}</textarea>
+                            <textarea  id="definition" rows='8' name="definition" placeholder="أدخل التفاصيل"
+                                      class="form-control summernote">{!! $item->definition !!}</textarea>
+                            </div>
+                        </div>
+
+                        <div class="form-group m-form__group row">
+                            <label class="col-lg-3 col-form-label">صفات المهندس الناجح</label>
+                            <div class="col-lg-6">
+                            <textarea  id="qualities" rows='8' name="qualities" placeholder="أدخل التفاصيل"
+                                      class="form-control summernote">{!! $item->qualities !!}</textarea>
+                            </div>
+                        </div>
+                        <div class="form-group m-form__group row">
+                            <label class="col-lg-3 col-form-label">إيجابيات دراسة التخصص</label>
+                            <div class="col-lg-6">
+                            <textarea  id="advantages" rows='8' name="advantages" placeholder="أدخل التفاصيل"
+                                      class="form-control summernote">{!! $item->advantages !!}</textarea>
+                            </div>
+                        </div>
+                        <div class="form-group m-form__group row">
+                            <label class="col-lg-3 col-form-label">سلبيات دراسة التخصص</label>
+                            <div class="col-lg-6">
+                            <textarea  id="disadvantages" rows='8' name="disadvantages" placeholder="أدخل التفاصيل"
+                                      class="form-control summernote">{!! $item->disadvantages !!}</textarea>
+                            </div>
+                        </div>
+                        <div class="form-group m-form__group row">
+                            <label class="col-lg-3 col-form-label">مجالات العمل</label>
+                            <div class="col-lg-6">
+                            <textarea id="workfields" rows='8' name="workfields" placeholder="أدخل التفاصيل"
+                                      class="form-control summernote">{!! $item->workfields !!}</textarea>
                             </div>
                         </div>
                         <div class="form-group m-form__group row">
@@ -67,6 +96,7 @@
                                 @endif
                             </div>
                         </div>
+
                     </div>
                 </div>
                 <div class="m-portlet__foot m-portlet__foot--fit">

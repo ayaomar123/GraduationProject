@@ -3,14 +3,14 @@
 <style>
     .myphoto{
         background-size: cover;
-        background-image:url('../storage/images/{{$courseDetails->image}}');
+        background-image:url("{{$courseDetails->image?asset('storage/images/'.$courseDetails->image):asset('assets/images/noor10.jpg')}}");
         width: 100%;
         background-repeat: no-repeat;
         height: 280px;
         margin-top: 40px;
         }
 </style>
-    
+
 @endsection
 @section('content')
     <div id="content pt-5">
@@ -71,7 +71,7 @@
                             </div>
                         </div>
                     </div>
-                    
+
                 </div>
                 <div class="col-md-9">
                     <div class="card">
@@ -79,7 +79,7 @@
                             <div class="row">
                                 <div class="col-md-6">
                                     <div class="row">
-                                        <img alt="" src="{{asset('storage/images/'.$courseDetails->trainer->image)}}"
+                                        <img alt="" src="{{$courseDetails->image?asset('storage/images/'.$courseDetails->trainer->image):asset('metronic/assets/app/media/img/users/user.png')}}"
                                              style="height: 50px;width: 50px;border-radius: 50%">
                                         <h4 class="py-3 white mr-4"> اسم المدرب:  {{$courseDetails->trainer->name}} </h4>
                                     </div>
@@ -104,7 +104,7 @@
                                                 </linearGradient>
                                             </defs>
                                         </svg>
-                                                        
+
                                                     @else
                                                     <svg fill="none" height="15" viewBox="0 0 9 8" width="15"
                                                     xmlns="http://www.w3.org/2000/svg">
@@ -127,9 +127,9 @@
                                                     @php $rating--; @endphp
                                                 </span>
                                             @endforeach
-                                        
-                                        
-                                       
+
+
+
                                     </h4>
                                 </div>
                             </div>
@@ -239,8 +239,8 @@
                             <div class="col-md-4 pt-sm-32pt pt-md-0 d-flex flex-column align-items-center justify-content-center border-left-custom user_instructor-info">
                                 <div class="user_instructor-contact text-center">
                                     <div class="mb-16pt instructor__img-rounded"><img
-                                            alt="دعاء الشيخ"
-                                            class="rounded-circle" src="{{asset('storage/images/'.$courseDetails->trainer->image)}}" width="100" height="100"></div>
+                                            alt="Aya Omar"
+                                            class="rounded-circle" src="{{$courseDetails->image?asset('storage/images/'.$courseDetails->trainer->image):asset('metronic/assets/app/media/img/users/user.png')}}" width="100" height="100"></div>
                                     <h3 class="m-0"> {{$courseDetails->trainer->name}}</h3></div>
                             </div>
 

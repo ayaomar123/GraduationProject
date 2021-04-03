@@ -48,6 +48,7 @@ class DepartmentController extends Controller
             $imagename= $request->image->hashName();
             $requestData['image'] = $imagename;
         }
+        //dd($requestData);
         $department = Department::create($requestData);
         Session::flash("msg","s: تمت عملية الاضافة بنجاح");
         return redirect(route("departments.index"));
@@ -96,6 +97,7 @@ class DepartmentController extends Controller
     {
         $itemDB = Department::find($id);
         $requestData = $request->all();
+        //dd($requestData);
         if($request->image){
             $fileName = $request->image->store("public/images");
             $imageName = $request->image->hashName();
@@ -103,7 +105,7 @@ class DepartmentController extends Controller
         }
         $itemDB->update($requestData);
 
-        session()->flash("msg","s:تم التحدسث بنجاح ");
+        session()->flash("msg","s:تم التحديث بنجاح ");
         return redirect(route("departments.index"));
     }
 

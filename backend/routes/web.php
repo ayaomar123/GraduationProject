@@ -44,7 +44,12 @@ Route::get('',function (){
 });
 
 Route::resource("quiz",FrontQuestionController::class);
-Route::resource("myprofile",CustomerHomeController::class);
+Route::get("quiz-showQuiz",[FrontQuestionController::class,'showQuiz'])->name('quiz.showQuiz');
+Route::get("getResult",[FrontResultController::class,'index'])->name('getResult');
+
+Route::get("myprofile", [CustomerHomeController::class, 'edit'])->name("myprofile.edit");
+Route::put("myprofile", [CustomerHomeController::class, 'update'])->name("myprofile.update");
+Route::get("get-my-courses", [CustomerHomeController::class, 'myCourse'])->name("userCourses");
 Route::get("getDepartments",[FrontDepartmentController::class,'index']);
 Route::get('/getDepartments/{slug}', [FrontDepartmentController::class,'details'])->name("getDepartments.details");
 
@@ -54,9 +59,11 @@ Route::get("getScholar/external",[FrontScholarController::class,'external'])->na
 Route::get('/getScholar/{slug}', [FrontScholarController::class,'details'])->name("getScholarDetails");
 Route::get("getCourses",[FrontCourseController::class,'index'])->name('getCourses');
 Route::get("getCourses/subscription/{slug}",[FrontCourseController::class,'subscription'])->name('subscription');
+Route::post("getCourses/subscription/{slug}",[FrontCourseController::class,'postSubscription'])->name('postSubscription');
+Route::get("getCourses/subscription/{slug}/delete", [FrontCourseController::class, 'destroy'])->name("getCoursesDetails.delete");
+
 Route::get('/getCourses/{slug}', [FrontCourseController::class,'details'])->name("getCoursesDetails");
 Route::get('/menu/{slug}', [FrontCourseController::class,'menu'])->name("menu");
-Route::get("getResult",[FrontResultController::class,'index'])->name('getResult');
 Route::get("getPages/who",[FrontStaticPageController::class,'index'])->name('getPages/who');
 Route::get("getPages/calls",[FrontStaticPageController::class,'calls'])->name('getPages/calls');
 Route::resource('msg', MsgController::class);
@@ -96,6 +103,10 @@ Route::prefix("admin")->middleware(['auth','role:admin'])->group(function() {
 
     Route::get("change-pass", [ChangePasswordController::class, 'edit'])->name("password.edit");
     Route::post("change-pass", [ChangePasswordController::class, 'update'])->name("password.changed");
+
+    Route::get("getMsg", [ChangePasswordController::class, 'show'])->name("msg.show");
+    Route::get("getMsg/{id}/delete", [ChangePasswordController::class, 'destroy'])->name("getMsg.delete");
+
 
     Route::get("profile", [UserProfileController::class, 'edit'])->name("profile.edit");
     Route::put("profile", [UserProfileController::class, 'update'])->name("profile.update");

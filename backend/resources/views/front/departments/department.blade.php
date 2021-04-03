@@ -31,7 +31,7 @@
                 <div class="col-lg-4 mb-4 text-right">
                     <div class="card border-0 mb-2">
                         <a href="getDepartments/{{$department->slug}}">
-                            <img class="card-img-top" src="{{asset('storage/images/'.$department->image)}}" alt="" style="height: 250px;">
+                            <img class="card-img-top" src="{{$department->image?asset('storage/images/'.$department->image):asset('assets/images/arch9.jpg')}}" alt="" style="height: 250px;">
                             <h4 class="w-100 btn text-center py-2" style="background-color: #0b3b65;color: white">{{$department->name}}</h4>
                         </a>
                     </div>

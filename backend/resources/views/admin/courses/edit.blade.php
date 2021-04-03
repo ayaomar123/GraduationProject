@@ -25,7 +25,7 @@
                                     <option selected>-اختر القسم-</option>
                                     @foreach($departments as $department)
                                         <option
-                                            {{$department->id==$item->id?'':'selected'}} value='{{$department->id}}'>
+                                            {{$department->id==$item->id?'selected':''}} value='{{$department->id}}'>
                                             {{$department->name}}</option>
                                     @endforeach
                                 </select>

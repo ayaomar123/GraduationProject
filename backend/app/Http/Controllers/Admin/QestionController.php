@@ -19,8 +19,8 @@ class QestionController extends Controller
     public function index(Request $request)
     {
         $q = $request->q;
-        $items = Question::whereRaw('(question_body like ?)',["%$q%"])->paginate(10)->appends(['q'=>$q]);
-        return view("admin.question.index")->with('items',$items);
+        $items = Question::whereRaw('(question_body like ?)', ["%$q%"])->paginate(10)->appends(['q' => $q]);
+        return view("admin.question.index")->with('items', $items);
     }
 
     /**
@@ -36,22 +36,27 @@ class QestionController extends Controller
     /**
      * Store a newly created resource in storage.
      *
-     * @param  \Illuminate\Http\Request  $request
+     * @param \Illuminate\Http\Request $request
      * @return Response
      */
     public function store(Request $request)
     {
         $requestData = $request->all();
+        if($request->image){
+            $filename= $request->image->store('public/images');
+            $imagename= $request->image->hashName();
+            $requestData['image'] = $imagename;
+        }
         //dd($requestData);
         $user = Question::create($requestData);
-        Session::flash("msg","s: تمت عملية الاضافة بنجاح");
+        Session::flash("msg", "s: تمت عملية الاضافة بنجاح");
         return redirect(route("question.index"));
     }
 
     /**
      * Display the specified resource.
      *
-     * @param  int  $id
+     * @param int $id
      * @return Response
      */
     public function show($id)
@@ -62,24 +67,24 @@ class QestionController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  int  $id
+     * @param int $id
      * @return Response
      */
     public function edit($id)
     {
         $item = Question::find($id);
-        if(!$item){
-            session()->flash("msg","e:عنوان السؤال غير صحيح");
+        if (!$item) {
+            session()->flash("msg", "e:عنوان السؤال غير صحيح");
             return redirect(route("question.index"));
         }
-        return view("admin.question.edit",compact('item'));
+        return view("admin.question.edit", compact('item'));
     }
 
     /**
      * Update the specified resource in storage.
      *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  int  $id
+     * @param \Illuminate\Http\Request $request
+     * @param int $id
      * @return Response
      */
     public function update(Request $request, $id)
@@ -87,23 +92,28 @@ class QestionController extends Controller
 
         $question = Question::find($id);
         $requestData = $request->all();
+        if ($request->image) {
+            $fileName = $request->image->store("public/images");
+            $imageName = $request->image->hashName();
+            $requestData['image'] = $imageName;
+        }
         $question->update($requestData);
 
-        session()->flash("msg","s:تم تعديل السؤال بنجاح");
+        session()->flash("msg", "s:تم تعديل السؤال بنجاح");
         return redirect(route("question.index"));
     }
 
     /**
      * Remove the specified resource from storage.
      *
-     * @param  int  $id
+     * @param int $id
      * @return Response
      */
     public function destroy($id)
     {
         $itemDB = Question::find($id);
         $itemDB->delete();
-        session()->flash("msg","w:تم حذف السؤال بنجاح");
+        session()->flash("msg", "w:تم حذف السؤال بنجاح");
         return redirect(route("question.index"));
     }
 }

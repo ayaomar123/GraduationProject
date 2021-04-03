@@ -3,25 +3,24 @@
 namespace App\Http\Controllers\front;
 
 use App\Http\Controllers\Controller;
-use Illuminate\Http\Request;
 use App\Models\StaticPage;
 
 class FrontStaticPageController extends Controller
 {
-    public function index(){
-        $Pages = StaticPage::
-        where('active', 1)
-        ->first();
-     //dd($scholarDetails);
+    public function index()
+    {
+        $Pages = StaticPage::where('active', 1)
+            ->first();
 
-    return view('front.pages.staticPage', compact('Pages'));
-}
-public function calls(){
-    $calls = StaticPage::where('active', 1)
-    ->latest();
- //dd($scholarDetails);
+        return view('front.pages.staticPage', compact('Pages'));
+    }
 
-return view('front.pages.staticPagecalls', compact('calls'));
-}
-    
+    public function calls()
+    {
+        $calls = StaticPage::where('active', 1)
+            ->latest();
+
+        return view('front.pages.staticPagecalls', compact('calls'));
+    }
+
 }

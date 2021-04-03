@@ -1,6 +1,6 @@
 @extends("layouts.admin")
 @section("title","الملف الشخصي")
-@section('css')
+@section('style')
     <style>
         .m-tabs-line .m-tabs__link {
             font-size: 16px;
@@ -59,7 +59,7 @@
                             <div class="row m-form">
                                 <label class="col-3 col-form-label">الصورة الشخصية:</label>
                                 <div class="col-7">
-                                    <img src="{{asset('storage/user-images/'.'/'.$user->image)}}"
+                                    <img src="{{asset('storage/images/'.'/'.$user->image)}}"
                                          style="width:auto; height:200px;"/>
                                 </div>
                             </div>
@@ -106,7 +106,7 @@
                                 <div class="form-group m-form__group row">
                                     <label for="example-text-input" class="col-2 col-form-label">تغيير الصورة</label>
                                     <div class="col-7">
-                                        <img src="{{asset('storage/user-images/'.$user->image)}}"
+                                        <img src="{{asset('storage/images/'.$user->image)}}"
                                              style="width:auto; height:100px;" id="display_user_image"/>
                                         <br>
                                         <input class="form-control m-input" type="file" id="user_image" name="image">

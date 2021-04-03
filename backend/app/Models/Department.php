@@ -11,7 +11,11 @@ class Department extends Model
     protected $fillable = [
         'name',
         'slug',
-        'description',
+        'definition',
+        'qualities',
+        'advantages',
+        'disadvantages',
+        'workfields',
         'image',
         'status'
     ];

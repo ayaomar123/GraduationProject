@@ -18,7 +18,6 @@ class CreateResultsTable extends Migration
             $table->integer('user_id');
             $table->string('question_id');
             $table->string('answer_id');
-            $table->string('answer_weight');
             $table->timestamps();
         });
     }

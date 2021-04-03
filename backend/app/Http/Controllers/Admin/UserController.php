@@ -20,7 +20,6 @@ class UserController extends Controller
         $items = $adminRole->users()->whereRaw('(email like ? or name like ?)',["%$q%","%$q%"])
             ->paginate(10)
             ->appends(['q'=>$q]);
-//        $items = User::whereRaw('(email like ? or name like ?)',["%$q%","%$q%"])->paginate(10)->appends(['q'=>$q]);
 
         return view("admin.user.index")->with('items',$items);
     }

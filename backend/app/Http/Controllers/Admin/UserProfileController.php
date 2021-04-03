@@ -22,7 +22,7 @@ class UserProfileController extends Controller
         $requestData= $request->all();
 
         if($request->image){
-            $filename= $request->image->store('public/user-images');
+            $filename= $request->image->store('public/images');
             $imagename= $request->image->hashName();
             $requestData['image'] = $imagename;
         }

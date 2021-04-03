@@ -17,8 +17,10 @@
 
                     <div class="main">
                         <div class="form-group has-search">
+                            <form class='row mb-3'>
                             <span class="fa fa-search form-control-feedback"></span>
-                            <input type="text" class="mr-5 form-control" placeholder="ابجث هنا عن الدورة...">
+                            <input name='q' value='{{request()->q}}' type="text" class="mr-5 form-control" placeholder="ابجث هنا عن الدورة...">
+                            </form>
                         </div>
                     </div>
                 </h4>
@@ -68,7 +70,7 @@
                                     <div class="single-new-arrival">
                                         <a href="{{asset('getCourses/'.$course->slug)}}">
                                             <div class="single-new-arrival-bg">
-                                                <img alt="new-arrivals images" src="{{asset('storage/images/'.$course->image)}}">
+                                                <img alt="new-arrivals images" src="{{$course->image?asset('storage/images/'.$course->image):asset('assets/images/a1.jpg')}}">
                                                 <div class="single-new-arrival-bg-overlay"></div>
                                                 <div class="new-arrival-cart">
                                                     <p class="arrival-review pull-right">
