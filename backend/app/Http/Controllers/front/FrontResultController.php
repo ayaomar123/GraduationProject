@@ -12,7 +12,9 @@ class FrontResultController extends Controller
     public function index()
     {
         $answers = Result::where('user_id', auth()->user()->id)->latest()
-            ->take(2)->get();
+            ->take(5)->get();
+
+//        dd($answers);
 
 //     dd($answers);
         $aya = 0;

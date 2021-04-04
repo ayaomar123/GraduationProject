@@ -2,9 +2,9 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\QuizRequest;
 use App\Models\Question;
 use App\Models\Result;
-use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Session;
 
@@ -12,32 +12,37 @@ class FrontQuestionController extends Controller
 {
     public function index()
     {
-            $questions = Question::with('answers')
-                ->get();
-            return view('front.quiz', compact('questions'));
+        $questions = Question::with('answers')
+            ->get();
+        return view('front.quiz', compact('questions'));
     }
 
-    public function store(Request $request){
-        $user= Auth::user();
+    public function store(QuizRequest $request)
+    {
+        $user = Auth::user();
         $requestData = $request->all();
-        foreach($requestData['question_id'] as $qid){
-                $qanswer = $requestData['q' . $qid];
-                Result::create([
-                        'user_id' => $user->id,
-                        'question_id' => $qid,
-                        'answer_id' => $qanswer,
-                    ]
-                );
+//        dd($requestData);
+        foreach ($requestData['question_id'] as $qid) {
+            $qanswer = $requestData['q' . $qid];
+            Result::create([
+                    'user_id' => $user->id,
+                    'question_id' => $qid,
+                    'answer_id' => $qanswer,
+                ]
+            );
 
         }
-        Session::flash("msg","s: تمت الإجابة بنجاح");
+        Session::flash("msg", "s: تمت الإجابة بنجاح");
         return redirect()->route('getResult');
     }
 
-    public function showQuiz(){
+    public function showQuiz()
+    {
         if (auth()->user()) {
             $questions = Question::with('answers')
-                ->where('department_id',1)
+                ->where('department_id', 1)
+                ->inRandomOrder()
+                ->take(5)
                 ->get();
             return view('front.ComputerQuiz', compact('questions'));
         } else {
