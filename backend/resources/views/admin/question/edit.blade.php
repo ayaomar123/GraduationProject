@@ -9,7 +9,22 @@
         <form method='post' action='{{route("question.update",$item->id)}}'>
             @csrf
             @method("put")
+
             <div class="m-portlet__body">
+                <div class="form-group m-form__group row">
+                    <label class="col-lg-3 col-form-label">القسم </label>
+                    <div class="col-lg-6">
+                        <select class="form-control chosen-rtl select" name='department_id' id='department_id'>
+                            <option selected>-اختر القسم-</option>
+                            @foreach($departments as $department)
+                                <option
+                                    {{$department->id==$item->id?'selected':''}} value='{{$department->id}}'>
+                                    {{$department->name}}</option>
+                            @endforeach
+                        </select>
+                    </div>
+                </div>
+
                 <div class="m-form__section m-form__section--first">
                     <div class="form-group m-form__group row">
                         <label class="col-lg-3 col-form-label">السؤال </label>
@@ -23,6 +38,7 @@
                 <a class='btn btn-light' href='{{route("question.index")}}'>الغاء الأمر</a>
 
             </div>
+
         </form>
     </div>
 

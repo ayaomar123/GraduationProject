@@ -11,10 +11,10 @@ class FrontResultController extends Controller
 {
     public function index()
     {
-        $answers = Result::where('user_id', auth()->user()->id)
-            ->get();
+        $answers = Result::where('user_id', auth()->user()->id)->latest()
+            ->take(2)->get();
 
-//        dd($answers);
+//     dd($answers);
         $aya = 0;
         foreach ($answers as $answer) {
 
@@ -22,7 +22,7 @@ class FrontResultController extends Controller
 
 
         }
-        return view('Front.result', compact('answers', 'aya'));
+        return view('Front.result', compact('answers', 'aya','answers'));
 
     }
 

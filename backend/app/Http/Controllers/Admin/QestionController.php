@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
+use App\Models\Department;
 use App\Models\Question;
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
@@ -30,7 +31,8 @@ class QestionController extends Controller
      */
     public function create()
     {
-        return view("admin.question.create");
+        $departments = Department::all();
+        return view("admin.question.create",compact('departments'));
     }
 
     /**
@@ -72,12 +74,13 @@ class QestionController extends Controller
      */
     public function edit($id)
     {
+        $departments = Department::all();
         $item = Question::find($id);
         if (!$item) {
             session()->flash("msg", "e:عنوان السؤال غير صحيح");
             return redirect(route("question.index"));
         }
-        return view("admin.question.edit", compact('item'));
+        return view("admin.question.edit", compact('item','departments'));
     }
 
     /**

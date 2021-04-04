@@ -310,26 +310,26 @@
                             <a class="nav-link" href="{{asset('')}}">الرئيسية</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">من نحن</a>
+                            <a class="nav-link" href="{{asset('getDepartments')}}">التخصصات</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="department.html">التخصصات</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="course.html">الدورات
+                            <a class="nav-link" href="{{asset('getCourses')}}">الدورات
                                 التدريبية</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="Scholarship.html">المنح</a>
+                            <a class="nav-link" href="{{asset('getScholar')}}">المنح</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="{{asset('quiz')}}">اختبار
                                 القدرات</a>
                         </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{asset('getPages/who')}}">من نحن</a>
+                        </li>
 
                     </ul>
                 </div>
-                <div class="col-md-4 col-lg-3 text-center">
+                <div class="col-md-4 col-lg-3 text-center py-5">
                     <img class="w-50 footer-logo" src="{{asset('assets/newfolder/images/dal.png')}}"/>
                     <h3 class="mt-3 text-right" style="color:
                                     #fff;">

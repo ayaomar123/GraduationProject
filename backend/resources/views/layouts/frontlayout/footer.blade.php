@@ -12,22 +12,22 @@
             <div class="col-md-3 col-lg-2 text-right">
                 <ul class="nav flex-column">
                     <li class="nav-item">
-                        <a class="nav-link" href="#">الرئيسية</a>
+                        <a class="nav-link" href="{{asset('')}}">الرئيسية</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">التخصصات</a>
+                        <a class="nav-link" href="{{asset('getDepartments')}}">التخصصات</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">الدورات التدريبية</a>
+                        <a class="nav-link" href="{{asset('getCourses')}}">الدورات التدريبية</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">المنح الجامعية</a>
+                        <a class="nav-link" href="{{asset('getScholar')}}">المنح الجامعية</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">من نحن</a>
+                        <a class="nav-link" href="{{asset('getPages/who')}}">من نحن</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">اتصل بنا</a>
+                        <a class="nav-link" href="{{asset('getPages/calls')}}">اتصل بنا</a>
                     </li>
                 </ul>
             </div>

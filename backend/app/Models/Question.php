@@ -10,7 +10,8 @@ class Question extends Model
     use HasFactory;
     protected $fillable = [
         'question_body',
-        'image'
+        'image',
+        'department_id'
     ];
 
     public function answers() {
@@ -20,6 +21,9 @@ class Question extends Model
     public function answer()
     {
         return $this->belongsTo(Answer::class);
+    }
+    public function department(){
+        return $this->belongsTo(Department::class);
     }
 
 }

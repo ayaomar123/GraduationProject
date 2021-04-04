@@ -26,60 +26,17 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f8fe2947-eb27-4003-98fd-9960f1d7fc08" name="Default Changelist" comment="aya 2-3">
+    <list default="true" id="f8fe2947-eb27-4003-98fd-9960f1d7fc08" name="Default Changelist" comment="ayaOmar 4-3">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/app/Http/Controllers/Admin/DepartmentController.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/app/Http/Controllers/Admin/DepartmentController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/app/Http/Controllers/Admin/QestionController.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/app/Http/Controllers/Admin/QestionController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/app/Http/Controllers/Admin/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/app/Http/Controllers/Admin/UserController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/app/Http/Controllers/Admin/UserProfileController.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/app/Http/Controllers/Admin/UserProfileController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/app/Http/Controllers/Auth/ChangePasswordController.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/app/Http/Controllers/Auth/ChangePasswordController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/app/Http/Controllers/CustomerHomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/app/Http/Controllers/CustomerHomeController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/app/Http/Controllers/FrontQuestionController.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/app/Http/Controllers/FrontQuestionController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/app/Http/Controllers/front/FrontCourseController.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/app/Http/Controllers/front/FrontCourseController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/app/Http/Controllers/front/FrontResultController.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/app/Http/Controllers/front/FrontResultController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/app/Http/Controllers/front/FrontScholarController.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/app/Http/Controllers/front/FrontScholarController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/app/Http/Controllers/front/FrontStaticPageController.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/app/Http/Controllers/front/FrontStaticPageController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/app/Http/Controllers/front/MsgController.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/app/Http/Controllers/front/MsgController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/app/Models/Department.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/app/Models/Department.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/app/Models/Question.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/app/Models/Question.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/app/Models/Result.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/app/Models/Result.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/app/Models/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/app/Providers/AppServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/app/Providers/AppServiceProvider.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/database/migrations/2021_01_24_102631_create_ratings_table.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/database/migrations/2021_02_08_172540_create_departments_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/database/migrations/2021_02_08_172540_create_departments_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/database/migrations/2021_02_08_172559_create_tests_table.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/database/migrations/2021_02_08_172712_create_questions_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/database/migrations/2021_02_08_172712_create_questions_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/database/migrations/2021_02_12_163718_create_results_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/database/migrations/2021_02_12_163718_create_results_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/database/migrations/2021_02_18_205929_create_scholarship_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/database/migrations/2021_02_18_205929_create_scholarship_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/database/migrations/2021_02_18_220103_create_courses_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/database/migrations/2021_02_18_220103_create_courses_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/database/migrations/2021_03_06_081128_create_trainers_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/database/migrations/2021_03_06_081128_create_trainers_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/database/seeders/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/database/seeders/DatabaseSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/public/assets/images/اختبار القدرات.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/resources/lang/en/validation.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/resources/lang/en/validation.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/resources/views/admin/courses/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/resources/views/admin/courses/edit.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/resources/views/admin/departments/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/resources/views/admin/departments/create.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/resources/views/admin/departments/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/resources/views/admin/departments/edit.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/resources/views/admin/departments/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/resources/views/admin/departments/show.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/resources/views/admin/question/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/resources/views/admin/question/create.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/resources/views/admin/user/profile.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/resources/views/admin/user/profile.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/resources/views/auth/login.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/resources/views/auth/login.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/resources/views/errors/403.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/resources/views/errors/403.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/resources/views/admin/question/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/resources/views/admin/question/edit.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/resources/views/front/CustomerHome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/resources/views/front/CustomerHome.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/resources/views/front/courses/course.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/resources/views/front/courses/course.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/resources/views/front/courses/courseDetails.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/resources/views/front/courses/courseDetails.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/resources/views/front/courses/coursesuscription.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/resources/views/front/courses/coursesuscription.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/resources/views/front/courses/menu.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/resources/views/front/courses/menu.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/resources/views/front/departments/department.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/resources/views/front/departments/department.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/resources/views/front/departments/departmentDetails.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/resources/views/front/departments/departmentDetails.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/resources/views/front/pages/staticPage.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/resources/views/front/pages/staticPage.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/resources/views/front/pages/staticPagecalls.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/resources/views/front/pages/staticPagecalls.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/resources/views/front/quiz.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/resources/views/front/quiz.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/resources/views/front/scholars/scholar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/resources/views/front/scholars/scholar.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/resources/views/front/scholars/scholarDetails.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/resources/views/front/scholars/scholarDetails.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/resources/views/layouts/admin/aside.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/resources/views/layouts/admin/aside.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/resources/views/layouts/admin/header.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/resources/views/layouts/admin/header.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/resources/views/layouts/frontlayout/header.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/resources/views/layouts/frontlayout/header.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/resources/views/front/result.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/resources/views/front/result.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/resources/views/layouts/frontlayout/footer.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/resources/views/layouts/frontlayout/footer.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -263,7 +220,7 @@
       <workItem from="1615220614220" duration="1841000" />
       <workItem from="1615564550893" duration="15479000" />
       <workItem from="1616858608720" duration="79372000" />
-      <workItem from="1617380631728" duration="9557000" />
+      <workItem from="1617380631728" duration="16650000" />
     </task>
     <task id="LOCAL-00001" summary="aya 27-2">
       <created>1614453960968</created>
@@ -279,7 +236,14 @@
       <option name="project" value="LOCAL" />
       <updated>1614710104550</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="ayaOmar 4-3">
+      <created>1617455510214</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1617455510215</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -312,7 +276,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="aya 27-2" />
     <MESSAGE value="aya 2-3" />
-    <option name="LAST_COMMIT_MESSAGE" value="aya 2-3" />
+    <MESSAGE value="ayaOmar 4-3" />
+    <option name="LAST_COMMIT_MESSAGE" value="ayaOmar 4-3" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

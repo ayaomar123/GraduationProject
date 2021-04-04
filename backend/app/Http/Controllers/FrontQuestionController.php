@@ -12,7 +12,8 @@ class FrontQuestionController extends Controller
 {
     public function index()
     {
-            $questions = Question::with('answers')->get();
+            $questions = Question::with('answers')
+                ->get();
             return view('front.quiz', compact('questions'));
     }
 
@@ -35,7 +36,9 @@ class FrontQuestionController extends Controller
 
     public function showQuiz(){
         if (auth()->user()) {
-            $questions = Question::with('answers')->get();
+            $questions = Question::with('answers')
+                ->where('department_id',1)
+                ->get();
             return view('front.ComputerQuiz', compact('questions'));
         } else {
             session()->flash('msg', 's:قم بتسجيل الدخول كي تتمكن من حل اختبار القدرات');
