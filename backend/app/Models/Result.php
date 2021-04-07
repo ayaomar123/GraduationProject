@@ -16,13 +16,18 @@ class Result extends Model
     ];
 
 
-    public function questions()
+    public function question()
     {
-        return $this->belongsToMany(Question::class);
+        return $this->belongsTo(Question::class);
     }
     public function user()
     {
         return $this->belongsTo(User::class);
+    }
+
+    public function department()
+    {
+        return $this->belongsTo(Department::class);
     }
 
 

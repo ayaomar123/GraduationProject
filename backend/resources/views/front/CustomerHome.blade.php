@@ -46,7 +46,7 @@
                                 <nav class="main-menu">
                                     <ul class="menu-area-main">
                                         <li><a href="{{asset('quiz')}}">اختبار
-                                                القدرات <i class="fas fa-tasks"></i></a></li>
+                                                الميول <i class="fas fa-tasks"></i></a></li>
                                         <li><a href="{{asset('getScholar')}}">المنح
                                                 الجامعية <i class="fas fa-hand-holding-usd"></i></a></li>
                                         <li><a href="{{asset('getCourses')}}">الدورات
@@ -83,7 +83,7 @@
                             <div class="aya">
                                 <a class="btn btn-lg
                                             w-50" href="{{asset('quiz')}}" style="background-color:
-                                            #e2adab;">ابدأ اختبار القدرات</a>
+                                            #e2adab;">ابدأ اختبار الميول</a>
                             </div>
 
 
@@ -247,7 +247,7 @@
         <div class="col-md-6">
             <div class="right_section_main text-right">
 
-                <h2 class="taital-text">اختبار القدرات </h2>
+                <h2 class="taital-text">اختبار الميول </h2>
                 <p class="donec_text"> عندما كنا صغاراً كنا نقضي وقت
                     طويل في أحلام اليقظة .. حيث نحلم بأننا نمتلك
                     المال والرفاهية والشهرة والتقدير الاجتماعي
@@ -279,22 +279,23 @@
             <div class="row justify-content-between align-items-top
                             py-5">
                 <div class="col-md-4 col-lg-3 text-center">
-                    <form>
+                    <form method="post" action='{{route("msg.index")}}'>
+                        @csrf
                         <div class="form-group">
                             <input class="form-control
                                             text-right" id="exampleFormControlInput1"
                                    placeholder="أدخل اسمك"
-                                   type="text">
+                                   type="text" value="{{auth()->user()->name??''}}" name="name">
                         </div>
                         <div class="form-group">
-                            <input class="form-control
+                            <input name="email" class="form-control
                                             text-right" id="exampleFormControlInput2"
                                    placeholder="بريدك الالكتروني"
-                                   type="email">
+                                   type="email" value="{{auth()->user()->email??''}}">
                         </div>
                         <div class="form-group">
                                         <textarea class="form-control
-                                            text-right"
+                                            text-right" name="myMsg"
                                                   id="exampleFormControlTextarea1"
                                                   placeholder="أدخل رسالتك" rows="3"></textarea>
                         </div>
@@ -321,7 +322,7 @@
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="{{asset('quiz')}}">اختبار
-                                القدرات</a>
+                                الميول</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="{{asset('getPages/who')}}">من نحن</a>

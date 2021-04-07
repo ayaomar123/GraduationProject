@@ -57,7 +57,6 @@ class CustomerHomeController extends Controller
         //أسماء الدورات اللي مسجل فيها اليوزر اللي داخل
         if (auth()->user()) {
             $crs = Subscription::where('user_id', auth()->user()->id)->get();
-//            dd($crs);
             foreach ($crs as $ce) {
                 $c = Course::where('id', $ce->id)->take(10)->get();
                 return view('layouts.frontlayout.myCourses', compact('crs'));
@@ -67,5 +66,15 @@ class CustomerHomeController extends Controller
             return redirect(route('login'));
         }
 
+    }
+
+    public function myResults(){
+        if (auth()->user()) {
+            $result = Result::where('user_id', auth()->user()->id)->get();
+//            dd($result);
+            return view('layouts.frontlayout.myResult', compact('result'));
+        } else {
+            return redirect(route('login'));
+        }
     }
 }

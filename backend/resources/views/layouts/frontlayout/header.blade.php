@@ -36,7 +36,7 @@
                         <a class="nav-link" href="{{asset('getDepartments')}}"> التخصصات </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="{{asset('quiz')}}"> اختبار القدرات </a>
+                        <a class="nav-link" href="{{asset('quiz')}}"> اختبار الميول </a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="{{asset('getCourses')}}"> الدورات التدريبية </a>
@@ -84,10 +84,10 @@
                                            class="btn m-btn--pill m-btn m-btn--custom m-btn--label-brand m-btn--bolder">
                                             <h4> دوراتي <i class="fas fa-lg fa-sign-out-alt"></i></h4>
                                         </a>
-                                        <a class="dropdown-item" href="#"
-                                           class="btn m-btn--pill m-btn m-btn--custom m-btn--label-brand m-btn--bolder">
-                                            <h4> اختبارات القدرات <i class="fas fa-lg fa-sign-out-alt"></i></h4>
-                                        </a>
+{{--                                        <a class="dropdown-item" href="{{route('myResults')}}"--}}
+{{--                                           class="btn m-btn--pill m-btn m-btn--custom m-btn--label-brand m-btn--bolder">--}}
+{{--                                            <h4> اختبارات الميول <i class="fas fa-lg fa-sign-out-alt"></i></h4>--}}
+{{--                                        </a>--}}
                                         <form method="POST" action="{{ route('logout') }}">
                                             @csrf
                                             <a class="dropdown-item" href="route('logout')"

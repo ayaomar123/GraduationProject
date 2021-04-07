@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Admin;
 use App\Http\Controllers\Controller;
 use App\Models\Department;
 use App\Models\Course;
+use App\Models\Subscription;
 use App\Models\Trainer;
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
@@ -127,5 +128,19 @@ class CourseController extends Controller
         $itemDB->delete();
         session()->flash("msg","w:تم الحذف بنجاح");
         return redirect(route("courses.index"));
+    }
+
+
+    public function subscribers(Request $request){
+        $courses = Course::all();
+        $course = $request->course;
+        $query = Subscription::whereRaw(true);
+        if ($course) {
+            $query->where('course_id', $course);
+        }
+        $items = $query->paginate(10)->appends(['course' => $course]);
+
+//        dd($items);
+        return view('admin.courses.subscribers',compact('courses','items'));
     }
 }

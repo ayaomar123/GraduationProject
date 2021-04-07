@@ -28,11 +28,15 @@
   <component name="ChangeListManager">
     <list default="true" id="f8fe2947-eb27-4003-98fd-9960f1d7fc08" name="Default Changelist" comment="ayaOmar 4-4">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/app/Http/Controllers/FrontQuestionController.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/app/Http/Controllers/FrontQuestionController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/app/Http/Controllers/front/FrontResultController.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/app/Http/Controllers/front/FrontResultController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/database/migrations/2021_02_08_172712_create_questions_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/database/migrations/2021_02_08_172712_create_questions_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/database/migrations/2021_02_11_073044_create_answers_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/database/migrations/2021_02_11_073044_create_answers_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/database/migrations/2021_02_12_163718_create_results_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/database/migrations/2021_02_12_163718_create_results_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/app/Http/Controllers/Admin/CourseController.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/app/Http/Controllers/Admin/CourseController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/app/Http/Controllers/CustomerHomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/app/Http/Controllers/CustomerHomeController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/app/Models/Result.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/app/Models/Result.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/resources/views/front/CustomerHome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/resources/views/front/CustomerHome.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/resources/views/front/courses/coursesuscription.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/resources/views/front/courses/coursesuscription.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/resources/views/front/result.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/resources/views/front/result.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/resources/views/layouts/admin/aside.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/resources/views/layouts/admin/aside.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/resources/views/layouts/frontlayout/header.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/resources/views/layouts/frontlayout/header.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -173,18 +177,18 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/backend/resources/views/front" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/backend/resources/views/layouts/frontlayout" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\c\GraduationProject\backend\resources\views\front" />
       <recent name="D:\c\GraduationProject\backend\resources\views\layouts\frontlayout" />
+      <recent name="D:\c\GraduationProject\backend\resources\views\admin\courses" />
+      <recent name="D:\c\GraduationProject\backend\resources\views\front" />
       <recent name="D:\c\GraduationProject\backend\resources\views\admin" />
       <recent name="D:\c\GraduationProject\backend\database\seeders" />
-      <recent name="C:\xampp\htdocs\GraduationProject\backend\resources\views\front\courses" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\xampp\htdocs\GraduationProject\backend\resources\views\admin" />
@@ -216,7 +220,7 @@
       <workItem from="1615220614220" duration="1841000" />
       <workItem from="1615564550893" duration="15479000" />
       <workItem from="1616858608720" duration="79372000" />
-      <workItem from="1617380631728" duration="22884000" />
+      <workItem from="1617380631728" duration="30685000" />
     </task>
     <task id="LOCAL-00001" summary="aya 27-2">
       <created>1614453960968</created>
@@ -246,7 +250,14 @@
       <option name="project" value="LOCAL" />
       <updated>1617536034620</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="ayaOmar 4-4">
+      <created>1617542264885</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1617542264885</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

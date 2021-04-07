@@ -6,7 +6,7 @@
                 <h4 class="btn" style="margin-top: 40px;margin-left: 1000px">
                     <nav aria-label="breadcrumb">
                         <ol class="breadcrumb">
-                            <li class="breadcrumb-item"><a href="index.html">الرئيسية</a></li>
+                            <li class="breadcrumb-item"><a href="{{asset('')}}">الرئيسية</a></li>
                             <li class="breadcrumb-item active" aria-current="page">الدورات التدريبية</li>
                         </ol>
                     </nav>

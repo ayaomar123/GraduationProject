@@ -50,6 +50,7 @@ Route::get("getResult",[FrontResultController::class,'index'])->name('getResult'
 Route::get("myprofile", [CustomerHomeController::class, 'edit'])->name("myprofile.edit");
 Route::put("myprofile", [CustomerHomeController::class, 'update'])->name("myprofile.update");
 Route::get("get-my-courses", [CustomerHomeController::class, 'myCourse'])->name("userCourses");
+Route::get("get-my-results", [CustomerHomeController::class, 'myResults'])->name("myResults");
 Route::get("getDepartments",[FrontDepartmentController::class,'index']);
 Route::get('/getDepartments/{slug}', [FrontDepartmentController::class,'details'])->name("getDepartments.details");
 
@@ -93,6 +94,7 @@ Route::prefix("admin")->middleware(['auth','role:admin'])->group(function() {
     Route::get("scholarships/{id}/delete", [ScholarController::class, 'destroy'])->name("scholarships.delete");
 
     Route::resource("courses", CourseController::class);
+    Route::get("subscribers", [CourseController::class, 'subscribers'])->name("subscribers");
     Route::get("courses/{id}/delete", [CourseController::class, 'destroy'])->name("courses.delete");
 
     Route::resource("question", QestionController::class);
