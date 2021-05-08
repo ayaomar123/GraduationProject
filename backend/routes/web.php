@@ -21,6 +21,7 @@ use App\Http\Controllers\front\MsgController;
 use App\Http\Controllers\RatingController;
 
 use App\Http\Controllers\FrontQuestionController;
+use App\Http\Controllers\SuccessStoryController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -52,6 +53,7 @@ Route::put("myprofile", [CustomerHomeController::class, 'update'])->name("myprof
 Route::get("get-my-courses", [CustomerHomeController::class, 'myCourse'])->name("userCourses");
 Route::get("get-my-results", [CustomerHomeController::class, 'myResults'])->name("myResults");
 Route::get("getDepartments",[FrontDepartmentController::class,'index']);
+Route::get("SuccessStory",[SuccessStoryController::class,'SuccessStory']);
 Route::get('/getDepartments/{slug}', [FrontDepartmentController::class,'details'])->name("getDepartments.details");
 
 Route::get("getScholar",[FrontScholarController::class,'index'])->name('scolarss');

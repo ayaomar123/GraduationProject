@@ -44,6 +44,9 @@
                     <li class="nav-item">
                         <a class="nav-link" href="{{asset('getScholar')}}"> المنح الجامعية </a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{asset('SuccessStory')}}"> قصص النجاح</a>
+                    </li>
 
                     <li class="nav-item">
                         <a class="nav-link" href="{{asset('getPages/who')}}"> من نحن </a>
@@ -54,11 +57,11 @@
                 </ul>
             </div>
 
-            <div class="mt-1 col-xl-2 ">
+            <div class="mt-1 col-xl-1 ">
                 <nav class="navbar navbar-expand-sm" style="margin-right: -70px">
 
                     @auth()
-                        <div class="collapse navbar-collapse" id="navbar-list-4" style="margin-right: 100px">
+                        <div class="collapse navbar-collapse" id="navbar-list-4" style="margin-right: 15px">
                             <ul class="navbar-nav">
                                 <li class="nav-item dropdown">
                                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink"
