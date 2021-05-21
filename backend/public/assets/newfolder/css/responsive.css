@@ -138,7 +138,7 @@
 
     .form-control:not(:last-child) { padding-left: 10px; font-size: 16px; }
     .search_bt { padding: 7px 20px;}
-    .choose_text { font-size: 33px !impotent;}
+    .choose_text { font-size: 33px;}
     .lorem_text { margin-left: 0px;}
     .dolar_tetx { font-size: 34px;}
     .special_text { font-size: 17px;margin-top: -100px }

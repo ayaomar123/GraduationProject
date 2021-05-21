@@ -1,4 +1,24 @@
 @extends('layouts.frontlayout.frontpage')
+@section('style')
+    <style>
+        @media screen and (max-width: 600px) {
+            .main{
+                width: 50%;
+                margin: 10px;
+            }
+            .breadcrumb{
+                visibility: hidden;
+            }
+            .myaya2{
+                width: 200%;
+            }
+            .form-control{
+                width: 250px;
+            }
+
+        }
+    </style>
+@endsection
 @section('content')
     <div id="content pt-5">
         <div class="text-center myaya2">
@@ -19,7 +39,7 @@
                         <div class="form-group has-search">
                             <form class='row mb-3'>
                                 <span class="fa fa-search form-control-feedback"></span>
-                                <input name='q' value='{{request()->q}}' type="text" class="mr-5 form-control" placeholder="ابجث هنا عن الدورة...">
+                                <input name='q' autocomplete="off" value='{{request()->q}}' type="text" class="mr-5 form-control" placeholder="ابجث هنا عن الدورة...">
                             </form>
                         </div>
                     </div>
