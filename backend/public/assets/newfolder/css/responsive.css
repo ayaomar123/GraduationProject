@@ -4,7 +4,7 @@
 /*------------------------------------------------------------------- 991px x 768px ---------------------------------------------------------------------*/
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
-    
+
     .header-search {
         padding: 15px 0px;
     }
@@ -141,7 +141,7 @@
     .choose_text { font-size: 33px !impotent;}
     .lorem_text { margin-left: 0px;}
     .dolar_tetx { font-size: 34px;}
-    .special_text { font-size: 17px; }
+    .special_text { font-size: 17px;margin-top: -100px }
     .send_btn { width: 60%;}
     .contact_taital { padding-left: 10px; padding-right: 10px;}
     .londan_text { padding-left: 6px;}
@@ -152,7 +152,7 @@
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
-    
+
     .titlepage h2::after {width: 58%;}
     .about-box .titlepage h2::after {
         width: 52%;
@@ -265,7 +265,7 @@ width: 41%;
     .banner-main .carousel-caption {top: 0%;}
 .titlepage h2 {
 font-size: 42px;
-display: block; 
+display: block;
 }
 #main_slider a.carousel-control-prev {
     position: absolute;
@@ -331,7 +331,7 @@ width: 55%;
 
 @media (max-width: 575px) {
     .last { display: none; }
-    .carousel-caption {display: none;} 
+    .carousel-caption {display: none;}
 .header { padding-top: 0px; }
 .logo { float: inherit; padding-bottom: 15px; text-align: center;}
 .btn-primary {max-width: 126px;
@@ -341,8 +341,8 @@ font-size: 14px;}
 .titlepage h2 {
     font-size: 27px;
 }
-.sporrt_text{ 
-     font-size: 23px; 
+.sporrt_text{
+     font-size: 23px;
      margin-top: 0px;
 }
 .main {
@@ -406,7 +406,7 @@ font-size: 16px;
 ul.link li {
 
     padding: 8px 12px;
-    padding-bottom: 0px; 
+    padding-bottom: 0px;
 }
 
 .bt_main { width: 45%;}

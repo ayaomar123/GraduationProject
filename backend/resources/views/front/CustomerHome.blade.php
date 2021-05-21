@@ -6,7 +6,8 @@
     <meta charset="utf-8">
     <meta content="IE=edge" http-equiv="X-UA-Compatible">
     <!-- mobile metas -->
-    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <meta content="initial-scale=1, maximum-scale=1" name="viewport">
     <!-- site metas -->
     <title>Graduate Website</title>
@@ -29,7 +30,49 @@
           rel="stylesheet">
     <link crossorigin="anonymous" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
           integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" rel="stylesheet">
+    <style>
+        div.example {
+            padding: 15px;
+        }
 
+        @media screen and (min-width: 601px) {
+            div.example {
+                font-size: 50px;
+            }
+        }
+
+        @media screen and (max-width: 600px) {
+            div.about_main{
+                margin-top: -235px;
+            }
+            div.example {
+                margin-top: 30px;
+            }
+            h2{
+                margin-top: 5px;
+            }
+            btn{
+                width: 100% !important;
+            }
+            .taital-text{
+                margin-top: -66px;
+            }
+            .right_section_main{
+                margin-top: 35px;
+            }
+
+
+        }
+        @media (min-width: 1200px) {
+            .about_main {
+                margin-top: 0px;
+            }
+            btn{
+                width: 50% !important;
+            }
+        }
+
+    </style>
 
 </head>
 
@@ -42,34 +85,33 @@
                 <div class="row">
                     <div class="col-xl-11 col-lg-9 col-md-9 col-sm-9">
                         <div class="menu-area">
-                            <div class="limit-box">
+                            <div class="limit-box" style="overflow: hidden;">
                                 <nav class="main-menu">
                                     <ul class="menu-area-main">
-                                        <li><a href="{{asset('quiz')}}">اختبار
+                                        <li><a style="text-align: right" href="{{asset('quiz')}}">اختبار
                                                 الميول <i class="fas fa-tasks"></i></a></li>
-                                        <li><a href="{{asset('getScholar')}}">المنح
+                                        <li><a style="text-align: right"  href="{{asset('getScholar')}}">المنح
                                                 الجامعية <i class="fas fa-hand-holding-usd"></i></a></li>
-                                        <li><a href="{{asset('getCourses')}}">الدورات
+                                        <li><a style="text-align: right"  href="{{asset('getCourses')}}">الدورات
                                                 التدريبية <i class="fas fa-chalkboard-teacher"></i></a></li>
-                                        <li><a href="{{asset('getDepartments')}}">التخصصات <i class="fas fa-laptop"></i></a></li>
-                                        <li><a href="{{asset('')}}">الرئيسية <i class="fas fa-home"></i></a></li>
+                                        <li><a style="text-align: right"  href="{{asset('getDepartments')}}">التخصصات <i class="fas fa-laptop"></i></a></li>
+                                        <li><a style="text-align: right"  href="{{asset('')}}">الرئيسية <i class="fas fa-home"></i></a></li>
                                     </ul>
                                 </nav>
                             </div>
                         </div>
                     </div>
                     <div class="col-xl-1">
-                        <img alt="" class="mt-1" src="{{asset('assets/newfolder/images/dal.png')}}" style="max-width: 100px;">
+                        <img alt="" class="m-3" src="{{asset('assets/newfolder/images/dal.png')}}" style="max-width: 100px;">
                     </div>
 
                 </div>
             </div>
         </div>
         <!-- end header inner -->
-        <section>
             <div class="bannen_inner" style="margin-top: -20px;">
                 <div class="container">
-                    <div class="row">
+                    <div class="row example">
                         <div class="col-xl-5 col-lg-6 col-md-6
                                     col-sm-12">
                             <h1 class="web_text ml3"><strong>أهلا وسهلا
@@ -82,7 +124,7 @@
                                 </h3></a>
                             <div class="aya">
                                 <a class="btn btn-lg
-                                            w-50" href="{{asset('quiz')}}" style="background-color:
+                                            " href="{{asset('quiz')}}" style="background-color:
                                             #e2adab;">ابدأ اختبار الميول</a>
                             </div>
 
@@ -94,15 +136,12 @@
                             </div>
                         </div>
 
-                        <div class="col-xl-7 col-lg-6 col-md-6 col-sm-12">
-
-                        </div>
 
                     </div>
 
                 </div>
             </div>
-        </section></div>
+        </div>
 </header>
 <!-- banner end -->
 <!-- choose start -->
@@ -154,7 +193,7 @@
 
                     لذا نحاول أن نقدم لكم هذا الدليل الشامل لمعظم الإختصاصات الجامعية ونقدم لكم بعض الإرشادات والمعلومات التي ستجعل من الاختيار أمراً سهلاً </p>
                 <a href="{{asset('getDepartments')}}">
-                    <button class="btn btn-lg more">المزيد
+                    <button class="btn btn-lg mb-3 more">المزيد
                     </button>
                 </a>
             </div>
@@ -184,7 +223,7 @@
                 <p class="donec_text"> تلعب الدورات التدريبية دوراً هامَّاً وكبيراً في تنمية المهارات لدى الأشخاص، حيث تُساعد هذه الدورات في تطوير الذات وبناء الثقة بالنفس، بالإضافة إلى تحسين المستوى الوظيفي للفرد؛ كما تهدف إلى توسيع قاعدة المعرفة لدى جميع المتدرِّبين، وتعليمهم بعض المهارات الجديدة، وتطوير مهاراتهم القديمة. </p>
                 <a href="{{asset('getCourses')}}">
                     <button class="btn btn-lg
-                                     more">المزيد
+                                  mb-3   more">المزيد
                     </button>
                 </a>
             </div>
@@ -202,7 +241,7 @@
                     توفر منصة دليلك في الجامعة الإسلامية بغزة حزمة متميزة من المنح والمساعدات والقروض الجامعية بهدف مساعدة طلبتها وتمكينهم من بدء ومواصلة مسيرتهم الأكاديمية
                 </p>
                 <a href="{{asset('getScholar')}}">
-                <button class="btn btn-lg  more">المزيد</button>
+                <button class="btn btn-lg mb-3  more">المزيد</button>
                 </a>
             </div>
         </div>
@@ -233,7 +272,7 @@
                     هذا الاختبار وضع للكشف عن شخصيتك وميولك وهو مؤشر لتحديد التخصص الأنسب لك، ولا يعبر بالضرورة عن اختيارك لأحد التخصصات في الجامعة
                 </p>
                 <a href="{{asset('quiz')}}">
-                <button class="btn btn-lg  more">المزيد</button>
+                <button class="btn btn-lg mb-3  more">المزيد</button>
                 </a>
             </div>
         </div>

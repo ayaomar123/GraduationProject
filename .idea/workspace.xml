@@ -26,10 +26,12 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f8fe2947-eb27-4003-98fd-9960f1d7fc08" name="Default Changelist" comment="ayaOmar 4-4">
+    <list default="true" id="f8fe2947-eb27-4003-98fd-9960f1d7fc08" name="Default Changelist" comment="ayaOmar 8-5">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/resources/views/layouts/frontlayout/header.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/resources/views/layouts/frontlayout/header.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/public/assets/newfolder/css/responsive.css" beforeDir="false" afterPath="$PROJECT_DIR$/backend/public/assets/newfolder/css/responsive.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/public/assets/newfolder/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/backend/public/assets/newfolder/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/resources/views/front/CustomerHome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/resources/views/front/CustomerHome.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/resources/views/front/SuccessStory.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/resources/views/front/SuccessStory.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -227,7 +229,10 @@
       <workItem from="1617892403124" duration="197000" />
       <workItem from="1617988246682" duration="3490000" />
       <workItem from="1618293108503" duration="1811000" />
-      <workItem from="1620472718485" duration="8399000" />
+      <workItem from="1620472718485" duration="8745000" />
+      <workItem from="1620482861445" duration="758000" />
+      <workItem from="1620546713190" duration="308000" />
+      <workItem from="1621589754662" duration="7765000" />
     </task>
     <task id="LOCAL-00001" summary="aya 27-2">
       <created>1614453960968</created>
@@ -271,7 +276,14 @@
       <option name="project" value="LOCAL" />
       <updated>1617886161726</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="ayaOmar 8-5">
+      <created>1620481612810</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1620481612810</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -306,7 +318,8 @@
     <MESSAGE value="aya 2-3" />
     <MESSAGE value="ayaOmar 4-3" />
     <MESSAGE value="ayaOmar 4-4" />
-    <option name="LAST_COMMIT_MESSAGE" value="ayaOmar 4-4" />
+    <MESSAGE value="ayaOmar 8-5" />
+    <option name="LAST_COMMIT_MESSAGE" value="ayaOmar 8-5" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -328,7 +341,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="php">
           <url>file://$PROJECT_DIR$/backend/resources/views/front/SuccessStory.blade.php</url>
-          <line>17</line>
+          <line>15</line>
           <option name="timeStamp" value="11" />
         </line-breakpoint>
       </breakpoints>

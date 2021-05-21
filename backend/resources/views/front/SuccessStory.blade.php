@@ -1,7 +1,5 @@
 @extends('layouts.frontlayout.frontpage')
 
-
-
 @section('content')
     <div class="text-center myaya">
         <div class="">
