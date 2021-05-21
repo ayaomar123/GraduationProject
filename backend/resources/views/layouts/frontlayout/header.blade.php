@@ -107,7 +107,7 @@
                         </div>
 
                     @else
-                        <div class="collapse navbar-collapse" id="navbar-list-4" style="margin-right: 50px">
+                        <div class="collapse navbar-collapse" id="navbar-list-4" style="margin-left: 50px">
                             <ul class="navbar-nav">
                                 <li class="nav-item dropdown">
                                     <a class="nav-link" href="{{asset('login')}}"> تسجيل الدخول </a>
