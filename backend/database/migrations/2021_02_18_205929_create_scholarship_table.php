@@ -16,7 +16,7 @@ class CreateScholarshipTable extends Migration
         Schema::create('scholarships', function (Blueprint $table) {
             $table->id();
             $table->string('name');
-            $table->string('slug')->unique();
+            $table->string('slug');
             $table->double('percent');
             $table->string('image')->nullable();
             $table->string('link')->nullable();

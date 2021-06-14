@@ -26,7 +26,7 @@
                         <br>
                         <h3>نتمنى لك التوفيق طالبنا العزيز</h3>
                         <br>
-                        <h3><a class="btn btn-outline-danger" href="computer.html">اقرأ المزيد عن هذا التخصص</a>
+                        <h3><a class="btn btn-outline-danger" href="{{asset('getDepartments/حاسوب')}}">اقرأ المزيد عن هذا التخصص</a>
                         </h3>
                     </div>
 

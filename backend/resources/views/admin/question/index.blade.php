@@ -53,7 +53,7 @@
                                                 <span></span>
                                             </label>
                                         </td>
-                                        <td>{{ $item->question_body }}</td>
+                                        <td>{!! $item->question_body !!}</td>
                                         <td width="10%">
                                             <a href='{{ route("question.edit",$item->id) }}'
                                                class="m-portlet__nav-link btn m-btn m-btn--hover-brand m-btn--icon m-btn--icon-only m-btn--pill"

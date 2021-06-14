@@ -42,7 +42,7 @@ class FrontQuestionController extends Controller
             $questions = Question::with('answers')
                 ->where('department_id', 1)
                 ->inRandomOrder()
-                ->take(5)
+                ->take(8)
                 ->get();
             return view('front.ComputerQuiz', compact('questions'));
         } else {

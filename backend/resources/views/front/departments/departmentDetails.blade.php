@@ -5,7 +5,7 @@
             background-image:url("{{$departmentDetails->image?asset('storage/images/'.$departmentDetails->image):asset('assets/images/noor10.jpg')}}");
             background-size: cover;
             background-repeat: no-repeat;
-            height: 300px;
+            height: 400px;
         }
     </style>
 @endsection

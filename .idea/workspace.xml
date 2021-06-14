@@ -28,7 +28,23 @@
   <component name="ChangeListManager">
     <list default="true" id="f8fe2947-eb27-4003-98fd-9960f1d7fc08" name="Default Changelist" comment="ayaOmar 8-5">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/resources/views/layouts/frontlayout/header.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/resources/views/layouts/frontlayout/header.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/app/Http/Controllers/FrontQuestionController.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/app/Http/Controllers/FrontQuestionController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/database/migrations/2014_10_12_000000_create_users_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/database/migrations/2014_10_12_000000_create_users_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/database/migrations/2014_10_12_100000_create_password_resets_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/database/migrations/2014_10_12_100000_create_password_resets_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/database/migrations/2019_08_19_000000_create_failed_jobs_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/database/migrations/2019_08_19_000000_create_failed_jobs_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/database/migrations/2021_02_08_172540_create_departments_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/database/migrations/2021_02_08_172540_create_departments_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/database/migrations/2021_02_18_205929_create_scholarship_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/database/migrations/2021_02_18_205929_create_scholarship_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/database/migrations/2021_02_18_220103_create_courses_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/database/migrations/2021_02_18_220103_create_courses_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/database/migrations/2021_02_19_002841_create_permission_tables.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/public/assets/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/backend/public/assets/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/public/assets/newfolder/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/backend/public/assets/newfolder/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/resources/views/admin/question/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/resources/views/admin/question/create.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/resources/views/admin/question/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/resources/views/admin/question/edit.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/resources/views/admin/question/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/resources/views/admin/question/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/resources/views/front/ComputerQuiz.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/resources/views/front/ComputerQuiz.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/resources/views/front/departments/department.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/resources/views/front/departments/department.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/resources/views/front/result.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/resources/views/front/result.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/resources/views/static-page/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/resources/views/static-page/edit.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -229,7 +245,13 @@
       <workItem from="1620472718485" duration="8745000" />
       <workItem from="1620482861445" duration="758000" />
       <workItem from="1620546713190" duration="308000" />
-      <workItem from="1621589754662" duration="13185000" />
+      <workItem from="1621589754662" duration="13813000" />
+      <workItem from="1621751780153" duration="115000" />
+      <workItem from="1621944589289" duration="1636000" />
+      <workItem from="1622030094507" duration="54000" />
+      <workItem from="1622279160319" duration="3044000" />
+      <workItem from="1623673991354" duration="65000" />
+      <workItem from="1623676973791" duration="4818000" />
     </task>
     <task id="LOCAL-00001" summary="aya 27-2">
       <created>1614453960968</created>
@@ -294,7 +316,14 @@
       <option name="project" value="LOCAL" />
       <updated>1621602870568</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="ayaOmar 8-5">
+      <created>1621603593247</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1621603593247</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -354,6 +383,11 @@
           <url>file://$PROJECT_DIR$/backend/resources/views/front/SuccessStory.blade.php</url>
           <line>37</line>
           <option name="timeStamp" value="11" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/backend/resources/views/front/CustomerHome.blade.php</url>
+          <line>210</line>
+          <option name="timeStamp" value="12" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
